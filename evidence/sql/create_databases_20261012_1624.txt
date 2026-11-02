@@ -1,0 +1,4 @@
+ADY201m_Report2 ['CollectionRuns', 'PriceObservations', 'ProductMatches', 'Products', 'Stores', 'vw_PriceComparison']
+ADY201m_Report2_Test ['CollectionRuns', 'PriceObservations', 'ProductMatches', 'Products', 'Stores', 'vw_PriceComparison']
+second create refused OK: Database ADY201m_Report2 already exists - not creating it again. Ask the owner before any change.
+guard OK: Refusing database 'SupermarketPrices': only databases named ADY201m_Report2* are allowed

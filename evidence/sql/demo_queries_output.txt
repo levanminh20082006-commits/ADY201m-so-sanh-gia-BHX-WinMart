@@ -1,0 +1,129 @@
+Database: ADY201m_Report2
+====================================================================================================
+-- 1) SELECT: xem 20 bản ghi giá mới nhất, kèm tên sản phẩm và siêu thị.
+             collected_at store_code                                                name     brand  sale_price_vnd  list_price_vnd                                                                                   product_url
+2026-10-12 09:43:18+00:00    winmart      Khăn ướt chăm sóc da Fressi Care All 100 miếng  ALL CARE         49900.0         49900.0              https://winmart.vn/products/all-care-fressicare-100-to--s10020648?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart                 Khăn giấy rút 2 lớp Silkwell 280 tờ  SILKWELL         29000.0         29000.0           https://winmart.vn/products/silkwell-khan-giay-rut-280-to--s10020624?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart             Giấy bếp đa dụng 2 lớp Elene gói 100 tờ     ELENE         26000.0         26000.0           https://winmart.vn/products/elene-giay-bep-da-dung-100-to--s10020502?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart          Giấy vệ sinh Elene xanh ngọc 10c 3 lớp lõi     ELENE        115000.0        146300.0       https://winmart.vn/products/elene-gvs-xanh-ngoc-10c-3-lop-loi--s10171203?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart             Giấy vệ sinh Hà Nội 6 cuộn 3 lớp có lõi    HA NOI         66000.0         66000.0 https://winmart.vn/products/ha-noi-giay-ve-sinh-6-cuon-3-lop-co-loi--s10613616?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart                  Giấy rút lụa Silkwell 3 lớp 200 tờ  SILKWELL         34500.0         34500.0      https://winmart.vn/products/silkwell-giay-rut-lua-3-lop-200-to--s10170882?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart            Khăn ướt Huggié bơ cacao và hạt mỡ 72 tờ   HUGGIES         45000.0         45000.0       https://winmart.vn/products/huggies-k.uot-bo-cacao-hat-mo-72m--s10639160?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart Khăn giấy bỏ túi Tempo 4 lớp gói 90 tờ 16 x 19,5 cm     TEMPO         32300.0         32300.0   https://winmart.vn/products/tempo-khan-giay-rut-bac-ha-4-lop-90to--s10624441?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart                Khăn giấy rút Elène 3 lớp gói 160 tờ     ELENE         29000.0         29000.0     https://winmart.vn/products/elene-giay-lua-tre-rut-160-to-3-lop--s10161781?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart     Khăn ướt kháng khuẩn khử mùi Let Green 15 miếng  LETGREEN         30400.0         30400.0 https://winmart.vn/products/let-green-khan-uot-kk-khu-mui-15mieng3g--s10170928?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart     Giấy vệ sinh Elene xanh 10 cuộn 3 lớp không lõi     ELENE        117700.0        117700.0   https://winmart.vn/products/elene-gvs-10-cuon-xanh-3lop-khong-loi--s10020670?storeCode=1535
+2026-10-12 09:43:18+00:00    winmart         Khăn giấy ăn rút 2 lớp Watersilk gói 200 tờ WATERSILK         26000.0         26000.0            https://winmart.vn/products/watersilk-giay-an-rut-200-to--s10020513?storeCode=1535
+[20 rows]
+====================================================================================================
+-- 2) COUNT: tổng số bản ghi trong từng bảng → dùng để đối chiếu với CSV.
+       table_name  row_count
+           Stores          2
+   CollectionRuns          1
+         Products       3507
+PriceObservations       3507
+   ProductMatches        258
+[5 rows]
+====================================================================================================
+-- 3) DISTINCT: có bao nhiêu thương hiệu khác nhau ở mỗi siêu thị.
+store_code  distinct_brands
+       bhx              296
+   winmart              465
+[2 rows]
+====================================================================================================
+-- 4) WHERE: chỉ lấy sản phẩm đang khuyến mãi (giá niêm yết > giá bán) của Vinamilk.
+store_code                                                              name  list_price_vnd  sale_price_vnd
+       bhx               Thùng 24 hộp sữa Vinamilk 9 loại hạt ít đường 180ml        295000.0        280000.0
+       bhx           Thùng 48 bịch sữa dinh dưỡng Vinamilk không đường 220ml        345000.0        340000.0
+       bhx                         Thùng 48 bịch sữa Vinamilk có đường 220ml        345000.0        340000.0
+       bhx      Thùng 48 hộp sữa tươi Vinamilk Green Farm rất ít đường 180ml        455000.0        445000.0
+   winmart Sữa chua uống men sống hương dâu Probi Vinamilk lốc 5 chai x 65ml         26600.0         22200.0
+   winmart     Sữa chua uống men sống hương dưa gang Probi lốc 5 chai x 65ml         26600.0         22200.0
+   winmart  Sữa chua uống men sống ít đường Probi Vinamilk lốc 5 chai x 65ml         26600.0         22200.0
+   winmart    Sữa chua uống Vinamilk Probi hương việt quất lốc 5 chai x 65ml         26600.0         22200.0
+   winmart Sữa chua uống men sống Vinamilk Probi hương dứa Lốc 5 chai x 65ml         26600.0         22200.0
+   winmart           Sữa chua uống men sống Probi Vinamilk lốc 5 chai x 65ml         26600.0         24300.0
+   winmart                          Sữa chua uống Vinamilk Probi đường 400ml         28500.0         24500.0
+   winmart              Lốc 5 chai sữa chua uống Probi Pedia+ hương cam 65ml         29700.0         24800.0
+[15 rows]
+====================================================================================================
+-- 5) GROUP BY + MIN/MAX/AVG: thống kê giá theo siêu thị.
+store_code  observations  min_price  max_price  avg_price  on_promotion
+   winmart          2095     2600.0  1226000.0    82631.0           234
+       bhx          1412     3600.0  1521000.0    88380.0           347
+[2 rows]
+====================================================================================================
+-- 6) GROUP BY theo danh mục + ORDER BY: danh mục nào có nhiều sản phẩm nhất.
+store_code             category_slug  products  avg_price
+   winmart             banh-keo--c07       427    55755.0
+   winmart    do-uong-giai-khat--c09       359    78566.0
+   winmart         sua-cac-loai--c08       298    80816.0
+   winmart               gia-vi--c35       255    71149.0
+   winmart mi-thuc-pham-an-lien--c34       249    65957.0
+   winmart        cham-soc-da--c0146       204   130133.0
+       bhx                        mi       174   117637.0
+       bhx                   dau-goi       111   134877.0
+   winmart     hoa-pham-tay-rua--c10       101   131322.0
+       bhx                  sua-tuoi        77   143388.0
+   winmart     cham-soc-ca-nhan--c11        72   165321.0
+       bhx                 nuoc-ngot        71    55522.0
+[54 rows]
+====================================================================================================
+-- 7) Thống kê theo thời điểm thu thập: mỗi lần chạy (run) có bao nhiêu giá, thu thập từ mấy giờ đến mấy giờ.
+           run_id store_code  observations           first_collected            last_collected
+run_20261012_1622        bhx          1412 2026-10-12 09:22:13+00:00 2026-10-12 09:38:20+00:00
+run_20261012_1622    winmart          2095 2026-10-12 09:23:58+00:00 2026-10-12 09:43:18+00:00
+[2 rows]
+====================================================================================================
+-- 8) Kiểm tra bản ghi trùng: một sản phẩm không được có 2 giá trong cùng 1 lần chạy.
+(0 rows)
+[0 rows]
+====================================================================================================
+-- 9) Kiểm tra trùng sản phẩm: cùng siêu thị + cùng mã sản phẩm chỉ có 1 dòng. Mong đợi: 0 dòng.
+(0 rows)
+[0 rows]
+====================================================================================================
+-- 10) Kết quả ghép sản phẩm: bao nhiêu cặp MATCHED / NEEDS_REVIEW.
+           run_id       status  pairs
+run_20261012_1622      MATCHED    139
+run_20261012_1622 NEEDS_REVIEW    119
+[2 rows]
+====================================================================================================
+-- 11) Bảng so sánh giá chính (view chỉ chứa cặp MATCHED và đủ điều kiện so sánh).
+           brand                                   bhx_name                                winmart_name  size_value size_unit  pack_count  bhx_price_vnd  winmart_price_vnd  price_diff_vnd  price_diff_pct                                                                                   bhx_url                                                                                  winmart_url
+         Twister        Nước cam ép Twister Tropicana 1 lít                      Nước Cam Ép Twister 1L      1000.0        ml           1        16000.0            23800.0          7800.0           48.75                https://www.bachhoaxanh.com/nuoc-ep-trai-cay/nuoc-cam-ep-twister-cam-1-lit         https://winmart.vn/products/twister-nuoc-cam-ep-10-chai-1l--s10150203?storeCode=1535
+             P/S Kem đánh răng P/S muối hồng & hoa cúc 230g Kem đánh răng P/S muối hồng và hoa cúc 230g       230.0         g           1        35000.0            50000.0         15000.0           42.86     https://www.bachhoaxanh.com/kem-danh-rang/kem-danh-rang-p-s-muoi-hong-va-hoa-cuc-230g          https://winmart.vn/products/ps-kdr-muoi-hong-hoa-cuc-230g--s10171162?storeCode=1535
+            Surf    Nước giặt Surf hương nước hoa túi 3.1kg     Nước giặt hương nước hoa Surf túi 3,1kg      3100.0         g           1       105000.0           143400.0         38400.0           36.57             https://www.bachhoaxanh.com/nuoc-giat/nuoc-giat-surf-huong-nuoc-hoa-tui-3-lit https://winmart.vn/products/surf-nuoc-giat-huong-nuoc-hoa-tui-31kg--s10160963?storeCode=1535
+           Orion                 Kẹo dẻo đào Orion Boom 91g                 Kẹo dẻo Boom vị đào gói 91g        91.0         g           1        22000.0            14900.0         -7100.0          -32.27                     https://www.bachhoaxanh.com/keo-mem/keo-deo-boom-vi-dao-orion-goi-91g                https://winmart.vn/products/boom-keo-deo-vi-dao-91g--s10195932?storeCode=1535
+           Downy          Nước xịt vải Downy huyền bí 370ml           Xịt vải huyền bí Downy chai 370ml       370.0        ml           1        82000.0           106600.0         24600.0           30.00               https://www.bachhoaxanh.com/nuoc-xa/nuoc-xit-vai-downy-huong-huyen-bi-370ml      https://winmart.vn/products/downy-xit-vai-huyen-bi-chai-370ml--s10170827?storeCode=1535
+              G7                    Cà phê sữa G7 3in1 336g             Cà phê hòa tan 3in1 G7 hộp 336g       336.0         g           1        70000.0            90800.0         20800.0           29.71              https://www.bachhoaxanh.com/ca-phe-hoa-tan/ca-phe-g7-3in1-hop-21-sachets-16g        https://winmart.vn/products/g7-cafe-hoa-tan-3in1-336g-2116g--s10012822?storeCode=1535
+Head & Shoulders      Dầu gội Head & Shoulders bạc hà 850ml       Dầu gội bạc hà Head & Shoulders 850ml       850.0        ml           1       189000.0           234700.0         45700.0           24.18 https://www.bachhoaxanh.com/dau-goi/dau-goi-sach-gau-head-shoulders-bac-ha-mat-ruoi-850ml                https://winmart.vn/products/hs-dau-goi-bac-ha-850ml--s10236863?storeCode=1535
+       Nam Dương     Nước tương thượng hạng Nam Dương 210ml Nước tương thượng hạng Nam Dương chai 210ml       210.0        ml           1        19900.0            24200.0          4300.0           21.61        https://www.bachhoaxanh.com/nuoc-tuong/nuoc-tuong-thuong-hang-nam-duong-chai-210ml https://winmart.vn/products/nam-duong-nuoc-tuong-thuong-hang-210ml--s10600001?storeCode=1535
+          Meizan                  Dầu đậu nành Meizan 2 lít                      Dầu đậu nành Meizan 2L      2000.0        ml           1       139000.0           109900.0        -29100.0          -20.94                              https://www.bachhoaxanh.com/dau-an/dau-dau-nanh-meizan-2-lit            https://winmart.vn/products/meizan-dau-dau-nanh-chai-2l--s10010076?storeCode=1535
+           Maggi               Hạt nêm Maggi nấm hương 450g Hạt nêm cao cấp vị nấm hương Maggi gói 450g       450.0         g           1        52500.0            42200.0        -10300.0          -19.62                      https://www.bachhoaxanh.com/hat-nem/hat-nem-nam-huong-maggi-goi-450g     https://winmart.vn/products/maggi-hat-nem-cc-vi-nam-huong-450g--s10009052?storeCode=1535
+           ViFon                Cháo thịt gà thật Vifon 70g                  Cháo thịt gà Vifon gói 70g        70.0         g           1        11000.0             9000.0         -2000.0          -18.18                    https://www.bachhoaxanh.com/chao-an-lien/chao-thit-ga-vifon-goi-70g-50                 https://winmart.vn/products/vifon-chao-thit-ga-70g--s10007983?storeCode=1535
+           ViFon               Cháo thịt bằm thật Vifon 70g                 Cháo thịt bằm Vifon gói 70g        70.0         g           1        11000.0             9000.0         -2000.0          -18.18                   https://www.bachhoaxanh.com/chao-an-lien/chao-thit-bam-vifon-goi-70g-50                https://winmart.vn/products/vifon-chao-thit-bam-70g--s10007984?storeCode=1535
+[30 rows]
+====================================================================================================
+-- 12) Tóm tắt chênh lệch: bao nhiêu cặp WinMart rẻ hơn / đắt hơn / bằng giá, chênh lệch trung bình %.
+                result  pairs  avg_diff_pct
+            Same price      9          0.00
+       WinMart cheaper     65         -7.08
+WinMart more expensive     65          9.65
+[3 rows]
+====================================================================================================
+-- 13) Truy vết: từ một giá trong SQL quay về đúng file JSON gốc và vị trí trong file.
+      observation_id                                                name  sale_price_vnd                                                           raw_file                                                  row_id dom_price_check
+3bc11acbd05fa9790da6                   Kẹo sữa caramen Alpenliebe 115.5g         18000.0                   data/raw_py/run_20261012_1622/bhx__keo-cung.json                    run_20261012_1622|bhx|keo-cung|r2|i0           match
+7c2f796d40bfbfa5506c                 Ô mai mơ cam thảo Hồng Lam hộp 200g         77900.0          data/raw_py/run_20261012_1622/winmart__banh-keo--c07.json          run_20261012_1622|winmart|banh-keo--c07|r47|i2           match
+8fad27940a2c1f6d2620                Giấy rút đa năng Lency 4 lớp 1280 tờ         38500.0                  data/raw_py/run_20261012_1622/bhx__khan-giay.json                   run_20261012_1622|bhx|khan-giay|r1|i1           match
+eca2ad05ace35e54bfd9          Nước yến Thiên Việt kids hương cam lọ 70ml         56400.0 data/raw_py/run_20261012_1622/winmart__do-uong-giai-khat--c09.json run_20261012_1622|winmart|do-uong-giai-khat--c09|r29|i1           match
+cc993fea3ba35b5a1b10 Dung dịch tẩy vết bẩn cổ áo Essence dạng chai 220ml         41000.0  data/raw_py/run_20261012_1622/winmart__hoa-pham-tay-rua--c10.json   run_20261012_1622|winmart|hoa-pham-tay-rua--c10|r8|i7           match
+[5 rows]
+====================================================================================================
+-- 14) Lịch sử giá của một sản phẩm qua các lần thu thập (dùng cho Report 3 khi có nhiều run).
+store_code                                                name            run_id              collected_at  sale_price_vnd
+       bhx              Bánh bông lan sữa vị vani Delipie 216g run_20261012_1622 2026-10-12 09:33:35+00:00         36000.0
+       bhx Gói 5 cái bánh bông lan sợi thịt gà Orion C'est Bon run_20261012_1622 2026-10-12 09:33:35+00:00         20000.0
+       bhx      Gói bánh Custas Bakery Castella trứng Lava 50g run_20261012_1622 2026-10-12 09:33:35+00:00         15000.0
+[3 rows]

@@ -1,0 +1,24 @@
+== first load 2026-10-12T16:52:49+07:00
+C:\Users\lvqua\Projects\ADY201m_Python\report2\storage.py:163: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  matches = pd.concat([matched[cols], review[cols]], ignore_index=True)
+{
+ "run_id": "run_20261012_1622",
+ "products_inserted": 3507,
+ "products_updated": 0,
+ "observations_inserted": 3507,
+ "observations_skipped_existing": 0,
+ "matches_inserted": 258,
+ "matches_skipped_existing": 0
+}
+== second load (idempotency) 2026-10-12T16:53:18+07:00
+C:\Users\lvqua\Projects\ADY201m_Python\report2\storage.py:163: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  matches = pd.concat([matched[cols], review[cols]], ignore_index=True)
+{
+ "run_id": "run_20261012_1622",
+ "products_inserted": 0,
+ "products_updated": 3507,
+ "observations_inserted": 0,
+ "observations_skipped_existing": 3507,
+ "matches_inserted": 0,
+ "matches_skipped_existing": 258
+}

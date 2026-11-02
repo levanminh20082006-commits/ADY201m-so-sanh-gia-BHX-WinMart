@@ -1,0 +1,47 @@
+{
+ "run_id": "run_20261012_1622",
+ "database": "ADY201m_Report2",
+ "checked_at": "2026-10-12T23:52:42+07:00",
+ "raw_json_rows": {
+  "bhx": 1514,
+  "winmart": 2266
+ },
+ "raw_flat_csv_rows": {
+  "bhx": 1514,
+  "winmart": 2266
+ },
+ "clean_csv_rows": {
+  "bhx": 1412,
+  "winmart": 2095
+ },
+ "rejected_csv_rows": {
+  "bhx": 102,
+  "winmart": 171
+ },
+ "rejected_by_reason": {
+  "duplicate_in_run": 200,
+  "missing_product_code": 73
+ },
+ "sql_price_observations": {
+  "winmart": 2095,
+  "bhx": 1412
+ },
+ "csv_match_status": {
+  "NOT_MATCHED": 1154,
+  "MATCHED": 139,
+  "NEEDS_REVIEW": 119
+ },
+ "sql_match_status": {
+  "MATCHED": 139,
+  "NEEDS_REVIEW": 119
+ },
+ "checks": {
+  "json_rows == flat_csv_rows": true,
+  "raw_rows == clean + rejected": true,
+  "clean_csv_rows == sql_observations": true,
+  "matched_csv == sql_matched": true,
+  "needs_review_csv == sql_needs_review": true,
+  "no_duplicate_observations_in_sql": true
+ },
+ "all_checks_passed": true
+}
