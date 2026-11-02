@@ -1,0 +1,106 @@
+2026-10-12 16:09:47,088 INFO run trial_milk: 6 category pages
+2026-10-12 16:10:01,222 INFO [1/6] bhx sua-tuoi -> ok, 82 cards, 9 json responses 
+2026-10-12 16:10:17,639 INFO [2/6] bhx sua-chua -> ok, 21 cards, 3 json responses 
+2026-10-12 16:10:34,031 INFO [3/6] bhx sua-dac -> ok, 18 cards, 3 json responses 
+2026-10-12 16:10:50,484 INFO [4/6] bhx sua-tu-hat -> ok, 24 cards, 3 json responses 
+2026-10-12 16:11:06,886 INFO [5/6] bhx sua-trai-cay -> ok, 25 cards, 3 json responses 
+2026-10-12 16:12:08,211 INFO [6/6] winmart sua-cac-loai--c08 -> ok, 280 cards, 37 json responses 
+2026-10-12 16:12:13,329 INFO run trial_milk finished: 6/6 pages ok -> C:\Users\lvqua\Projects\ADY201m_Python\data\raw_py\trial_milk
+2026-10-12 16:12:40,767 INFO run run_20261012_1612: 50 category pages
+2026-10-12 16:12:58,566 INFO [1/50] bhx sua-tuoi -> ok, 83 cards, 9 json responses 
+2026-10-12 16:13:15,001 INFO [2/50] bhx sua-chua -> ok, 21 cards, 3 json responses 
+2026-10-12 16:13:31,400 INFO [3/50] bhx sua-dac -> ok, 18 cards, 3 json responses 
+2026-10-12 16:13:47,766 INFO [4/50] bhx sua-tu-hat -> ok, 24 cards, 3 json responses 
+2026-10-12 16:14:04,080 INFO [5/50] bhx sua-trai-cay -> ok, 25 cards, 3 json responses 
+2026-10-12 16:14:50,231 INFO [6/50] winmart sua-cac-loai--c08 -> ok, 288 cards, 37 json responses 
+2026-10-12 16:15:08,488 INFO [7/50] bhx nuoc-ngot -> ok, 80 cards, 9 json responses 
+2026-10-12 16:15:26,852 INFO [8/50] bhx nuoc-suoi-khoang -> ok, 51 cards, 6 json responses 
+2026-10-12 16:15:45,176 INFO [9/50] bhx nuoc-tra -> ok, 61 cards, 7 json responses 
+2026-10-12 16:16:07,069 INFO [10/50] bhx nuoc-tang-luc -> ok, 48 cards, 6 json responses 
+2026-10-12 16:16:25,398 INFO [11/50] bhx nuoc-ep-trai-cay -> ok, 37 cards, 5 json responses 
+2026-10-12 16:16:41,831 INFO [12/50] bhx ca-phe-hoa-tan -> ok, 35 cards, 4 json responses 
+2026-10-12 16:16:58,187 INFO [13/50] bhx ca-phe-phin -> ok, 9 cards, 1 json responses 
+2026-10-12 16:17:32,911 INFO [14/50] winmart do-uong-giai-khat--c09 -> ok, 140 cards, 18 json responses 
+2026-10-12 16:17:51,153 INFO [15/50] bhx mi -> ok, 181 cards, 19 json responses 
+2026-10-12 16:18:07,599 INFO [16/50] bhx pho -> ok, 31 cards, 4 json responses 
+2026-10-12 16:18:24,095 INFO [17/50] bhx hu-tieu -> ok, 36 cards, 4 json responses 
+2026-10-12 16:18:40,574 INFO [18/50] bhx chao-an-lien -> ok, 27 cards, 4 json responses 
+2026-10-12 16:18:56,974 INFO [19/50] bhx mien-kho -> ok, 9 cards, 1 json responses 
+2026-10-12 16:19:40,988 INFO [20/50] winmart mi-thuc-pham-an-lien--c34 -> ok, 200 cards, 26 json responses 
+2026-10-12 16:19:57,350 INFO [21/50] bhx dau-an -> ok, 36 cards, 4 json responses 
+2026-10-12 16:22:03,883 INFO run run_20261012_1622: 50 category pages
+2026-10-12 16:22:13,852 INFO [1/50] bhx sua-tuoi -> ok, 83 cards, 9 json responses, end_reached=True 
+2026-10-12 16:22:27,838 INFO [2/50] bhx sua-chua -> ok, 21 cards, 3 json responses, end_reached=True 
+2026-10-12 16:22:41,856 INFO [3/50] bhx sua-dac -> ok, 18 cards, 3 json responses, end_reached=True 
+2026-10-12 16:22:55,779 INFO [4/50] bhx sua-tu-hat -> ok, 24 cards, 3 json responses, end_reached=True 
+2026-10-12 16:23:09,752 INFO [5/50] bhx sua-trai-cay -> ok, 25 cards, 3 json responses, end_reached=True 
+2026-10-12 16:23:58,839 INFO [6/50] winmart sua-cac-loai--c08 -> ok, 272 cards, 37 json responses, end_reached=True 
+2026-10-12 16:24:12,829 INFO [7/50] bhx nuoc-ngot -> ok, 80 cards, 9 json responses, end_reached=True 
+2026-10-12 16:24:26,902 INFO [8/50] bhx nuoc-suoi-khoang -> ok, 51 cards, 6 json responses, end_reached=True 
+2026-10-12 16:24:40,911 INFO [9/50] bhx nuoc-tra -> ok, 61 cards, 7 json responses, end_reached=True 
+2026-10-12 16:24:54,880 INFO [10/50] bhx nuoc-tang-luc -> ok, 48 cards, 6 json responses, end_reached=True 
+2026-10-12 16:25:08,772 INFO [11/50] bhx nuoc-ep-trai-cay -> ok, 37 cards, 5 json responses, end_reached=True 
+2026-10-12 16:25:23,603 INFO [12/50] bhx ca-phe-hoa-tan -> ok, 35 cards, 4 json responses, end_reached=True 
+2026-10-12 16:25:46,811 INFO [13/50] bhx ca-phe-phin -> ok, 9 cards, 1 json responses, end_reached=False 
+2026-10-12 16:26:32,675 INFO [14/50] winmart do-uong-giai-khat--c09 -> ok, 280 cards, 36 json responses, end_reached=True 
+2026-10-12 16:26:46,628 INFO [15/50] bhx mi -> ok, 181 cards, 19 json responses, end_reached=True 
+2026-10-12 16:27:00,563 INFO [16/50] bhx pho -> ok, 31 cards, 4 json responses, end_reached=True 
+2026-10-12 16:27:14,575 INFO [17/50] bhx hu-tieu -> ok, 36 cards, 4 json responses, end_reached=True 
+2026-10-12 16:27:28,594 INFO [18/50] bhx chao-an-lien -> ok, 27 cards, 4 json responses, end_reached=True 
+2026-10-12 16:27:51,842 INFO [19/50] bhx mien-kho -> ok, 9 cards, 1 json responses, end_reached=False 
+2026-10-12 16:28:27,705 INFO [20/50] winmart mi-thuc-pham-an-lien--c34 -> ok, 192 cards, 26 json responses, end_reached=True 
+2026-10-12 16:28:41,728 INFO [21/50] bhx dau-an -> ok, 36 cards, 4 json responses, end_reached=True 
+2026-10-12 16:28:55,739 INFO [22/50] bhx nuoc-mam -> ok, 33 cards, 4 json responses, end_reached=True 
+2026-10-12 16:29:09,904 INFO [23/50] bhx nuoc-tuong -> ok, 25 cards, 3 json responses, end_reached=True 
+2026-10-12 16:29:26,282 INFO [24/50] bhx hat-nem -> ok, 35 cards, 4 json responses, end_reached=True 
+2026-10-12 16:29:40,318 INFO [25/50] bhx duong -> ok, 15 cards, 3 json responses, end_reached=True 
+2026-10-12 16:29:54,378 INFO [26/50] bhx tuong-ot-ca-den -> ok, 37 cards, 5 json responses, end_reached=True 
+2026-10-12 16:30:08,339 INFO [27/50] bhx bot-gia-vi -> ok, 14 cards, 3 json responses, end_reached=True 
+2026-10-12 16:30:22,335 INFO [28/50] bhx muoi-an -> ok, 19 cards, 3 json responses, end_reached=True 
+2026-10-12 16:31:33,106 INFO [29/50] winmart gia-vi--c35 -> ok, 254 cards, 33 json responses, end_reached=True 
+2026-10-12 16:31:47,196 INFO [30/50] bhx banh-quy -> ok, 54 cards, 6 json responses, end_reached=True 
+2026-10-12 16:32:01,669 INFO [31/50] bhx banh-xop -> ok, 13 cards, 3 json responses, end_reached=True 
+2026-10-12 16:32:15,706 INFO [32/50] bhx snack -> ok, 73 cards, 8 json responses, end_reached=True 
+2026-10-12 16:32:29,956 INFO [33/50] bhx keo-cung -> ok, 25 cards, 4 json responses, end_reached=True 
+2026-10-12 16:32:43,955 INFO [34/50] bhx keo-mem -> ok, 33 cards, 5 json responses, end_reached=True 
+2026-10-12 16:32:58,051 INFO [35/50] bhx socola -> ok, 17 cards, 3 json responses, end_reached=True 
+2026-10-12 16:33:21,228 INFO [36/50] bhx banh-chocopie-kitkat -> ok, 12 cards, 1 json responses, end_reached=False 
+2026-10-12 16:33:35,413 INFO [37/50] bhx banh-bong-lan -> ok, 26 cards, 3 json responses, end_reached=True 
+2026-10-12 16:35:14,669 INFO [38/50] winmart banh-keo--c07 -> ok, 419 cards, 55 json responses, end_reached=True 
+2026-10-12 16:35:28,686 INFO [39/50] bhx nuoc-giat -> ok, 63 cards, 7 json responses, end_reached=True 
+2026-10-12 16:35:42,759 INFO [40/50] bhx nuoc-xa -> ok, 52 cards, 6 json responses, end_reached=True 
+2026-10-12 16:35:56,820 INFO [41/50] bhx nuoc-rua-chen -> ok, 34 cards, 4 json responses, end_reached=True 
+2026-10-12 16:36:10,770 INFO [42/50] bhx nuoc-lau-nha -> ok, 27 cards, 4 json responses, end_reached=True 
+2026-10-12 16:36:24,911 INFO [43/50] bhx bot-giat -> ok, 22 cards, 3 json responses, end_reached=True 
+2026-10-12 16:37:00,912 INFO [44/50] winmart hoa-pham-tay-rua--c10 -> ok, 101 cards, 14 json responses, end_reached=True 
+2026-10-12 16:37:14,923 INFO [45/50] bhx kem-danh-rang -> ok, 47 cards, 6 json responses, end_reached=True 
+2026-10-12 16:37:28,974 INFO [46/50] bhx dau-goi -> ok, 125 cards, 13 json responses, end_reached=True 
+2026-10-12 16:37:43,211 INFO [47/50] bhx sua-tam -> ok, 67 cards, 8 json responses, end_reached=True 
+2026-10-12 16:37:57,193 INFO [48/50] bhx khan-giay -> ok, 24 cards, 4 json responses, end_reached=True 
+2026-10-12 16:38:20,226 INFO [49/50] bhx giay-ve-sinh -> ok, 6 cards, 1 json responses, end_reached=False 
+2026-10-12 16:39:14,171 INFO [50/50] winmart cham-soc-ca-nhan--c11 -> ok, 60 cards, 8 json responses, end_reached=False 
+2026-10-12 16:39:19,311 INFO run run_20261012_1622 finished: 50/50 pages ok -> C:\Users\lvqua\Projects\ADY201m_Python\data\raw_py\run_20261012_1622
+2026-10-12 16:39:47,669 INFO run run_20261012_1622: 1 category pages
+2026-10-12 16:40:25,345 INFO [1/1] winmart cham-soc-ca-nhan--c11 -> ok, 76 cards, 10 json responses, end_reached=False 
+2026-10-12 16:40:30,469 INFO run run_20261012_1622 finished: 50/50 pages ok -> C:\Users\lvqua\Projects\ADY201m_Python\data\raw_py\run_20261012_1622
+2026-10-12 16:40:52,707 INFO run run_20261012_1622: 4 category pages
+2026-10-12 16:41:09,370 INFO [1/4] winmart cham-soc-rang-mieng--c0147 -> ok, 41 cards, 11 json responses, end_reached=True 
+2026-10-12 16:41:29,540 INFO [2/4] winmart cham-soc-toc--c0145 -> ok, 72 cards, 10 json responses, end_reached=True 
+2026-10-12 16:42:58,031 INFO [3/4] winmart cham-soc-da--c0146 -> ok, 207 cards, 27 json responses, end_reached=True 
+2026-10-12 16:43:18,135 INFO [4/4] winmart khan-giay-khan-uot--c0151 -> ok, 53 cards, 8 json responses, end_reached=True 
+2026-10-12 16:43:23,274 INFO run run_20261012_1622 finished: 54/54 pages ok -> C:\Users\lvqua\Projects\ADY201m_Python\data\raw_py\run_20261012_1622
+2026-10-14 17:53:21,189 INFO run demo_small: 2 category pages
+2026-10-14 17:53:36,775 INFO run demo_small: 2 category pages
+2026-10-14 17:53:40,478 INFO [1/2] bhx sua-tuoi -> ok, 98 cards, 11 json responses, end_reached=True 
+2026-10-14 17:53:47,528 INFO [1/2] bhx sua-tuoi -> ok, 98 cards, 11 json responses, end_reached=True 
+2026-10-14 17:53:54,327 INFO [2/2] bhx sua-chua -> ok, 20 cards, 3 json responses, end_reached=True 
+2026-10-14 17:54:00,350 INFO run demo_small finished: 2/2 pages ok -> C:\Users\lvqua\Projects\ADY201m_Python\data\raw_py\demo_small
+2026-10-14 17:54:01,582 INFO [2/2] bhx sua-chua -> ok, 20 cards, 3 json responses, end_reached=True 
+2026-10-14 17:54:07,653 INFO run demo_small finished: 2/2 pages ok -> C:\Users\lvqua\Projects\ADY201m_Python\data\raw_py\demo_small
+2026-10-14 18:28:48,268 INFO run demo_small: 2 category pages
+2026-10-14 18:29:00,781 INFO [1/2] bhx sua-tuoi -> ok, 97 cards, 11 json responses, end_reached=True 
+2026-10-14 18:29:14,620 INFO [2/2] bhx sua-chua -> ok, 20 cards, 3 json responses, end_reached=True 
+2026-10-14 18:29:20,644 INFO run demo_small finished: 2/2 pages ok -> C:\Users\lvqua\Projects\ADY201m_Python\data\raw_py\demo_small
+2026-10-14 22:30:57,114 INFO run demo_small: 2 category pages
+2026-10-14 22:31:16,115 INFO [1/2] bhx sua-tuoi -> ok, 91 cards, 10 json responses, end_reached=True 
+2026-10-14 22:31:29,750 WARNING retry https://www.bachhoaxanh.com/sua-chua after: TargetClosedError: Page.wait_for_timeout: Target page, context or browser has been closed

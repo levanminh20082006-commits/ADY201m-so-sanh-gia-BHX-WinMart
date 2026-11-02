@@ -1,0 +1,10 @@
+{
+ "sample_size": 12,
+ "seed": 42,
+ "matched_pairs_total": 139,
+ "bhx_name_found": 4,
+ "bhx_price_found": 11,
+ "winmart_name_found": 12,
+ "winmart_price_found": 10,
+ "errors": 0
+}

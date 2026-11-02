@@ -1,0 +1,86 @@
+{
+ "run_id": "trial_milk",
+ "started_at": "2026-10-12T16:09:47+07:00",
+ "settings": {
+  "PAGE_TIMEOUT_MS": 60000,
+  "DELAY_BETWEEN_PAGES_S": 5,
+  "MAX_SCROLL_ROUNDS": 80,
+  "STABLE_ROUNDS_TO_STOP": 3,
+  "MAX_RETRIES": 1
+ },
+ "pages": [
+  {
+   "store": "bhx",
+   "group": "milk_dairy",
+   "category_slug": "sua-tuoi",
+   "url": "https://www.bachhoaxanh.com/sua-tuoi",
+   "file": "bhx__sua-tuoi.json",
+   "status": "ok",
+   "error": null,
+   "dom_cards": 82,
+   "responses": 9,
+   "collected_at": "2026-10-12T16:10:01+07:00"
+  },
+  {
+   "store": "bhx",
+   "group": "milk_dairy",
+   "category_slug": "sua-chua",
+   "url": "https://www.bachhoaxanh.com/sua-chua",
+   "file": "bhx__sua-chua.json",
+   "status": "ok",
+   "error": null,
+   "dom_cards": 21,
+   "responses": 3,
+   "collected_at": "2026-10-12T16:10:17+07:00"
+  },
+  {
+   "store": "bhx",
+   "group": "milk_dairy",
+   "category_slug": "sua-dac",
+   "url": "https://www.bachhoaxanh.com/sua-dac",
+   "file": "bhx__sua-dac.json",
+   "status": "ok",
+   "error": null,
+   "dom_cards": 18,
+   "responses": 3,
+   "collected_at": "2026-10-12T16:10:34+07:00"
+  },
+  {
+   "store": "bhx",
+   "group": "milk_dairy",
+   "category_slug": "sua-tu-hat",
+   "url": "https://www.bachhoaxanh.com/sua-tu-hat",
+   "file": "bhx__sua-tu-hat.json",
+   "status": "ok",
+   "error": null,
+   "dom_cards": 24,
+   "responses": 3,
+   "collected_at": "2026-10-12T16:10:50+07:00"
+  },
+  {
+   "store": "bhx",
+   "group": "milk_dairy",
+   "category_slug": "sua-trai-cay",
+   "url": "https://www.bachhoaxanh.com/sua-trai-cay",
+   "file": "bhx__sua-trai-cay.json",
+   "status": "ok",
+   "error": null,
+   "dom_cards": 25,
+   "responses": 3,
+   "collected_at": "2026-10-12T16:11:06+07:00"
+  },
+  {
+   "store": "winmart",
+   "group": "milk_dairy",
+   "category_slug": "sua-cac-loai--c08",
+   "url": "https://winmart.vn/sua-cac-loai--c08?storeCode=1535",
+   "file": "winmart__sua-cac-loai--c08.json",
+   "status": "ok",
+   "error": null,
+   "dom_cards": 280,
+   "responses": 37,
+   "collected_at": "2026-10-12T16:12:08+07:00"
+  }
+ ],
+ "finished_at": "2026-10-12T16:12:13+07:00"
+}

@@ -1,0 +1,31 @@
+User-agent: *
+
+Disallow: /lich-su-mua-hang
+Disallow: /gio-hang
+Disallow: /gio-hang/*
+Disallow: /gio-hang/dat-hang-thanh-cong/*
+Disallow: /dang-nhap
+Disallow: /uu-dai-dac-biet
+Disallow: /tien-du
+Disallow: /thong-tin-ca-nhan
+Disallow: /thong-tin-ca-nhan/phieu-mua-hang
+Disallow: /thong-bao
+Disallow: /thanh-toan
+Disallow: /thanh-toan/thong-tin-thanh-toan
+Disallow: /don-hang
+Disallow: /don-hang/*
+Disallow: /dia-chi
+Disallow: /cap-nhat-thong-tin
+Disallow: /sieu-thi-*
+Disallow: /hoa-don-dien-tu/*
+Disallow: /sp/*
+Disallow: /tim-kiem?key=*
+Disallow: /cong-thanh-toan*
+Disallow: *st=
+Disallow: /tra-cuu-ma-buu-dien-tp-ho-chi-minh-zip-code-postal-code-1415140
+Disallow: /hoi-dap
+Disallow: /comment/initbhx*
+
+
+User-agent: AdsBot-Google
+Sitemap: https://www.bachhoaxanh.com/sitemapnew

@@ -1,0 +1,42 @@
+{
+ "run_id": "demo_small",
+ "started_at": "2026-10-14T18:28:48+07:00",
+ "settings": {
+  "PAGE_TIMEOUT_MS": 60000,
+  "DELAY_BETWEEN_PAGES_S": 5,
+  "MAX_SCROLL_ROUNDS": 120,
+  "STABLE_ROUNDS_TO_STOP": 4,
+  "MAX_RETRIES": 1
+ },
+ "pages": [
+  {
+   "store": "bhx",
+   "group": "milk_dairy",
+   "category_slug": "sua-tuoi",
+   "url": "https://www.bachhoaxanh.com/sua-tuoi",
+   "file": "bhx__sua-tuoi.json",
+   "status": "ok",
+   "error": null,
+   "dom_cards": 97,
+   "responses": 11,
+   "end_reached": true,
+   "site_total_count": null,
+   "collected_at": "2026-10-14T18:29:00+07:00"
+  },
+  {
+   "store": "bhx",
+   "group": "milk_dairy",
+   "category_slug": "sua-chua",
+   "url": "https://www.bachhoaxanh.com/sua-chua",
+   "file": "bhx__sua-chua.json",
+   "status": "ok",
+   "error": null,
+   "dom_cards": 20,
+   "responses": 3,
+   "end_reached": true,
+   "site_total_count": null,
+   "collected_at": "2026-10-14T18:29:14+07:00"
+  }
+ ],
+ "finished_at": "2026-10-14T18:29:20+07:00"
+}
