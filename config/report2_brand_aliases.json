@@ -1,0 +1,51 @@
+{
+  "_note": "Brand keys (lowercase, no accents/spaces) that the two stores spell differently. Each alias was checked against real product names collected on 2026-10-12 (see evidence column). Matching still requires same size, pack, variant and name similarity.",
+  "aliases": {
+    "teaplus": [
+      "tea"
+    ],
+    "ottogi": [
+      "otoki"
+    ],
+    "teppy": [
+      "minutemaidteppy"
+    ],
+    "monsterenergy": [
+      "monster"
+    ],
+    "pocarisweat": [
+      "pocari"
+    ],
+    "thtruemilk": [
+      "thmilk",
+      "thtrueyogurt"
+    ],
+    "kun": [
+      "lofkun"
+    ],
+    "nutifood": [
+      "nutimilk"
+    ]
+  },
+  "evidence": {
+    "tea": "WinMart brand TEA: 'Trà Ô long Tea+ Plus Pepsico thùng 24 chai x 350ml'; BHX brand Tea Plus: 'trà ô long Tea Plus 1 lít'",
+    "otoki": "WinMart brand OTOKI: 'Mì xốt tương đen Ottogi 75g'; BHX brand Ottogi: 'Mì trộn phô mai mini Ottogi gói 75g'",
+    "minutemaidteppy": "WinMart: 'Nước cam có tép Teppy Minute Maid chai 1 lít'; BHX brand Teppy: 'Nước cam có tép Teppy 1 lít'",
+    "monster": "WinMart brand MONSTER vs BHX brand Monster Energy (energy drinks)",
+    "pocari": "WinMart brand POCARI vs BHX brand Pocari Sweat",
+    "thmilk": "WinMart brand TH MILK includes 'TH True Yogurt' and 'TH Milk' drinks; BHX uses TH true MILK / TH True Yogurt",
+    "lofkun": "BHX brand Lof Kun: 'sữa lúa mạch Lof Kun'; WinMart brand KUN: 'thức uống dinh dưỡng Kun cacao lúa mạch'",
+    "nutimilk": "WinMart brand NUTIFOOD: 'Creamer đặc sữa pha chế Nutimilk hộp 380g'; BHX brand Nutimilk",
+    "manufacturers": "WinMart names: \"Thùng 30 gói mì tôm chua cay Hảo Hảo Vina Acecook 75g\", \"mì Modern Vina Acecook\"; \"Mì ăn liền Koreno vị kim chi Paldo\" (WinMart brand KORENO). A manufacturer word next to its own product brand is not another brand."
+  },
+  "manufacturers": {
+    "acecook": [
+      "haohao",
+      "modern",
+      "handy"
+    ],
+    "paldo": [
+      "koreno"
+    ]
+  }
+}

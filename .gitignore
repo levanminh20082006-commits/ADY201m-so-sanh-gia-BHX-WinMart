@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+
+# Presentation material (speech, Q&A, shortcuts that only work on one machine) - not part of the technical project
+THUYET_TRINH_REPORT3/
+THUYET_TRINH_THU_THAP_VA_LUU_TRU/
+DEMO_THUYET_TRINH/
+*.zip
+*.lnk
+docs/report2/Hieu_toan_bo_Report2.docx
+docs/report2/Hoi_dap_va_Doi_chieu_bang_chung.md
+docs/report2/Huong_dan_hoc_tieng_Viet.md
+docs/report2/Report2_Thuyet_trinh_6_nguoi.pptx
+docs/report2/Thuyet_trinh_va_Demo.md
+
+# OS / editor files
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

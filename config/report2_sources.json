@@ -1,0 +1,31 @@
+{
+  "_note": "Category pairs chosen because both supermarkets sell the same packaged brands. BHX uses leaf categories; WinMart parent categories already include their sub-categories.",
+  "stores": {
+    "bhx": {"name": "Bach Hoa Xanh", "base_url": "https://www.bachhoaxanh.com"},
+    "winmart": {"name": "WinMart", "base_url": "https://winmart.vn", "store_code": "1535"}
+  },
+  "groups": [
+    {"group": "milk_dairy",
+     "bhx": ["sua-tuoi", "sua-chua", "sua-dac", "sua-tu-hat", "sua-trai-cay"],
+     "winmart": ["sua-cac-loai--c08"]},
+    {"group": "beverages",
+     "bhx": ["nuoc-ngot", "nuoc-suoi-khoang", "nuoc-tra", "nuoc-tang-luc", "nuoc-ep-trai-cay", "ca-phe-hoa-tan", "ca-phe-phin"],
+     "winmart": ["do-uong-giai-khat--c09"]},
+    {"group": "instant_food",
+     "bhx": ["mi", "pho", "hu-tieu", "chao-an-lien", "mien-kho"],
+     "winmart": ["mi-thuc-pham-an-lien--c34"]},
+    {"group": "seasoning",
+     "bhx": ["dau-an", "nuoc-mam", "nuoc-tuong", "hat-nem", "duong", "tuong-ot-ca-den", "bot-gia-vi", "muoi-an"],
+     "winmart": ["gia-vi--c35"]},
+    {"group": "snacks_confectionery",
+     "bhx": ["banh-quy", "banh-xop", "snack", "keo-cung", "keo-mem", "socola", "banh-chocopie-kitkat", "banh-bong-lan"],
+     "winmart": ["banh-keo--c07"]},
+    {"group": "household_cleaning",
+     "bhx": ["nuoc-giat", "nuoc-xa", "nuoc-rua-chen", "nuoc-lau-nha", "bot-giat"],
+     "winmart": ["hoa-pham-tay-rua--c10"]},
+    {"group": "personal_care",
+     "bhx": ["kem-danh-rang", "dau-goi", "sua-tam", "khan-giay", "giay-ve-sinh"],
+     "winmart": ["cham-soc-rang-mieng--c0147", "cham-soc-toc--c0145", "cham-soc-da--c0146", "khan-giay-khan-uot--c0151"],
+     "_winmart_note": "Parent page cham-soc-ca-nhan--c11 (483 products) stops loading after page 9 on 2026-10-12, so its sub-categories are used."}
+  ]
+}
