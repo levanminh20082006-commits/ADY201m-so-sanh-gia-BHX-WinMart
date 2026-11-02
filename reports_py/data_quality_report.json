@@ -1,0 +1,136 @@
+{
+ "generated_at": "2026-10-12T23:52:36+07:00",
+ "runs": [
+  "run_20261012_1622"
+ ],
+ "pages": {
+  "total": 54,
+  "by_status": {
+   "ok": 54
+  },
+  "failed": [],
+  "end_not_confirmed": [
+   "winmart/cham-soc-ca-nhan--c11"
+  ]
+ },
+ "rows": {
+  "raw_rows": 3780,
+  "raw_by_store": {
+   "winmart": 2266,
+   "bhx": 1514
+  },
+  "clean_rows": 3507,
+  "clean_by_store": {
+   "winmart": 2095,
+   "bhx": 1412
+  },
+  "rejected_rows": 273,
+  "rejected_by_store": {
+   "winmart": 171,
+   "bhx": 102
+  },
+  "rejected_by_reason": {
+   "duplicate_in_run": 200,
+   "missing_product_code": 73
+  }
+ },
+ "distinct_products_by_store": {
+  "bhx": 1412,
+  "winmart": 2095
+ },
+ "exact_duplicate_raw_rows": 102,
+ "missing_pct_raw": {
+  "bhx": {
+   "name": 0.0,
+   "brand_raw": 0.0,
+   "sale_price_raw": 0.0,
+   "list_price_raw": 0.0,
+   "product_code": 4.82,
+   "barcode": 100.0,
+   "unit_label": 0.0,
+   "spec_size": 94.19,
+   "product_url": 0.0,
+   "collected_at": 0.0
+  },
+  "winmart": {
+   "name": 0.0,
+   "brand_raw": 0.0,
+   "sale_price_raw": 0.0,
+   "list_price_raw": 0.0,
+   "product_code": 0.0,
+   "barcode": 0.0,
+   "unit_label": 0.0,
+   "spec_size": 100.0,
+   "product_url": 0.0,
+   "collected_at": 0.0
+  }
+ },
+ "missing_pct_clean": {
+  "bhx": {
+   "brand": 0.07,
+   "list_price_vnd": 0.0,
+   "size_value": 1.7,
+   "pack_count": 4.46,
+   "barcode": 100.0,
+   "unit_price_vnd_per_kg_or_l": 6.09
+  },
+  "winmart": {
+   "brand": 0.57,
+   "list_price_vnd": 0.1,
+   "size_value": 7.83,
+   "pack_count": 6.21,
+   "barcode": 0.0,
+   "unit_price_vnd_per_kg_or_l": 13.7
+  }
+ },
+ "dom_price_check_clean": {
+  "bhx": {
+   "match": 1366,
+   "match_flash_sale": 46
+  },
+  "winmart": {
+   "match": 1890,
+   "not_visible": 201,
+   "match_weight_unit": 4
+  }
+ },
+ "warnings_clean": {
+  "pack_count_unclear": 193,
+  "size_not_found": 188,
+  "brand_missing": 13,
+  "pack_count_conflict_name_vs_unit": 32,
+  "list_price_below_sale_price": 2
+ },
+ "price_summary_clean": {
+  "bhx": {
+   "min": 3600,
+   "max": 1521000,
+   "mean": 88380,
+   "promotion_share_pct": 24.6
+  },
+  "winmart": {
+   "min": 2600,
+   "max": 1226000,
+   "mean": 82631,
+   "promotion_share_pct": 11.2
+  }
+ },
+ "collected_at_range": {
+  "bhx": [
+   "2026-10-12T16:22:13+07:00",
+   "2026-10-12T16:38:20+07:00"
+  ],
+  "winmart": [
+   "2026-10-12T16:23:58+07:00",
+   "2026-10-12T16:43:18+07:00"
+  ]
+ },
+ "price_context": {
+  "bhx": [
+   "2546 / provinceId=1027"
+  ],
+  "winmart": [
+   "1535 / storeGroupCode=1998"
+  ]
+ }
+}
