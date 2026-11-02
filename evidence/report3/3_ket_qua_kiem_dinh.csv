@@ -1,0 +1,5 @@
+﻿gia_thuyet,kiem_dinh,thong_ke,p_value,ghi_chu,ket_luan_alpha_0.05
+H1 Tỉ lệ khuyến mãi BHX vs WinMart,Chi-square 2x2,chi2 = 109.67,1.1588807558089562e-25,BHX 24.6% vs WinMart 11.2%,CÓ ý nghĩa thống kê
+H2 Giá cả kệ hàng (không ghép cặp),Mann-Whitney U,z = 4.57,4.81399881758047e-06,P(giá WinMart > giá BHX) = 0.545 - so sánh khác mặt hàng,CÓ ý nghĩa thống kê
+H3 Cùng 1 sản phẩm (139 cặp),Paired t-test trên log(WinMart/BHX),t = 0.660,0.5095105095463504,chênh trung bình hình học +0.61%,KHÔNG có ý nghĩa thống kê
+H3 Cùng 1 sản phẩm (139 cặp),Sign test chính xác,65 rẻ hơn / 65 đắt hơn,1.0,9 cặp bằng giá bị loại,KHÔNG có ý nghĩa thống kê

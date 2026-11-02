@@ -1,0 +1,19 @@
+﻿bien,kieu_du_lieu,y_nghia,so_gia_tri_khac_nhau,thieu_%,vi_du
+store,categorical (nominal),siêu thị: bhx / winmart,2,0.0,bhx
+group,categorical (nominal),"nhóm hàng, 7 giá trị",7,0.0,snacks_confectionery
+category_slug,categorical (nominal),trang danh mục trên website,54,0.0,banh-bong-lan
+brand,categorical (nominal),thương hiệu,755,0.4,Delipie
+unit_label,categorical (nominal),"đơn vị bán: Gói, Chai, Thùng...",40,0.0,Hộp
+size_unit,categorical (nominal),g / ml,2,5.4,g
+sale_price_vnd,ratio (số liên tục),"giá bán (VND) - có số 0 thật, 100k = 2 x 50k",1059,0.0,36000
+list_price_vnd,ratio (số liên tục),giá niêm yết trước giảm giá (VND),1048,0.1,36000.0
+discount_pct,ratio (số liên tục),% giảm giá = (niêm yết - bán) / niêm yết x 100,227,0.0,0.0
+size_value,ratio (số liên tục),khối lượng / dung tích 1 món (g hoặc ml),326,5.4,216.0
+pack_count,ratio (số rời rạc - đếm),số món trong 1 đơn vị bán,31,5.5,1.0
+total_quantity,ratio (số liên tục),khối lượng tổng = size_value x pack_count,417,10.6,216.0
+unit_price_vnd_per_kg_or_l,"ratio (số liên tục, tính ra)",giá trên 1 kg hoặc 1 lít,2038,10.6,166667.0
+stock_qty,ratio (số rời rạc - đếm),số lượng tồn kho (chỉ WinMart),371,40.3,29.0
+is_promotion,categorical (nhị phân có/không),có khuyến mãi (giá niêm yết > giá bán),2,0.0,False
+collected_at,"interval (thời gian, không có số 0 tự nhiên)","thời điểm thu thập, +07:00",54,0.0,2026-10-12T16:33:35+07:00
+product_code,"categorical (mã định danh, không đem tính)",mã sản phẩm của siêu thị,3507,0.0,1053087000346
+barcode,"categorical (mã định danh, không đem tính)",mã vạch (chỉ WinMart),2095,40.3,8934680045940.0

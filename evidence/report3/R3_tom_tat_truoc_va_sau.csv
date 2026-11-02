@@ -1,0 +1,20 @@
+﻿chi_so,TRUOC (chưa làm Report 3 + 4),SAU (đã làm Report 3 + 4)
+Số dòng,3507,3507
+Số cột,45,83
+Số ô giá trị bị thay đổi,,139
+"pack_count sai (Wake Up 247, lốc 6, 25*20g...)",41 dòng sai,đã sửa 41
+Dòng có giá/kg-lít,3134,3159
+Giá/kg-lít thấp nhất (đ),141,4000
+Thương hiệu trống,13,0
+Giá niêm yết trống,2,0
+Ô trống trong 4 cột đặc trưng cho mô hình,chưa có cột,0
+Cột có / không flash sale,chưa có,is_flash_sale: 67 True
+Cột cờ outlier,chưa có,49 dòng (log giá) - chỉ đánh dấu
+"Cột chuẩn hóa (min-max, z, robust)",chưa có,12 cột
+"Cột one-hot (siêu thị, nhóm hàng)",chưa có,9 cột + 2 cột 0/1
+Dòng trùng lặp (kiểm tra 3 cách),chưa kiểm tra,0
+Phân khúc giá - binning (rẻ / trung bình / cao),chưa có,856 / 1700 / 951
+"Thống kê mô tả (mean, median, mode, variance, std, range)",chưa có,"8 biến số + theo siêu thị, nhóm hàng"
+Kiểm định ý nghĩa thống kê,chưa có,"3 giả thuyết (Chi-square, Mann-Whitney, paired t-test + sign test)"
+"REPORT 4 - Biểu đồ trực quan hóa (slide 6.3, 6.4)",chưa có biểu đồ nào,"12 biểu đồ: column/bar 4, stacked column 1, pie 1, histogram 2, boxplot 2, scatter 2"
+File kết quả,chưa có,report3_results.md (Report 3) + report4_results.md và 12 hình .png (Report 4)

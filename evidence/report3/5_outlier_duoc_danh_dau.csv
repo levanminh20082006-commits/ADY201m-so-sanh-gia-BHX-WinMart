@@ -1,0 +1,167 @@
+﻿store,group,name_clean,sale_price_vnd,unit_price_vnd_per_kg_or_l,price_outlier,log_price_outlier,unit_price_outlier
+winmart,beverages,Trà Ceylon Dilmah hương bạc hà hộp 30g,54600,1820000.0,False,False,True
+winmart,beverages,Cà phê G7 Gu mạnh X2 3in1 (25g*12) 300g,80600,3224000.0,False,False,True
+winmart,beverages,Café Mr.Viet hòa tan đen hộp 40g,104100,2602500.0,False,False,True
+winmart,beverages,Tổ yến nguyên chất chưng sẵn vị hạt sen Yến Việt hộp 65ml,294000,4523077.0,True,False,True
+winmart,beverages,Tổ yến nguyên chất chưng sẵn Yến Việt không đường hộp 65ml,294000,4523077.0,True,False,True
+bhx,household_cleaning,Nước xả cho bé Comfort mềm dịu 10 góix20ml,21000,1050000.0,False,False,True
+winmart,household_cleaning,Viên tẩy bồn cầu hương chanh Vim 55g,27500,500000.0,False,False,True
+winmart,household_cleaning,Viên treo bồn cầu Vim hương lavender 55g,27500,500000.0,False,False,True
+winmart,household_cleaning,"Viên tẩy bồn cầu Vim trà xanh, chanh 55g",27500,500000.0,False,False,True
+winmart,household_cleaning,Dung dịch xông đuổi muỗi ARS nomat P60 45ml,29500,655556.0,False,False,True
+bhx,household_cleaning,Nước xịt vải Downy huyền bí 370ml,82000,221622.0,False,False,True
+winmart,household_cleaning,Xịt vải đam mê chai Downy 370ml,106600,288108.0,False,False,True
+winmart,household_cleaning,Xịt vải huyền bí Downy chai 370ml,106600,288108.0,False,False,True
+winmart,household_cleaning,Xịt vải nắng mai chai Downy 370ml,107600,290811.0,False,False,True
+winmart,household_cleaning,Túi 5 viên treo bồn cầu Vim hương oải hương 55g,117900,428727.0,False,False,True
+bhx,household_cleaning,Viên xả vải Lenor hương trà trắng chai 420ml,143000,340476.0,False,False,True
+bhx,instant_food,Canh tổ yến rong biển Yến Việt 4.8g,6000,1250000.0,False,False,True
+winmart,instant_food,Bánh đa nem Thiên Nhiên Xanh gói 75g (gói 40 chiếc),16500,5500.0,False,False,True
+bhx,instant_food,Mì khô gà cay Samyang ly 70g,36000,514286.0,False,False,True
+winmart,instant_food,Mì khô gà cay Samyang ly 70g,36700,524286.0,False,False,True
+winmart,instant_food,Mỳ ly khô gà cay Samyang vị phô mai 70g,39800,568571.0,False,False,True
+winmart,instant_food,Mì Ly Khô Gà Cay Carbonara 80g,39800,497500.0,False,False,True
+bhx,instant_food,Canh chua chay I.Soup 5 viên x 10g,55000,1100000.0,False,False,True
+winmart,milk_dairy,Sữa đậu nành Fami nguyên chất Vinasoy gói 200ml,4200,21000.0,False,True,False
+winmart,milk_dairy,Sữa đậu nành Fami nguyên chất ít đường gói 200ml,4200,21000.0,False,True,False
+bhx,milk_dairy,Sữa đậu nành Fami Canxi ít đường 200ml,4300,21500.0,False,True,False
+bhx,milk_dairy,Sữa đậu nành Fami Canxi 200ml,4300,21500.0,False,True,False
+winmart,milk_dairy,Sữa đậu nành Fami Canxi Vinasoy túi 200ml,4300,21500.0,False,True,False
+winmart,milk_dairy,Sữa đậu nành Fami canxi ít đường bịch 200ml,4300,21500.0,False,True,False
+winmart,milk_dairy,Sữa đậu nành Fami nguyên chất hộp 1L,16500,16500.0,False,False,True
+winmart,milk_dairy,Bơ lạt tự nhiên TH TRUE BUTTER 10g*10gói,43900,439000.0,False,False,True
+winmart,milk_dairy,Sữa Ensure hương vani chai 237ml,45500,191983.0,False,False,True
+winmart,milk_dairy,Sữa chua Hoff vị nguyên bản vỉ 4 hộp 55g,47600,216364.0,False,False,True
+winmart,milk_dairy,Sữa chua hoa quả Hoff vị táo vỉ 4 hộp 55g,47600,216364.0,False,False,True
+winmart,milk_dairy,Sữa chua hoa quả Hoff vị chuối vỉ 4 hộp 55g,47600,216364.0,False,False,True
+winmart,milk_dairy,Sữa chua hoa quả Hoff vị dâu tây vỉ 4 hộp 55g,47600,216364.0,False,False,True
+winmart,milk_dairy,Phô mai vuông vị sữa Belcube gói 78g,48500,621795.0,False,False,True
+winmart,milk_dairy,Phô mai Belcube ngọt vị Dâu 78g x15C,51500,660256.0,False,False,True
+winmart,milk_dairy,Phô mai Emmental sợi gói 70g,59300,847143.0,False,False,True
+winmart,milk_dairy,Sữa uống dinh dưỡng Abbott Glucerna hương vani chai 220ml,62500,284091.0,False,False,True
+winmart,milk_dairy,Phô mai Zelachi cheddar gói 100g,64300,643000.0,False,False,True
+winmart,milk_dairy,Váng sữa hương vani Hoff vỉ 4 hộp x 55g,64900,295000.0,False,False,True
+winmart,milk_dairy,Lốc 4 hộp váng sữa vị hạt dẻ Hoff 55g,64900,295000.0,False,False,True
+winmart,milk_dairy,Phô mai ăn vị dâu chuối Kidsmix vỉ 4 hộp x 50g,65700,328500.0,False,False,True
+winmart,milk_dairy,Phô mai ăn vị dâu lê Kidsmix vỉ 4 hộp x 50g,65700,328500.0,False,False,True
+winmart,milk_dairy,Phô mai lát Hamburger Zott gói 200g,67000,335000.0,False,False,True
+winmart,milk_dairy,Phô mai lát Sandwich Zott gói 200g,67000,335000.0,False,False,True
+winmart,milk_dairy,Phô mai Mozzarella gói 200g,73700,368500.0,False,False,True
+winmart,milk_dairy,Phô mai lát Cheddar Anchor gói 200g,74000,370000.0,False,False,True
+winmart,milk_dairy,Bơ nhạt President vỉ 10 viên x 10g,74900,749000.0,False,False,True
+winmart,milk_dairy,Vỉ 4 hộp váng sữa hương vani Zott Monte 55g,76000,345455.0,False,False,True
+winmart,milk_dairy,Vỉ 4 hộp váng sữa Monte sô cô la 55g,76000,345455.0,False,False,True
+winmart,milk_dairy,Lốc 4 váng sữa hạt óc chó Hoff 55g,78800,358182.0,False,False,True
+winmart,milk_dairy,Phô mai hun khói Solse sợi dê gói 100g,81000,810000.0,False,False,True
+winmart,milk_dairy,Phô mai các loại hạt dinh dưỡng QBB 90g,83800,931111.0,False,False,True
+winmart,milk_dairy,Phô mai vị vanilla QBB 90g,83800,931111.0,False,False,True
+winmart,milk_dairy,Sữa chua tươi nguyên chất Farmers Union Greek Style Lốc 2 hộp x 140g,90000,321429.0,False,False,True
+winmart,milk_dairy,Sữa chua ăn vị mật ong Farmers Union Greek Style Lốc 2 hộp x 140g,90000,321429.0,False,False,True
+winmart,milk_dairy,Phô mai sữa chua Kids Mix Premium hoa quả vỉ 6 hộp 50g,99800,332667.0,False,False,True
+winmart,milk_dairy,Phô mai cheddar Kiwifood gói 200g,108000,540000.0,False,False,True
+winmart,milk_dairy,Sữa hạt dẻ cười Degrees 137 truyền thống 180ml lốc 3,109900,203519.0,False,False,True
+winmart,milk_dairy,Lốc 3 hộp sữa óc chó Degrees 137 truyền thống 180ml,109900,203519.0,False,False,True
+winmart,milk_dairy,Phô mai gói Edam 200g,111000,555000.0,False,False,True
+winmart,milk_dairy,Phô mai Paysan camembert breton hộp 125g,111500,892000.0,False,False,True
+winmart,milk_dairy,Phô mai Paysan Brie Breton hộp 125g,111500,892000.0,False,False,True
+winmart,milk_dairy,Phô mai Mozzarella hộp 200g,114000,570000.0,False,False,True
+winmart,milk_dairy,Phô mai cắt Emmetal 200g,117000,585000.0,False,False,True
+winmart,milk_dairy,Phô mai Kiwifood Gouda gói 200g,118800,594000.0,False,False,True
+winmart,milk_dairy,Kem sữa tươi Emborg whipped cream 250ml,145600,582400.0,False,False,True
+winmart,milk_dairy,Phô mai Bega Strong & Bitey Vintage 250g,148800,595200.0,False,False,True
+winmart,milk_dairy,Phô mai BegaTasty Grated Cheese 250g,152000,608000.0,False,False,True
+winmart,milk_dairy,Kem sữa có đường tiệt trùng dạng xịt Paysan Breton chai 250g,152700,610800.0,False,False,True
+winmart,milk_dairy,Sữa chua Hy Lạp Farmers Union tăng cường protein hộp 500g,154000,308000.0,False,False,True
+winmart,milk_dairy,Sữa chua ăn tự nhiên Farmers Union Greek Style 500g,154000,308000.0,False,False,True
+winmart,milk_dairy,Sữa chua Hy Lạp Farmers Union không lactose 500g,154500,309000.0,False,False,True
+winmart,milk_dairy,Phô mai Emmental gói 220g,156000,709091.0,False,False,True
+winmart,milk_dairy,Kem sữa tươi whipping cream Anchor hộp 1L,204500,204500.0,True,False,True
+winmart,milk_dairy,Sữa chua ăn vị vani Farmers Union Greek Style Yoghurt With A Hint Of Vanilla Bean 950g,231800,244000.0,True,False,True
+winmart,milk_dairy,Sữa chua Hy Lạp Famers UnionVị tự nhiên hộp 1kg,239000,239000.0,True,False,True
+winmart,milk_dairy,Sữa bột Pediasure hương vani 400g,339500,848750.0,True,False,True
+winmart,milk_dairy,Sữa bột Glucerna SR Abbott 400g,441000,1102500.0,True,False,True
+winmart,milk_dairy,Sữa bột NutiFood Grow Plus+ cho trẻ thấp còi 900g,477000,530000.0,True,False,True
+bhx,milk_dairy,Thùng 48 hộp sữa tươi TH true MILK Hilo 180ml,489000,56597.0,True,True,False
+winmart,milk_dairy,Sữa bột NutiFood Grow Plus+ trên 1 tuổi lon 1.5kg (xanh),489000,326000.0,True,True,True
+bhx,milk_dairy,"Thùng 12 hộp creamer đặc sữa pha chế Nutimilk 1,284kg",609000,39525.0,True,True,False
+winmart,milk_dairy,Sữa bột hương vani PediaSure lon 850g,692000,814118.0,True,True,True
+winmart,milk_dairy,Sữa Bột Nutifood Growplus lon 1.5 kg,745000,496667.0,True,True,True
+winmart,milk_dairy,Sữa bột Abbott Glucerna hương vani hộp 850g,965000,1135294.0,True,True,True
+winmart,milk_dairy,Sữa Glucerna Hương Lúa Mạch hộp 850g,967000,1137647.0,True,True,True
+winmart,milk_dairy,Lon Ensure Gold Green Health Đạm thực vật 850g,993000,1168235.0,True,True,True
+winmart,milk_dairy,"Sữa bột Abbott PediaSure BA hương vani 1,6kg",1226000,766250.0,True,True,True
+winmart,personal_care,Lốc 10 gói khăn giấy bỏ túi Tempo icy menthol,4800,,False,True,False
+winmart,personal_care,Giấy lụa rút tre Elene 100 tờ 3 lớp,7600,,False,True,False
+bhx,personal_care,Khăn giấy lụa PREMIER 3 lớp 100 tờ,9000,,False,True,False
+winmart,personal_care,Nước rửa tay Lifebuoy bảo vệ vượt trội 10 chai 180g,36400,20222.0,False,False,True
+winmart,personal_care,Lăn khử mùi Enchanteur nước hoa sensation 20ml,50100,2505000.0,False,False,True
+winmart,personal_care,Sữa chống nắng bảo vệ da hoàn hảo Biore Perfect Block Milk 25ml,68800,2752000.0,False,False,True
+winmart,personal_care,Sữa chống nắng bảo vệ da hoàn hảo Biore SPF 50+ PA+++ 25ml,72000,2880000.0,False,False,True
+winmart,personal_care,Sữa chống nắng bảo vệ da hoàn hảo Biore SPF50+ PA+++ 25ml,72000,2880000.0,False,False,True
+winmart,personal_care,Nước rửa tay Lifebuoy bảo vệ vượt trội 10 chai 500g,76600,15320.0,False,False,True
+winmart,personal_care,Lăn khử mùi Enchanteur sáp romantic 40g,91300,2282500.0,False,False,True
+winmart,personal_care,Mặt nạ nghệ Hưng Yên Cocoon 30ml,142400,4746667.0,False,False,True
+winmart,personal_care,Kem chống nắng dưỡng ẩm Biore 50g SPF 50+ PA++++,200000,4000000.0,False,False,True
+winmart,personal_care,Sữa chống nắng Sunplay SPF81 70g,208000,2971429.0,False,False,True
+winmart,personal_care,Tinh chất chống nắng hiệu chỉnh sắc da Sunplay Skin Aqua Tone Up UV Essence SPF 50+ PA++++ 50g,209000,4180000.0,False,False,True
+winmart,personal_care,Sữa chống nắng Skin Aqua -Tone up UV 50g,209000,4180000.0,False,False,True
+winmart,personal_care,Gel chống nắng UV SenKa chai 80g,254000,3175000.0,False,False,True
+winmart,personal_care,Sữa chống nắng Bioré dịu nhẹ cho trẻ em 70ml,267000,3814286.0,False,False,True
+winmart,personal_care,Kem Pond's chống lão hóa ngày hộp 50g,303600,6072000.0,False,False,True
+winmart,personal_care,Kem dưỡng ban đêm Pond's Age Miracle 45G,303600,6746667.0,False,False,True
+bhx,seasoning,Muối sấy i ốt Sosal Group 1kg,8000,8000.0,False,False,True
+bhx,seasoning,Muối hạt thiên nhiên Ông Chà Và 1kg,10000,10000.0,False,False,True
+winmart,seasoning,Tiêu sọ xay Phú Quốc DH Foods lọ 45g,49000,1088889.0,False,False,True
+winmart,seasoning,Mù tạt Wasabi S&B hộp 43g,51400,1195349.0,False,False,True
+winmart,seasoning,Dầu mè Ottogi chai 110ml,99400,903636.0,False,False,True
+winmart,seasoning,Đường ăn kiêng Hermesetas lọ 90g,165000,1833333.0,True,False,True
+winmart,seasoning,Nước mắm cá cơm 60 độ đạm Hạnh Phúc 50ml,221300,4426000.0,True,False,True
+bhx,seasoning,12 chai dầu thực vật Orchid 1 lít,576000,48000.0,True,True,False
+bhx,seasoning,6 can dầu đậu nành Meizan 2 lít,580000,48333.0,True,True,False
+bhx,seasoning,20 gói đường mía thượng hạng Biên Hòa 1kg,640000,32000.0,True,True,False
+bhx,seasoning,12 chai dầu ăn thượng hạng Neptune Light 1 lít,696000,58000.0,True,True,False
+bhx,seasoning,6 can dầu đậu nành nguyên chất Simply 2 lít,696000,58000.0,True,True,False
+bhx,seasoning,Thùng 20 gói đường mía thiên nhiên Biên Hòa,722000,36100.0,True,True,False
+bhx,seasoning,12 chai dầu đậu nành nguyên chất Simply 1 lít,738000,61500.0,True,True,False
+bhx,seasoning,12 chai dầu đậu nành Tường An 1 lít,792000,66000.0,True,True,False
+winmart,seasoning,Dầu rán o liu Hanoli chai 3L,794000,264667.0,True,True,False
+bhx,seasoning,12 chai dầu gạo lứt Simply 1 lít,924000,77000.0,True,True,False
+winmart,snacks_confectionery,Kẹo dẻo hương trái cây Chupa Chups 8g,2600,325000.0,False,True,False
+bhx,snacks_confectionery,Snack vị truyền thống Tao Kae Noi 3g,8000,2666667.0,False,False,True
+bhx,snacks_confectionery,Snack vị mực Tao Kae Noi 3g,8000,2666667.0,False,False,True
+winmart,snacks_confectionery,Snack Big sheet truyền thống 3.2g,8700,2718750.0,False,False,True
+bhx,snacks_confectionery,Snack rong biển truyền thống Kimmy 5g,15000,3000000.0,False,False,True
+bhx,snacks_confectionery,Snack rong biển phô mai Kimmy 5g,15000,3000000.0,False,False,True
+bhx,snacks_confectionery,Hộp 10 cái bánh bông lan cuộn kem dâu Solite,29500,16389.0,False,False,True
+bhx,snacks_confectionery,Hộp 9 cái bánh bông lan cuộn kem sữa Tipo,30000,18519.0,False,False,True
+bhx,snacks_confectionery,Bánh cracker lúa mì AFC Dinh Dưỡng 8 cái,30000,21802.0,False,False,True
+bhx,snacks_confectionery,Bánh cracker vị rau AFC Dinh Dưỡng 8 gói,30500,22166.0,False,False,True
+bhx,snacks_confectionery,Hộp 6 cái bánh bông lan cốm dừa Hura Deli 168g,34000,33730.0,False,False,True
+bhx,snacks_confectionery,Kẹo mút dâu Chupa Chups Surprise 12g,36000,3000000.0,False,False,True
+bhx,snacks_confectionery,Kẹo búp bê lật đật Relkon 10g,37000,3700000.0,False,False,True
+bhx,snacks_confectionery,Hộp 20 cái bánh trứng cuộn kem cốm Hura Swissroll,52000,7222.0,False,False,True
+bhx,snacks_confectionery,Hộp 18 cái bánh bông lan cuộn kem bơ sữa Solite,52500,9002.0,False,False,True
+bhx,snacks_confectionery,Hộp 18 cái bánh bông lan cuộn kem lá dứa Solite,52500,9002.0,False,False,True
+bhx,snacks_confectionery,Hộp 12 cái bánh bông lan kem bơ sữa Solite,56500,17059.0,False,False,True
+winmart,snacks_confectionery,Kẹo lồng Playmore cún cảnh gói 8g,68900,8612500.0,False,False,True
+winmart,snacks_confectionery,Kẹo xương cá và lồng mèo Playmore 8g,69000,8625000.0,False,False,True
+winmart,snacks_confectionery,Socola đen Merci 250g,223000,892000.0,True,True,False
+winmart,snacks_confectionery,Kẹo dừa hạnh nhân Ferrero Confett 150g,225000,1500000.0,True,True,False
+winmart,snacks_confectionery,Kẹo Storch socola sữa hỗn hợp Merci 250g,237000,948000.0,True,True,False
+winmart,snacks_confectionery,Sô cô la 85% cocoa Lindt Excellence thanh 100g,240000,2400000.0,True,True,False
+winmart,snacks_confectionery,Hạt điều lụa Tuấn Đạt hộp 450g,242000,537778.0,True,True,False
+winmart,snacks_confectionery,Hạt điều lụa rang muối Mỹ Linh 500g,247000,494000.0,True,True,False
+winmart,snacks_confectionery,Hạt điều rang muối Minh Việt bóc vỏ 400g,247300,618250.0,True,True,False
+bhx,snacks_confectionery,Thùng 20 hộp bánh cá vị rong biển Orion Marine Boy 35g,254000,362857.0,True,True,False
+bhx,snacks_confectionery,Thùng 20 hộp bánh cá vị tôm nướng Orion Marine Boy 35g,254000,362857.0,True,True,False
+winmart,snacks_confectionery,Hạt điều rang muối nguyên vỏ Minh Việt 500g,256400,512800.0,True,True,False
+winmart,snacks_confectionery,Bò khô Thu Ba hộp 250g,264000,,True,True,False
+winmart,snacks_confectionery,Sô cô la Ferrero Rocher hộp 200g,266500,1332500.0,True,True,False
+winmart,snacks_confectionery,Hạnh nhân rang muối Minh Việt hộp 500g,287100,574200.0,True,True,False
+winmart,snacks_confectionery,Hạt dẻ cười Minh Việt gói 500g,289800,579600.0,True,True,False
+bhx,snacks_confectionery,Thùng 20 hộp bánh quy socola Orion Miz 54g,290000,268519.0,True,True,False
+winmart,snacks_confectionery,Hạt điều rang muối Minh Việt bóc vỏ 500g,294800,589600.0,True,True,False
+winmart,snacks_confectionery,Hạt điều lụa rang muối Mỹ Linh 500g,295000,590000.0,True,True,False
+winmart,snacks_confectionery,Hạt điều rang củi Hải Bình túi zip giấy 500g,309000,618000.0,True,True,False
+winmart,snacks_confectionery,Kẹo Socola Ferrero Rocher 375g,486000,1296000.0,True,True,False
+winmart,snacks_confectionery,Xoài sấy THD,561400,,True,True,False

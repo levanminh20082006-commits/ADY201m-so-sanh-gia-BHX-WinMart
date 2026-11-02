@@ -1,0 +1,364 @@
+﻿store,name_clean,brand,list_price_vnd,pack_count_filled,size_value,log_size_filled,list_price_imputed,brand_imputed,pack_imputed,size_imputed
+bhx,Bánh bông lan bơ sữa Kido's Bakery Castella 20g,Kido's Bakery,5000.0,1.0,20.0,2.995732273553991,False,False,True,False
+bhx,Bánh bơ trứng Richy Karo 270g,Richy,37000.0,1.0,270.0,5.598421958998375,False,False,True,False
+bhx,Bánh quy kem bơ đậu phộng Gouté hộp 40g,Gouté,15000.0,1.0,40.0,3.6888794541139363,False,False,True,False
+bhx,Bánh quy bơ Danisa hộp 72g,Danisa,20000.0,1.0,72.0,4.276666119016055,False,False,True,False
+bhx,Bánh quy bơ & cacao Danisa Abbracci 168g,Danisa,34500.0,1.0,168.0,5.123963979403259,False,False,True,False
+bhx,Bánh quy bơ LU Assorted Cookies LU 540g,Lu,200000.0,1.0,540.0,6.29156913955832,False,False,True,False
+bhx,Bánh cracker kem bơ Magic 300g,Magic,34000.0,1.0,300.0,5.703782474656201,False,False,True,False
+bhx,Bánh quy bơ Danisa 454g,Danisa,136000.0,1.0,454.0,6.118097198041348,False,False,True,False
+bhx,Bột tỏi Thành Lộc 20g,Thành Lộc,11000.0,1.0,20.0,2.995732273553991,False,False,True,False
+bhx,Bột điều Thành Lộc 20g,Thành Lộc,9800.0,1.0,20.0,2.995732273553991,False,False,True,False
+bhx,Ngũ vị hương Thành Lộc 20g,Thành Lộc,9000.0,1.0,20.0,2.995732273553991,False,False,True,False
+bhx,Gia vị bò kho Vianco 18g,Vianco,7200.0,1.0,18.0,2.8903717578961645,False,False,True,False
+bhx,Cháo tươi thịt bò Cây Thị 240g,Cây thị,25000.0,1.0,240.0,5.480638923341991,False,False,True,False
+bhx,Cháo tươi cá hồi cải bó xôi SG Food Baby 240g,SG Food,27000.0,1.0,240.0,5.480638923341991,False,False,True,False
+bhx,"Cháo tươi bò, đậu Hà Lan, cà rốt SG Food Baby 240g",SG Food,27000.0,1.0,240.0,5.480638923341991,False,False,True,False
+bhx,Cháo tổ yến gold Yến Lộc Phát thịt bằm gói 50g,Yến Lộc Phát,9200.0,1.0,50.0,3.912023005428146,False,False,True,False
+bhx,Cháo thịt bò Vifon 70g,ViFon,11200.0,1.0,70.0,4.248495242049359,False,False,True,False
+bhx,Bộ 3 gia vị thiết yếu Janbee,Janbee,99000.0,1.0,,6.907755278982137,False,False,True,True
+bhx,Tắm gội 2 in 1 hương nước hoa Romano Classic 900g,Romano,247000.0,1.0,900.0,6.802394763324311,False,False,True,False
+bhx,Tắm gội 3 trong 1 X-Men Everest Coffee 610g,X-Men,212000.0,1.0,610.0,6.413458957167357,False,False,True,False
+bhx,Tắm gội 2 trong 1 Romano Vip Passion sạch sâu 650g,Romano,228000.0,1.0,650.0,6.476972362889683,False,False,True,False
+bhx,Tắm gội 2 trong 1 Romano Grandiose hương nước hoa 650g,Romano,210000.0,1.0,650.0,6.476972362889683,False,False,True,False
+bhx,Tắm gội 2 in 1 X-Men Vegas Delight 630g,X-Men,212000.0,1.0,630.0,6.4457198193855785,False,False,True,False
+bhx,Tắm gội 2 in 1 X-Men Amazon Hunt 630g,X-Men,212000.0,1.0,630.0,6.4457198193855785,False,False,True,False
+bhx,Tắm gội 3 in 1 X-men For Boss hương gió biển 630g,X-Men,239500.0,1.0,630.0,6.4457198193855785,False,False,True,False
+bhx,Tắm gội 2 in 1 X-men Boss Intense hương nước hoa 850g,X-Men,278000.0,1.0,850.0,6.745236349484363,False,False,True,False
+bhx,Tắm gội 2 in 1 X-men Boss Intense hương nước hoa 650g,X-Men,240000.0,1.0,650.0,6.476972362889683,False,False,True,False
+bhx,Tắm gội 2 in 1 X-men Wood Sport thơm lâu 900g,X-Men,276000.0,1.0,900.0,6.802394763324311,False,False,True,False
+bhx,Dầu gội Fresh bồ kết óng mượt 650g,Fresh,100000.0,1.0,650.0,6.476972362889683,False,False,True,False
+bhx,Dầu gội Lifebuoy tóc dày óng ả 621ml,Lifebuoy,111000.0,1.0,621.0,6.431331081933479,False,False,True,False
+bhx,6 cuộn giấy Puri Premium Quality 3 lớp,Puri,63000.0,6.0,,5.393627546352362,False,False,False,True
+bhx,6 cuộn giấy PREMIER VinaRoll 3 lớp,PREMIER,67000.0,6.0,,5.393627546352362,False,False,False,True
+bhx,6 cuộn giấy Saigon Clean 2 lớp,Saigon,33000.0,6.0,,5.393627546352362,False,False,False,True
+bhx,10 cuộn giấy An An 2 lớp,An An,36500.0,10.0,,5.393627546352362,False,False,False,True
+bhx,Lốc 4 gói miến sườn heo Vifon 58g,UNKNOWN,43000.0,4.0,58.0,4.060443010546419,False,True,False,False
+bhx,Hủ tiếu bò kho Nhịp Sống gói 75g,Nhịp sống,11000.0,1.0,75.0,4.31748811353631,False,False,True,False
+bhx,Bộ kem và bàn chải Colgate MaxFresh than tre 225g,Colgate,58000.0,1.0,225.0,5.41610040220442,False,False,True,False
+bhx,Bộ kem và bàn chải Colgate muối than hoạt tính 150g,Colgate,45000.0,1.0,150.0,5.0106352940962555,False,False,True,False
+bhx,Kẹo đồ chơi LaLe hương trái cây bộ 9g,LaLe,49000.0,1.0,9.0,2.1972245773362196,False,False,True,False
+bhx,Kẹo đồ chơi LaLe hương trái cây bộ 6g,LaLe,30000.0,1.0,6.0,1.791759469228055,False,False,True,False
+bhx,10 gói khăn giấy bỏ túi Pulppy 3 lớp 10 tờ,Pulppy,22500.0,10.0,,5.393627546352362,False,False,False,True
+bhx,Khăn giấy lụa PREMIER 3 lớp 100 tờ,PREMIER,9000.0,1.0,,5.393627546352362,False,False,False,True
+bhx,Khăn giấy Puri 2 lớp 250 tờ,Puri,14700.0,1.0,,5.393627546352362,False,False,False,True
+bhx,Khăn giấy ăn Softly 1 lớp 100 tờ,Softly,10000.0,1.0,,5.393627546352362,False,False,False,True
+bhx,Khăn giấy Pulppy 2 lớp 180 tờ,Pulppy,24500.0,1.0,,5.393627546352362,False,False,False,True
+bhx,Thùng 10 gói giấy rút đa năng Lency 4 lớp 1280 tờ,Lency,342000.0,10.0,,5.393627546352362,False,False,False,True
+bhx,Combo 10 hộp khăn giấy Puri 2 lớp 180 tờ,Puri,200000.0,10.0,,5.393627546352362,False,False,False,True
+bhx,Combo 10 gói khăn giấy rút Puri 3 lớp 200 tờ,Puri,234000.0,10.0,,5.393627546352362,False,False,False,True
+bhx,Combo 10 gói khăn giấy Puri 2 lớp 250 tờ,Puri,150000.0,10.0,,5.393627546352362,False,False,False,True
+bhx,Giấy rút đa năng Lency 4 lớp 1280 tờ,Lency,38500.0,1.0,,5.393627546352362,False,False,False,True
+bhx,Thùng 40 gói khăn giấy Puri 3 lớp 200 tờ,Puri,960000.0,40.0,,5.393627546352362,False,False,False,True
+bhx,5 lốc 10 gói khăn giấy bỏ túi Pulppy 3 lớp 10 tờ,Pulppy,108000.0,10.0,,5.393627546352362,False,False,False,True
+bhx,5 gói khăn giấy Bless You À La Vie 2 lớp 250 tờ,Bless You,120000.0,5.0,,5.393627546352362,False,False,False,True
+bhx,5 gói khăn giấy Bless You À La Vie 1 lớp 100 tờ,Bless You,95000.0,5.0,,5.393627546352362,False,False,False,True
+bhx,5 gói khăn giấy ăn Softly 1 lớp 100 tờ,Softly,45000.0,5.0,,5.393627546352362,False,False,False,True
+bhx,Khăn giấy Puri 2 lớp 180 tờ,Puri,22500.0,1.0,,5.393627546352362,False,False,False,True
+bhx,Khăn giấy Puri 3 lớp 200 tờ,Puri,23500.0,1.0,,5.393627546352362,False,False,False,True
+bhx,Khăn giấy Bless You À La Vie 2 lớp 250 tờ,Bless You,25500.0,1.0,,5.393627546352362,False,False,False,True
+bhx,Khăn giấy Bless You À La Vie 1 lớp 100 tờ,Bless You,21500.0,1.0,,5.393627546352362,False,False,False,True
+bhx,Mì 3 Miền Gold bò hầm rau thơm gói 75g,3 Miền,5300.0,1.0,75.0,4.31748811353631,False,False,True,False
+bhx,Mì trộn Cung Đình Kool Spaghetti xốt bò bằm gói 105g,Cung Đình Kool,9000.0,1.0,105.0,4.653960350157523,False,False,True,False
+bhx,Mì Ohya bò hầm rau thơm gói 76g,Ohya,9700.0,1.0,76.0,4.330733340286331,False,False,True,False
+bhx,Mì Omachi Diamond bắp bò hầm dưa chua 121g,Omachi,14000.0,1.0,121.0,4.795790545596741,False,False,True,False
+bhx,Mì khoai tây Omachi xốt bò hầm hộp 92g,Omachi,15200.0,1.0,92.0,4.5217885770490405,False,False,True,False
+bhx,Mì spaghetti Bistro xốt bò bằm kiểu Ý gói 100g,Bistro,12400.0,1.0,100.0,4.605170185988092,False,False,True,False
+bhx,Mì bò SiuKay gói 127g,SiuKay,13500.0,1.0,127.0,4.844187086458591,False,False,True,False
+bhx,Mì khoai tây Omachi xốt bò hầm ly 114g,Omachi,19300.0,1.0,114.0,4.736198448394496,False,False,True,False
+bhx,Mì khoai tây Omachi Special bò hầm xốt vang gói 92g,Omachi,10500.0,1.0,92.0,4.5217885770490405,False,False,True,False
+bhx,Mì Unif bò rau thơm gói 72g,Unif,4100.0,1.0,72.0,4.276666119016055,False,False,True,False
+bhx,Mì trộn Cung Đình Kool Spaghetti xốt bò bầm tô 105g,Cung Đình Kool,15300.0,1.0,105.0,4.653960350157523,False,False,True,False
+bhx,Mì Doraemon bò cuộn phô mai gói 62g,Doremon,4800.0,1.0,62.0,4.127134385045092,False,False,True,False
+bhx,Mì khoai tây Omachi xốt bò hầm gói 80g,Omachi,9300.0,1.0,80.0,4.382026634673881,False,False,True,False
+bhx,[Có thịt thật] Phở bò Vifon 90g,ViFon,18000.0,1.0,90.0,4.499809670330265,False,False,True,False
+bhx,Phở bò Đệ Nhất 65g,Đệ Nhất,9000.0,1.0,65.0,4.174387269895637,False,False,True,False
+bhx,Phở bò tái lăn Đệ Nhất 68g,Đệ Nhất,10800.0,1.0,68.0,4.219507705176107,False,False,True,False
+bhx,Phở Vifon vị bò 75g,ViFon,11500.0,1.0,75.0,4.31748811353631,False,False,True,False
+bhx,Phở bò trộn Đệ Nhất 84g,Đệ Nhất,10800.0,1.0,84.0,4.430816798843313,False,False,True,False
+bhx,Phở bò Cung Đình Hà Nội 79g,Cung Đình,10000.0,1.0,79.0,4.3694478524670215,False,False,True,False
+bhx,Bún bò Huế Hằng Nga 73g,Hằng Nga,10000.0,1.0,73.0,4.290459441148391,False,False,True,False
+bhx,Phở bò Vifon 65g,ViFon,9600.0,1.0,65.0,4.174387269895637,False,False,True,False
+bhx,Snack vị bò Wagyu Lay's Max 42g,Lay's Stax,12000.0,1.0,42.0,3.7376696182833684,False,False,True,False
+bhx,Snack vị bắp bơ Hàn Quốc Orion Masita 60g,Orion,12000.0,1.0,60.0,4.0943445622221,False,False,True,False
+bhx,Snack vị bò lúc lắc Poca 65g,Poca,12000.0,1.0,65.0,4.174387269895637,False,False,True,False
+bhx,Snack bí đỏ vị bò nướng Oishi 32g,Oishi,6000.0,1.0,32.0,3.4657359027997265,False,False,True,False
+bhx,Kẹo socola bơ đậu phộng Snickers gói 20g,Snickers,10000.0,1.0,20.0,2.995732273553991,False,False,True,False
+bhx,Kẹo socola bơ đậu phộng Snickers gói 51g,Snickers,30000.0,1.0,51.0,3.9318256327243257,False,False,True,False
+bhx,Kem đặc Vinamilk Tài Lộc lon 380g,Vinamilk,17500.0,1.0,380.0,5.940171252720432,False,False,True,False
+winmart,Bánh quy kem lạnh Oreo gói 123.5g/ 119.6g,OREO,17900.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Snack Lay's wavy vị thăn bò nướng Texas 63/58g,LAY'S,10900.0,1.0,58.0,4.060443010546419,False,False,True,False
+winmart,Bò nướng tiêu đen Swing Max 108g,SWING MAX,21600.0,1.0,108.0,4.68213122712422,False,False,True,False
+winmart,Bánh quy bơ Pep Farm Chessmen 206g,PEPPERIDGE FARM,144100.0,1.0,206.0,5.327876168789581,False,False,True,False
+winmart,Bánh quy bơ Danisa hộp 454g,DANISA,146000.0,1.0,454.0,6.118097198041348,False,False,True,False
+winmart,Bánh gạo vị bò nướng One-One gói 150g,ONEONE,33000.0,1.0,150.0,5.0106352940962555,False,False,True,False
+winmart,Bánh quy bơ Diet Leibniz gói 200g,BAHLSEN LEIBNIZ,90900.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Bánh bông lan vị bơ sữa Solite khay 360g,SOLITE,53100.0,1.0,360.0,5.886104031450156,False,False,True,False
+winmart,Bánh xốp Gullon ăn kiêng không đường 210g/180g,GULLON,112500.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Bánh bơ trứng Richy gói 270g,RICHY,40900.0,1.0,270.0,5.598421958998375,False,False,True,False
+winmart,Bánh qui bơ Danisa hộp 200g,DANISA,61600.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Bánh quy nhân kem vani Oreo gói 66.5g/ 68.5g,OREO,10100.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Bánh quy bơ Danisa hộp 681g,DANISA,212000.0,1.0,681.0,6.523562306149512,False,False,True,False
+winmart,Bánh gạo Richy Jinju vị bò nướng tiêu 134.4g,RICHY,32000.0,1.0,134.4,4.900820428089049,False,False,True,False
+winmart,Bánh Bông Lan Ăn Sáng C'est Bon Sợi Thịt Gà Nhân Kem Phô Mai (Gói 5 cái),C'EST BON,21000.0,5.0,,4.736198448394496,False,False,False,True
+winmart,Bánh gạo Jinju cốm sữa,RICHY,28900.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Bánh Oreo vani 313.5g/303.6g,OREO,55000.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Bánh qui bơ hình thú Bahlsen Zoo 100g,BAHLSEN LEIBNIZ,59900.0,1.0,100.0,4.605170185988092,False,False,True,False
+winmart,Bánh cupcake Solite kem bơ sữa 276g,SOLITE,55600.0,1.0,276.0,5.62040086571715,False,False,True,False
+winmart,Kẹo Chobisca Đức Hạnh (kg),ĐỨC HẠNH,183600.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Kẹo dẻo burger Yubi gói 96g/90g,YUBI,33500.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Kẹo dẻo Yubi Frankurter 96g/90g,YUBI,33400.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Socola Sữa M&M'S gói 40g/37g,M&M,23900.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Socola Đậu Phộng M&M'S gói 40g/37g,M&M,23900.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Thạch bút chì poke VFoods cốc 22 cây,VFOODS,33900.0,22.0,,4.736198448394496,False,False,False,True
+winmart,Thạch New Joy VFOOD hương sữa chia 920,VFOODS,55200.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Kẹo trái tim Relkon đồ chơi Hello Kitty,RELKON,31000.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Kẹo búp bê Relkon Hello Kitty,RELKON,37000.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Kẹo Relkon trứng đồ chơi Justice League,RELKON,31300.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Kẹo cây quạt và con dấu Relkon Hello Kitty,RELKON,136000.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Thạch rau câu cốt trái cây tươi Fruit Gel,ABC,79000.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Thạch rau câu Zai Zai+ dài Đức Hạnh (Kg),ZAI ZAI,98800.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Thạch Caramen Zai Zai Đức Hạnh (Kg),ZAI ZAI,98800.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Kẹo Họng Orion vị gừng mật ong 87.5g,UNKNOWN,16200.0,1.0,87.5,4.471638793363569,False,True,False,False
+winmart,Socola Cadbury 40g/37g,CADBURY,25300.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Kẹo họng vị Việt Quất mật ong 87.5g,UNKNOWN,16400.0,1.0,87.5,4.471638793363569,False,True,False,False
+winmart,Thạch rau câu Zai Zai Đức Hạnh (Kg),ZAI ZAI,98800.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Snack Swing bít tết New York 58g/63g,SWING,11900.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Snack bí đỏ vị bò nướng Oishi gói 42g,OISHI,5500.0,1.0,42.0,3.7376696182833684,False,False,True,False
+winmart,Snack khoai tây Lay's vị bò bít tết Manhattan gói 95g,LAY'S,22000.0,1.0,95.0,4.553876891600541,False,False,True,False
+winmart,Big roll Taokeanoi vị mực 3g/3.6g,TAO KAE NOI,8600.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Bò khô Thu Ba hộp 250g,THU BA,264000.0,1.0,250.0,5.521460917862246,False,False,True,False
+winmart,Khô bò miếng cay truyền thống Pichi gói 50g,PICHI,84500.0,1.0,50.0,3.912023005428146,False,False,True,False
+winmart,Khoai tây Lay's vị thăn bò nướng Texas 150g,LAY'S,33000.0,1.0,150.0,5.0106352940962555,False,False,True,False
+winmart,Snack vị bò lúc lắc Poca gói 75g,POCA,10500.0,1.0,75.0,4.31748811353631,False,False,True,False
+winmart,Snack Oishi tôm cay đặc biệt gói 68g/73g,OISHI,11900.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Snack Swing Family Pack vị bò 152g,SWING,31500.0,1.0,152.0,5.0238805208462765,False,False,True,False
+winmart,Snack Masita vị bắp bơ kiểu Hàn Quốc 60g,ORION,11900.0,1.0,60.0,4.0943445622221,False,False,True,False
+winmart,Xoài sấy THD,TÂM HỮU DŨNG,561400.0,1.0,,4.736198448394496,False,False,False,True
+winmart,Bàn chải đánh răng Closeup Precision lông chải siêu mềm,CLOSE UP,55000.0,1.0,,6.429719478039138,False,False,False,True
+winmart,Sữa rửa mặt đất sét trắng Senka Perfect Whiteclay 120g,SENKA,126000.0,1.0,120.0,4.787491742782046,False,False,True,False
+winmart,Bộ đôi nước súc miệng diệt khuẩn Listerine Cool Mint 750ml,LISTERINE,227300.0,1.0,750.0,6.620073206530356,False,False,True,False
+winmart,Bộ 2 bàn chải đánh răng than hoạt tính P/S Charcoal (Giao màu ngẫu nhiên),P/S,59000.0,2.0,,6.429719478039138,False,False,False,True
+winmart,Bàn chải đánh răng Colgate siêu mềm,COLGATE,55000.0,1.0,,6.429719478039138,False,False,False,True
+winmart,Bàn chải đánh răng khoáng núi lửa,COLGATE,55000.0,1.0,,6.429719478039138,False,False,False,True
+winmart,Giấy vệ sinh Pulppy 10 cuộn màu xanh 2 lớp,PULPPY,88900.0,10.0,,6.429719478039138,False,False,False,True
+winmart,Thuốc nhuộm nam Bigen 101 - Màu đen,BIGEN,205200.0,1.0,,6.429719478039138,False,False,False,True
+winmart,Dầu Gội OGX Biotin & Collagen làm dày tóc chai 385ml,OGX,241000.0,1.0,385.0,5.953243334287785,False,False,True,False
+winmart,Dầu gội OGX Biotin Collagen làm dày tóc 385ml,OGX,241000.0,1.0,385.0,5.953243334287785,False,False,True,False
+winmart,Miếng dán lột mụn mũi Biore hộp 4 miếng,BIORE,29500.0,4.0,,5.19295685089021,False,False,False,True
+winmart,Miếng dán mũi lột mụn dành cho nam Men's Biore,BIORE,29500.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Dao cạo râu Gillette Vector,GILLETTE,34500.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Dao cạo cán vàng Gillette,GILLETTE,40300.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Lưỡi dao Gillette Fusion Pro 1 chiếc,GILLETTE,285000.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Lưỡi dao Gillette Power Fusion 1 chiếc,GILLETTE,359000.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Vỉ 4 lưỡi dao cạo Gillette Vector 4S,GILLETTE,67000.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Lưỡi dao cạo Gillette Vector,GILLETTE,36500.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Bông tẩy trang Bocoton 100 miếng,BOCOTON,41000.0,100.0,,5.19295685089021,False,False,False,True
+winmart,Bao cao su Durex kingtex 3s,DUREX,41500.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Dao Cạo Gillette BlueII gói 8+2,GILLETTE,80000.0,1.0,,5.19295685089021,False,False,True,True
+winmart,Sữa rửa mặt sáng da đất sét Nivea tuýp 100g,NIVEA,78500.0,1.0,100.0,4.605170185988092,False,False,True,False
+winmart,Lưỡi dao cạo Gillette Mach 3+ gói 6 cái,GILLETTE,396700.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Dao cạo râu Gillette Mach 3+,GILLETTE,240600.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Lưỡi dao cạo Gillette Mach3 x3 lưỡi,GILLETTE,240600.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Tắm gội 2 in 1 X-men Boss Intense 650g,X-MEN,220000.0,1.0,650.0,6.476972362889683,False,False,True,False
+winmart,Dao cạo 2 lưỡi Gillette Blue 2 Flexi gói 5+2,GILLETTE,50100.0,1.0,,5.19295685089021,False,False,True,True
+winmart,Bơ dưỡng thể cà phê Đắk Lắk Cocoon 200ml,COCOON,213300.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Sữa tắm gội 2 in 1 Romano Attitude 650g,ROMANO,201000.0,1.0,650.0,6.476972362889683,False,False,True,False
+winmart,Lăn khử mùi nam Rexona Invisible+ Antibacterial chai 50m,REXONA,62600.0,1.0,,5.19295685089021,False,False,False,True
+winmart,Sữa tắm Lifebuoy detox matcha & khổ qua chai 850g/800g,LIFEBUOY,229000.0,1.0,,5.19295685089021,False,False,False,True
+winmart,"Máy tăm nước không dây Lock&Lock ENR156BLU Cordless Oral Irrigator, 200ml - Màu xanh da trời",LOCK&LOCK,1379000.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Bộ đôi bàn chải đánh răng Colgate Optic white,COLGATE,107000.0,1.0,,5.357208884376228,False,False,True,True
+winmart,Dụng cụ vệ sinh lưỡi Beauty Formulas,BEAUTY FORMULA,65000.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bàn chải đánh răng Colgate slimsoft charcoal,COLGATE,51000.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bàn chải đánh răng Bizs+ storm,BIZS+,31900.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 2 bàn chải đánh răng Colgate slimsoft charcoal,COLGATE,75000.0,2.0,,5.357208884376228,False,False,False,True
+winmart,Chỉ kẽ răng Okamura 110p,OKAMURA,61500.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Chỉ nha khoa Oral-B Essential Floss 50m,ORAL-B,65500.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bàn chải đánh răng COLGATE 360 Charcoal Spiral xoắn kép,COLGATE,85000.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bàn chải P/S baking soda trắng răng tự nhiên,P/S,32500.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 2 bàn chải đánh răng Colgate Cushion Clean,COLGATE,105000.0,2.0,,5.357208884376228,False,False,False,True
+winmart,Bàn Chải Đánh Răng Sensodyne Sensitivity & Gum Soft Lông Tơ Mềm Mại,SENSODYNE,66000.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 3 bàn chải đánh răng Sensodyne Deep Clean Soft làm sạch sâu kẽ răng,SENSODYNE,92200.0,3.0,,5.357208884376228,False,False,False,True
+winmart,Kem đánh răng Colgate Opticwhite O2,COLGATE,119000.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bàn chải đánh răng P/S Charcoal,P/S,39500.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Kem đánh răng Closeup hương lộc đề hộp 230g,CLOSE UP,48200.0,1.0,230.0,5.438079308923196,False,False,True,False
+winmart,Bàn chải đánh răng Oral-B tinh chất trà đen (vỉ 3 cái),ORAL-B,71000.0,3.0,,5.357208884376228,False,False,False,True
+winmart,Bàn Chải Đánh Răng Oral-B Tinh Chất Trà Xanh (Vỉ 1),ORAL-B,34400.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 2 bàn chải đánh răng Lipzo crystal for girl,LIPZO,52600.0,2.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 2 bàn chải đánh răng Lipzo ruby charcoal,LIPZO,71800.0,2.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 2 bàn chải đánh răng P/S lông tơ sạch hiệu quả,P/S,34500.0,2.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 2 bàn chải đánh răng P/S lông tơ mềm mại,P/S,34500.0,2.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 2 bàn chải đánh răng Colgate SlimSoft Advanced,COLGATE,85000.0,2.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 2 bàn chải đánh răng Sensodyne Sensitive Extra Soft,SENSODYNE,48000.0,2.0,,5.357208884376228,False,False,False,True
+winmart,Chỉ kẽ răng Okamura90P,OKAMURA,34800.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Tăm nhựa nha khoa 140 que OKAMURA,OKAMURA,44700.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bàn chải đánh răng Lipzo áo dài công nghệ chỉ tơ xoắn kép kháng khuẩn siêu mảnh,LIPZO,44500.0,1.0,,5.357208884376228,False,False,False,True
+winmart,Bộ 2 bàn chải đánh răng P/S muối đá Himalaya,P/S,48500.0,2.0,,5.357208884376228,False,False,False,True
+winmart,Dầu gội Clear Men mát lạnh bạc hà 180g/170g,CLEAR,80000.0,1.0,,6.4457198193855785,False,False,False,True
+winmart,Thùng 24 lon nước tăng lực STING hương dâu 330ml/320ml,STING,264500.0,24.0,,5.799092654460526,False,False,False,True
+winmart,Thùng 24 lon nước tăng lực STING hương dâu 330ml/320ml,STING,67000.0,6.0,,5.799092654460526,False,False,False,True
+winmart,Thùng 24 lon nước tăng lực STING hương dâu 330ml/320ml,STING,11700.0,1.0,,5.799092654460526,False,False,False,True
+winmart,MIRINDA Nước ngọt chai 1.5L/1.75L,MIRINDA,240800.0,12.0,,5.799092654460526,False,False,False,True
+winmart,MIRINDA Nước ngọt chai 1.5L/1.75L,MIRINDA,20600.0,1.0,,5.799092654460526,False,False,False,True
+winmart,Thức uống bổ dưỡng lúa mạch Milo Active-Go​​​​​​​ Nestlé lọ 400g,MILO,89900.0,1.0,400.0,5.991464547107982,False,False,True,False
+winmart,Cà phê hòa tan 3in1 G7 Trung Nguyên gói 20 túi,G7,82800.0,20.0,,5.799092654460526,False,False,False,True
+winmart,Thùng 24 chai nước uống tinh khiết Dasani chai 500ml/510ml,DASANI,125000.0,24.0,,5.799092654460526,False,False,False,True
+winmart,Thùng 24 chai nước uống tinh khiết Dasani chai 500ml/510ml,DASANI,5300.0,1.0,,5.799092654460526,False,False,False,True
+winmart,Nước khoáng LaVie 5,LA VIE,30700.0,1.0,,5.799092654460526,False,False,False,True
+winmart,Nước uống sữa trái cây bổ dưỡng hương cam Nutri Boost chai 1L,NUTRI BOOST,31900.0,1.0,1000.0,6.907755278982137,False,False,True,False
+winmart,Thùng 24 lon nước tăng lực STING 330ml/320ml,STING,263800.0,24.0,,5.799092654460526,False,False,False,True
+winmart,Thùng 24 lon nước tăng lực STING 330ml/320ml,STING,67000.0,6.0,,5.799092654460526,False,False,False,True
+winmart,Thùng 24 lon nước tăng lực STING 330ml/320ml,STING,11400.0,1.0,,5.799092654460526,False,False,False,True
+winmart,Thực phẩm bổ sung nước lựu C-Vitt Vitamin C 140ml,C-VITT,15500.0,1.0,140.0,4.941642422609304,False,False,True,False
+winmart,Thực phẩm bổ sung nước chanh C-Vitt Vitamin C 140ml,C-VITT,15500.0,1.0,140.0,4.941642422609304,False,False,True,False
+winmart,Trà hoa Atiso túi lọc Vĩnh Tiến gói 400g,VĨNH TIẾN,182900.0,1.0,400.0,5.991464547107982,False,False,True,False
+winmart,Trà atiso Vĩnh Tiến đặc sản túi lọc 200g,VĨNH TIẾN,94000.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Trà sen túi lọc Phúc Long hộp 50g,PHÚC LONG,46000.0,1.0,50.0,3.912023005428146,False,False,True,False
+winmart,Ngũ Cốc Gạo Lức Huyết Rồng,XUÂN AN,93000.0,1.0,,5.799092654460526,False,False,False,True
+winmart,Trà đen hảo hạng túi lọc VINATEA hộp 50g,VINATEA,34100.0,1.0,50.0,3.912023005428146,False,False,True,False
+winmart,Trà sữa Blendy Royal 144g (18g x 8 gói),BLENDY,38900.0,8.0,,5.799092654460526,False,False,False,True
+winmart,Trà matcha Blendy sữa,BLENDY,41600.0,1.0,,5.799092654460526,False,False,False,True
+winmart,Trà Tân Cương nõn tôm Việt Hoa,ĐẠI GIA,189900.0,1.0,,5.799092654460526,False,False,False,True
+winmart,Trà đinh Tân Cương Đại Gia,ĐẠI GIA,252500.0,1.0,,5.799092654460526,False,False,False,True
+winmart,Nước mắm Chin Su cao cấp biển đông khẩu vị Nhật 500m,CHIN-SU,102000.0,1.0,,6.063785208687608,False,False,False,True
+winmart,Nước mắm Phú Quốc Thanh Quốc 35 độ đạm,THANH QUỐC,85900.0,1.0,,6.063785208687608,False,False,False,True
+winmart,Đường ăn kiêng Biên Hòa Isomalts 5g 250g,BIÊN HÒA,77700.0,1.0,,6.063785208687608,False,False,False,True
+winmart,Hạt nêm Knorr thịt thăn xương ống và tủy gói 1.2Kg,KNORR,106000.0,1.0,1200.0,7.090076835776092,False,False,True,False
+winmart,Xốt cà chua thịt bò băm Barilla lọ 400g,BARILLA,149200.0,1.0,400.0,5.991464547107982,False,False,True,False
+winmart,"Bột ngọt (mì chính) Ajinomoto gói 1,8kg",AJINOMOTO,135000.0,1.0,1800.0,7.495541943884256,False,False,True,False
+winmart,Sốt gia vị Barona canh chua Nam Bộ 80g,BARONA,13100.0,1.0,80.0,4.382026634673881,False,False,True,False
+winmart,Xốt bò kho Cholimex gói 90g,CHOLIMEX,11700.0,1.0,90.0,4.499809670330265,False,False,True,False
+winmart,Gia vị bún bò huế DHFood Natural 25g,DH FOODS,16000.0,1.0,25.0,3.2188758248682006,False,False,True,False
+winmart,Gia Vị Nấu Phở Bò SG DHFoods 25g,DH FOODS,16400.0,1.0,25.0,3.2188758248682006,False,False,True,False
+winmart,Nước dùng SG Food Cô Đặc Thái chay 150g/180g,SG FOOD,24100.0,1.0,,6.063785208687608,False,False,False,True
+winmart,Bộ xông đuổi muỗi Jumbo 120g,JUMBO,53100.0,1.0,120.0,4.787491742782046,False,False,True,False
+winmart,Bột giặt thông minh Omo gói 800g/770g,OMO,42300.0,1.0,,7.824046010856292,False,False,False,True
+winmart,Nước lau kính Gift 540ml/580ml,GIFT,23800.0,1.0,,7.824046010856292,False,False,False,True
+winmart,Viên rửa chén 5 trong 1 Sunlight 28 viên,SUNLIGHT,139800.0,28.0,,7.824046010856292,False,False,False,True
+winmart,Nước lau bếp Gift chai 520ml/540ml,GIFT,30800.0,1.0,,7.824046010856292,False,False,False,True
+winmart,Nước xả làn gió mát Downy gói 3.5L,DOWNY,278500.0,1.0,3500.0,8.160518247477505,False,False,True,False
+winmart,Giấy bếp đa dụng 2 lớp Elene gói 100 tờ,ELENE,26000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn giấy ăn rút 2 lớp Watersilk gói 200 tờ,WATERSILK,26000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn giấy lụa 2 lớp Elene gói 260 tờ,ELENE,27900.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh E'mos prem 10 cuộn 2 lớp cá heo xanh,E'MOS,100000.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt trẻ em Bobby 100 miếng,BOBBY,47100.0,100.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt không mùi Mamamy 100 tờ,MAMAMY,49000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh Hà Nội không lõi 10 cuộn 3 lớp,HA NOI,103000.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt vệ sinh Mamamy 100 tờ có mùi,MAMAMY,49300.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn giấy lụa 2 lớp Fairy 280 tờ 200 x 195mm,FAIRY,25400.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn giấy ướt Mamamy có nắp không mùi gói 80 tờ,MAMAMY,43000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh HANOI 10 cuộn 3 lớp có lõi,HA NOI,92500.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt vệ sinh 30 tờ không mùi Mamamy,MAMAMY,18900.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh cao cấp Silkwell 10 cuộn,SILKWELL,95000.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Giấy bếp đa năng Silkwell gói 100 tờ,SILKWELL,16900.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt chăm sóc da Fressi Care All 100 miếng,ALL CARE,49900.0,100.0,,5.393627546352362,False,False,False,True
+winmart,Khăn giấy rút 2 lớp Silkwell 280 tờ,SILKWELL,29000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt lau mặt FRESSICARE 20 tờ,FRESSICARE,17000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh Watersilk 36m 10 cuộn,WATERSILK,108600.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh Elene hồng 3 lớp 10 cuộn,ELENE,116900.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh Elene xanh 10 cuộn 3 lớp không lõi,ELENE,117700.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt Baby Nuna không mùi 80 tờ,NUNA,52000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn giấy lụa 2 lớp Teddy Bear Mollis gói 300 tờ,TEDDYBEAR,29700.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt cồn diệt khuẩn LETGREEN 50 tờ,LETGREEN,41000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn giấy rút Elène 3 lớp gói 160 tờ,ELENE,29000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh tre 3 lớp 10 cuộn Silkwell,SILKWELL,113000.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh Panda lụa 3 lớp 10 cuộn có lõi,PANDA,130000.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt Kinkin mùi trà xanh có nắp 100 tờ,KINKIN,44100.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt không mùi Kinkin có nắp 100 tờ,KINKIN,44100.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh WinMart Home 10 cuộn 2 lớp có lõi,WMHOME,39200.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Giấy lụa gói E'mos Special 2 lớp 250 tờ,E'MOS,28900.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy rút lụa Silkwell 3 lớp 200 tờ,SILKWELL,34500.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh Silkwell cao cấp 4 lớp 10 cuộn,SILKWELL,125100.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt kháng khuẩn khử mùi Let Green 15 miếng,LETGREEN,30400.0,15.0,,5.393627546352362,False,False,False,True
+winmart,Giấy lụa rút tre Elene 100 tờ 3 lớp,ELENE,7600.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh Elene xanh ngọc 10c 3 lớp lõi,ELENE,146300.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh WinMart Home Eco 10 cuộn 2 lớp,WMHOME,29400.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh Fairy cao cấp 10 cuộn 4 lớp,FAIRY,109000.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Khăn rút Fairy ngắn 150 tờ 3 lớp,FAIRY,14900.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt trẻ em Bobby 100 miếng không mùi hương,BOBBY,47600.0,100.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt không mùi Huggies 64 Miếng,HUGGIES,43300.0,64.0,,5.393627546352362,False,False,False,True
+winmart,Giấy hộp Blessyou Disney 100tờ 2 lớp,BLESS YOU,18000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt YUNIKU 20 tờ,YUNIKU,11500.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt Yuniku xanh ngọc 90 tờ,YUNIKU,38000.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy ăn 2 lớp Bless You Softpack (gói 250 tờ),BLESS YOU,25500.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ăn cao cấp 1 lớp Bless You 100 tờ 33 x 33 cm,BLESS YOU,20100.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh 2 lớp Bless You À La Vie (lốc 10 cuộn),BLESS YOU,97000.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh 3 lớp Bless You L'amour (lốc 10 cuộn),BLESS YOU,136500.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Giấy vệ sinh Hà Nội 6 cuộn 3 lớp có lõi,HA NOI,66000.0,6.0,,5.393627546352362,False,False,False,True
+winmart,Lốc 10 gói khăn giấy bỏ túi Tempo icy menthol,TEMPO,48000.0,10.0,,5.393627546352362,False,False,False,True
+winmart,Lốc 10 gói khăn giấy bỏ túi Tempo icy menthol,TEMPO,4800.0,1.0,,5.393627546352362,False,False,False,True
+winmart,"Khăn giấy bỏ túi Tempo 4 lớp gói 90 tờ 16 x 19,5 cm",TEMPO,32300.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn giấy rút Tempo Softpack 90 tờ,TEMPO,31900.0,1.0,,5.393627546352362,False,False,False,True
+winmart,Khăn ướt Huggié bơ cacao và hạt mỡ 72 tờ,HUGGIES,45000.0,1.0,,5.393627546352362,False,False,True,True
+winmart,Tokpokki Hàn Quốc vị phô mai gói 140g,UNKNOWN,36000.0,1.0,140.0,4.941642422609304,False,True,False,False
+winmart,Tokpokki Hàn Quốc vị chua ngọt hộp 105g,UNKNOWN,36000.0,1.0,105.0,4.653960350157523,False,True,False,False
+winmart,Bánh gạo tokpokki tròn O'food vị phô mai ly 105g,UNKNOWN,36000.0,1.0,105.0,4.653960350157523,False,True,False,False
+winmart,Topokki Hàn Quốc vị truyền thống OFood hộp 105g,UNKNOWN,36000.0,1.0,105.0,4.653960350157523,False,True,False,False
+winmart,Tokpokki Hàn Quốc vị truyền thống gói 140g,UNKNOWN,36000.0,1.0,140.0,4.941642422609304,False,True,False,False
+winmart,Phở thịt bò Hoàng gia gói 120g,VIFON,27000.0,1.0,120.0,4.787491742782046,False,False,True,False
+winmart,Mì vị bò cay Paldo gói 1kg,JUMBO,90000.0,1.0,1000.0,6.907755278982137,False,False,True,False
+winmart,Phở Hà Nội Cung Đình hương vị bò 68g*30,CUNG ĐÌNH,9600.0,1.0,68.0,4.219507705176107,False,False,True,False
+winmart,Mì vị bò cay Koreno Paldo gói 100g,KORENO,12200.0,1.0,100.0,4.605170185988092,False,False,True,False
+winmart,Mì gói ăn liền khoai tây vị xốt bò hầm Omachi thùng 30 gói x 80g,OMACHI,159000.0,1.0,80.0,4.382026634673881,False,False,True,False
+winmart,Mì ăn liền khoai tây sườn ngủ quả Omachi thùng 30 gói x 80g,OMACHI,159000.0,1.0,80.0,4.382026634673881,False,False,True,False
+winmart,Thùng 30 gói mì lẩu Thái hương vị tôm Vina 80g/81g,ACECOOK,260800.0,30.0,,4.51085950651685,False,False,False,True
+winmart,Thùng 30 gói mì lẩu Thái hương vị tôm Vina 80g/81g,ACECOOK,9000.0,1.0,,4.51085950651685,False,False,False,True
+winmart,Mì xào khô vị bò cay Indomie gói 91g,INDOMIE,6000.0,1.0,91.0,4.51085950651685,False,False,True,False
+winmart,Mì Yeul Cay Ottgi lốc 5 gói,OTOKI,70000.0,5.0,,4.51085950651685,False,False,False,True
+winmart,Mì trộn Ottogi BBQ vị bò 75g,OTOKI,9400.0,1.0,75.0,4.31748811353631,False,False,True,False
+winmart,Mì bò cay phô mai Nissin 70g,NISSIN,8000.0,1.0,70.0,4.248495242049359,False,False,True,False
+winmart,Mì Kimchi gói 8 bịch,OTOKI,100200.0,8.0,,4.51085950651685,False,False,False,True
+winmart,Mì Ottogi Jin tương đen vị bò 135g,OTOKI,16800.0,1.0,135.0,4.90527477843843,False,False,True,False
+winmart,Thùng 20 gói mì Acecook ăn liền Siukay cay 7 cấp độ vị hải sản 128g,ACECOOK,323500.0,1.0,128.0,4.852030263919617,False,False,True,False
+winmart,Phở trộn Đệ Nhất hương vị bò gói 84g,ĐỆ NHẤT,10600.0,1.0,84.0,4.430816798843313,False,False,True,False
+winmart,Mì bò hầm Ottogi 120g,OTOKI,12700.0,1.0,120.0,4.787491742782046,False,False,True,False
+winmart,Cháo tươi Saigonfood thịt thăm và bí đỏ 270g/240g,SG FOOD,24300.0,1.0,,4.51085950651685,False,False,False,True
+winmart,Cháo SGFood bổ dưỡng bồ câu yến mạch hạt sen 240g,SG FOOD,33600.0,1.0,240.0,5.480638923341991,False,False,True,False
+winmart,Cháo thịt bò Vifon gói 70g,VIFON,11000.0,1.0,70.0,4.248495242049359,False,False,True,False
+winmart,Cháo tươi baby bò đậu Hà Lan cà rốt SG Food gói 240g,SG FOOD,26500.0,1.0,240.0,5.480638923341991,False,False,True,False
+winmart,Cháo tươi cá hồi và cải bó xôi SG Food gói 240g,SG FOOD,25300.0,1.0,240.0,5.480638923341991,False,False,True,False
+winmart,Cháo SGFood bổ dưỡng tổ yến cá hồi 240g,SG FOOD,33200.0,1.0,240.0,5.480638923341991,False,False,True,False
+winmart,Cháo SGFood bổ dưỡng tổ yến hạt sen lá dứa 240g,SG FOOD,33200.0,1.0,240.0,5.480638923341991,False,False,True,False
+winmart,Cháo bổ dưỡng gà ác nhân sâm SG Food gói 240g,SG FOOD,33200.0,1.0,240.0,5.480638923341991,False,False,True,False
+winmart,Phở bò ăn liền Đệ Nhất Vina Acecook gói 65g/68g,ĐỆ NHẤT,8600.0,1.0,,4.51085950651685,False,False,True,True
+winmart,Bún bò Huế Hằng Nga gói 73g,ACECOOK,9900.0,1.0,73.0,4.290459441148391,False,False,True,False
+winmart,Phở thịt bò Vifon gói 65g,VIFON,9700.0,1.0,65.0,4.174387269895637,False,False,True,False
+winmart,Phở thịt bò Vifon bát 120g,VIFON,29400.0,1.0,120.0,4.787491742782046,False,False,True,False
+winmart,Bún bò Huế Vifon gói 65g,VIFON,9700.0,1.0,65.0,4.174387269895637,False,False,True,False
+winmart,Bún bò Huế Vifon Hoàng Gia gói 120g,VIFON,27300.0,1.0,120.0,4.787491742782046,False,False,True,False
+winmart,Phở tươi thịt bò hầm LC Foods 90g,LC FOOD,14900.0,1.0,90.0,4.499809670330265,False,False,True,False
+winmart,Phở bò LC Food 75g,LC FOOD,10700.0,1.0,75.0,4.31748811353631,False,False,True,False
+winmart,Phở Bò Chin su Story có thịt tô 131g,CHIN-SU,33700.0,1.0,131.0,4.875197323201151,False,False,True,False
+winmart,Phở Có Gói Xốt Thịt Vị Bò 70g,VIFON,11500.0,1.0,70.0,4.248495242049359,False,False,True,False
+winmart,Tokpokki vị phô mai Miwon gói 300g,UNKNOWN,63800.0,1.0,300.0,5.703782474656201,False,True,False,False
+winmart,Tokpokki vị truyền thống Miwon gói 300g,UNKNOWN,63800.0,1.0,300.0,5.703782474656201,False,True,False,False
+winmart,Tokpokki MiWon Hàn Quốc vị phô mai hộp 105g,UNKNOWN,36000.0,1.0,105.0,4.653960350157523,False,True,False,False
+winmart,Tokpokki MiWon Hàn Quốc vị phô mai gói 140g,UNKNOWN,36000.0,1.0,140.0,4.941642422609304,False,True,False,False
+winmart,Bánh đa nem 200g dày Thiên Nhiên Xanh,THIÊN NHIÊN XANH,30200.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Bơ lạt tự nhiên TH True milk 200g,TH TRUE BUTTER,76900.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Phô mai Con Bò Cười Light hộp 120g,CON BÒ CƯỜI,38500.0,1.0,120.0,4.787491742782046,False,False,True,False
+winmart,Phô mai Belcube ngọt vị Socola 78gx15C,BELCUBE,51500.0,1.0,,5.19295685089021,False,False,False,True
+winmart,MILO Sữa uống lúa mạch 115ml/110ml,MILO,252000.0,48.0,,5.19295685089021,False,False,False,True
+winmart,MILO Sữa uống lúa mạch 115ml/110ml,MILO,22100.0,4.0,,5.19295685089021,False,False,False,True
+winmart,Sữa đặc Tài Lộc Vinamilk 380g,VINAMILK,18000.0,1.0,380.0,5.940171252720432,False,False,True,False
+winmart,Lốc 4 hộp sữa chua uống dâu có thạch Nuvi,NUVI,33500.0,4.0,,5.19295685089021,False,False,False,True
+winmart,Sữa bắp non dinh dưỡng LOF lốc 4 hộp x 180ml,UNKNOWN,34300.0,4.0,180.0,5.19295685089021,False,True,False,False
+winmart,Thùng 48 hộp Sữa uống ít đường Nestle 180ml,MILO,398400.0,1.0,180.0,5.19295685089021,False,False,True,False
+winmart,Thùng 36 hộp sữa đậu nành Fami canxi ít đường 200ml,FAMI,181800.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Bơ mặn Président gói 200g,PRESIDENT,135000.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Bơ nhạt Président gói 200g,PRESIDENT,135000.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Bơ lạt Paysan Breton hộp 250g,PAYSAN,178000.0,1.0,250.0,5.521460917862246,False,False,True,False
+winmart,Bơ mặn Paysan Breton hộp 250g,PAYSAN,177500.0,1.0,250.0,5.521460917862246,False,False,True,False
+winmart,Bơ nhạt President gói 125g,PRESIDENT,84500.0,1.0,125.0,4.8283137373023015,False,False,True,False
+winmart,Bơ nhạt Président vỉ 10 hộpx10g,PRESIDENT,77900.0,1.0,10.0,2.302585092994046,False,False,True,False
+winmart,Phô mai vuông Belcube vị sữa Con Bò Cười gói 125g,BELCUBE,71500.0,1.0,125.0,4.8283137373023015,False,False,True,False
+winmart,Bơ mặn President gói 125g,PRESIDENT,84500.0,1.0,125.0,4.8283137373023015,False,False,True,False
+winmart,Bơ lạt Anchor gói 227g,ANCHOR,137500.0,1.0,227.0,5.424950017481403,False,False,True,False
+winmart,Bơ lạt Presiden hộp 250g,PRESIDENT,181000.0,1.0,250.0,5.521460917862246,False,False,True,False
+winmart,Bơ lạt Westgold 250g,WESTGOLD,135700.0,1.0,250.0,5.521460917862246,False,False,True,False
+winmart,Bơ mặn Westgold 250g,WESTGOLD,135700.0,1.0,250.0,5.521460917862246,False,False,True,False
+winmart,Phô mai Con Bò Cười 8M 112g,CON BÒ CƯỜI,37800.0,1.0,112.0,4.718498871295094,False,False,True,False
+winmart,Solse Phomai dây hun khói 100g,SOLSE,72000.0,1.0,100.0,4.605170185988092,False,False,True,False
+winmart,Phô mai dây hun khói Solse gói 200g,SOLSE,125200.0,1.0,200.0,5.298317366548036,False,False,True,False
+winmart,Sữa tươi tiệt trùng hương dâu Vinamilk lốc 4 hộp x 180ml,VINAMILK,36700.0,4.0,180.0,5.19295685089021,True,False,False,False
+winmart,Sữa tươi tiệt trùng sô cô la Vinamilk lốc 4 hộp x 180ml,VINAMILK,36700.0,4.0,180.0,5.19295685089021,True,False,False,False

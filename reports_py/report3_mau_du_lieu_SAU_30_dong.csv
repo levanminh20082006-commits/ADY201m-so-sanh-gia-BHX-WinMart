@@ -1,0 +1,31 @@
+﻿store,group,name_clean,brand,sale_price_vnd,list_price_vnd,is_promotion,discount_pct,is_flash_sale,size_value,size_unit,pack_count_report2,pack_count,pack_fix,unit_price_vnd_per_kg_or_l,phan_khuc_gia,brand_imputed,pack_imputed,size_imputed,log_price_outlier,log_price,log_price_minmax,log_price_z,store_bhx,store_winmart
+bhx,beverages,Nước tăng lực Wake Up 247 vị cà phê 330ml,Wake Up,11500,11500.0,False,0.0,False,330.0,ml,247.0,1.0,number_is_part_of_name,34848.0,rẻ (< 20k),False,False,False,False,9.3501,0.2334,-1.2352,1,0
+winmart,personal_care,Dầu gội dược liệu Thái Dương 7+ chai 250ml,THÁI DƯƠNG,167800,167800.0,False,0.0,False,250.0,ml,7.0,1.0,number_is_part_of_name,671200.0,cao (>= 100k),False,False,False,False,12.0305,0.654,1.1513,0,1
+winmart,personal_care,Lưỡi dao cạo Gillette Mach 3+ gói 6 cái,GILLETTE,396700,396700.0,False,0.0,False,,,3.0,1.0,number_is_part_of_name,,cao (>= 100k),False,False,True,False,12.8909,0.7891,1.9173,0,1
+bhx,snacks_confectionery,Bánh con cá mochi socola đậu đỏ Orion 145g,Orion,34000,34000.0,False,0.0,True,145.0,g,1.0,1.0,,234483.0,trung bình,False,False,False,False,10.4341,0.4035,-0.2701,1,0
+bhx,snacks_confectionery,Hộp 12 cái bánh bông lan kem bơ sữa Solite,Solite,56500,56500.0,False,0.0,True,276.0,g,12.0,12.0,,17059.0,trung bình,False,False,False,False,10.942,0.4832,0.1821,1,0
+bhx,snacks_confectionery,Bánh bouchee Lotte Chocolat phô mai 162g,Lotte,30500,30500.0,False,0.0,True,162.0,g,1.0,1.0,,188272.0,trung bình,False,False,False,False,10.3255,0.3864,-0.3668,1,0
+bhx,instant_food,Lốc 4 gói miến sườn heo Vifon 58g,UNKNOWN,43000,43000.0,False,0.0,False,58.0,g,4.0,4.0,,185345.0,trung bình,True,False,False,False,10.669,0.4403,-0.061,1,0
+winmart,snacks_confectionery,Kẹo Họng Orion vị gừng mật ong 87.5g,UNKNOWN,16200,16200.0,False,0.0,False,87.5,g,1.0,1.0,,185143.0,rẻ (< 20k),True,False,False,False,9.6928,0.2871,-0.9301,0,1
+bhx,seasoning,Bộ 3 gia vị thiết yếu Janbee,Janbee,75000,99000.0,True,24.2,False,,,,,,,trung bình,False,True,True,False,11.2252,0.5276,0.4343,1,0
+bhx,personal_care,6 cuộn giấy Puri Premium Quality 3 lớp,Puri,49000,63000.0,True,22.2,False,,,6.0,6.0,,,trung bình,False,False,True,False,10.7996,0.4608,0.0553,1,0
+bhx,snacks_confectionery,Thùng 20 hộp bánh quy socola Orion Miz 54g,Orion,290000,290000.0,False,0.0,False,54.0,g,20.0,20.0,,268519.0,cao (>= 100k),False,False,False,True,12.5776,0.7399,1.6384,1,0
+bhx,snacks_confectionery,Thùng 20 hộp bánh cá vị rong biển Orion Marine Boy 35g,Orion,254000,254000.0,False,0.0,False,35.0,g,20.0,20.0,,362857.0,cao (>= 100k),False,False,False,True,12.4451,0.7191,1.5204,1,0
+winmart,instant_food,Mì spaghetti số 25 Santa Lucia gói 500g,SANTA LUCIA,47500,47500.0,False,0.0,False,500.0,g,1.0,1.0,,95000.0,trung bình,False,False,False,False,10.7685,0.456,0.0276,0,1
+winmart,instant_food,Mì ăn liền khoai tây sườn ngủ quả Omachi thùng 30 gói x 80g,OMACHI,273000,273000.0,False,0.0,False,80.0,g,30.0,30.0,,113750.0,cao (>= 100k),False,False,False,False,12.5172,0.7304,1.5846,0,1
+bhx,household_cleaning,Nước giặt OMO siêu tốc lưu hương tươi mới 1.2kg,OMO,90500,90500.0,False,0.0,False,1200.0,g,1.0,1.0,,75417.0,trung bình,False,False,False,False,11.4131,0.5571,0.6016,1,0
+winmart,snacks_confectionery,Bánh Tipo Hữu Nghị trà xanh hộp 75g,TIPO,21900,21900.0,False,0.0,False,75.0,g,1.0,1.0,,292000.0,trung bình,False,False,False,False,9.9942,0.3344,-0.6617,0,1
+bhx,personal_care,Sữa tắm nước hoa Cindy Bloom Sexy Rexy 640g,Cindy,142000,189000.0,True,24.9,False,640.0,g,1.0,1.0,,221875.0,cao (>= 100k),False,False,False,False,11.8636,0.6278,1.0026,1,0
+winmart,personal_care,Dầu gội sạch gàu Clear mát lạnh bạc hà 630g,CLEAR,202000,202000.0,False,0.0,False,630.0,g,1.0,1.0,,320635.0,cao (>= 100k),False,False,False,False,12.216,0.6831,1.3164,0,1
+bhx,instant_food,Thùng 30 gói mì Hảo Hảo tôm chua cay 75g,Hảo Hảo,129000,129000.0,False,0.0,False,75.0,g,30.0,30.0,,57333.0,cao (>= 100k),False,False,False,False,11.7676,0.6128,0.9172,1,0
+winmart,personal_care,Dầu gội nam Clear Men sạch sâu trị gàu ngứa vi khuẩn 630g,CLEAR,170900,214000.0,True,20.1,False,630.0,g,1.0,1.0,,271270.0,cao (>= 100k),False,False,False,False,12.0488,0.6569,1.1676,0,1
+winmart,snacks_confectionery,Ô mai mơ cam thảo Hồng Lam hộp 200g,HỒNG LAM,77900,77900.0,False,0.0,False,200.0,g,1.0,1.0,,389500.0,trung bình,False,False,False,False,11.2632,0.5336,0.4681,0,1
+winmart,snacks_confectionery,Bánh kem xốp phômai Richeese Nabati cheese wafer 320g (16gr x20),NABATI,51000,51000.0,False,0.0,False,320.0,g,1.0,1.0,,159375.0,trung bình,False,False,False,False,10.8396,0.4671,0.0909,0,1
+winmart,instant_food,Cháo gà Vifon gói 50g,VIFON,4000,4000.0,False,0.0,False,50.0,g,1.0,1.0,,80000.0,rẻ (< 20k),False,False,False,False,8.294,0.0676,-2.1754,0,1
+bhx,instant_food,Thùng 30 gói mì khoai tây Cung Đình lẩu tôm chua cay 85g,Cung Đình,228000,228000.0,False,0.0,False,85.0,g,30.0,30.0,,89412.0,cao (>= 100k),False,False,False,False,12.3371,0.7022,1.4242,1,0
+winmart,personal_care,Giấy vệ sinh WinMart Home Eco 10 cuộn 2 lớp,WMHOME,29400,29400.0,False,0.0,False,,,10.0,10.0,,,trung bình,False,False,True,False,10.2887,0.3807,-0.3995,0,1
+winmart,beverages,Nước Giải Khát Coca-Cola Sleek 235ml,COCA-COLA,8800,8800.0,False,0.0,False,235.0,ml,1.0,1.0,,37447.0,rẻ (< 20k),False,False,False,False,9.0825,0.1914,-1.4734,0,1
+bhx,milk_dairy,48 hộp sữa lúa mạch Milo 110ml,Milo,241000,241000.0,False,0.0,False,110.0,ml,48.0,48.0,,45644.0,cao (>= 100k),False,False,False,False,12.3926,0.7109,1.4736,1,0
+bhx,seasoning,Hạt nêm Neptune vị heo 850g,Neptune,72000,72000.0,False,0.0,False,850.0,g,1.0,1.0,,84706.0,trung bình,False,False,False,False,11.1844,0.5212,0.398,1,0
+winmart,instant_food,Mì trộn trứng muối cay Vifon gói 105g,VIFON,14300,14300.0,False,0.0,False,105.0,g,1.0,1.0,,136190.0,rẻ (< 20k),False,False,False,False,9.568,0.2676,-1.0412,0,1
+winmart,milk_dairy,Sữa đặc có đường Ông Thọ đỏ lon 380g,ÔNG THỌ,28900,29500.0,True,2.0,False,380.0,g,1.0,1.0,,76053.0,trung bình,False,False,False,False,10.2716,0.378,-0.4148,0,1

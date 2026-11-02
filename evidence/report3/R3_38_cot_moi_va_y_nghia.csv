@@ -1,0 +1,39 @@
+﻿cot_moi,buoc_report3,y_nghia,vi_du_gia_tri
+pack_count_report2,3.1 Sửa lỗi,pack_count CŨ của Report 2 (giữ lại để đối chiếu),1.0
+unit_price_report2,3.1 Sửa lỗi,giá/kg-lít CŨ của Report 2 (giữ lại để đối chiếu),166667.0
+pack_fix,3.1 Sửa lỗi,lý do sửa pack_count (trống = không sửa),number_is_part_of_name
+list_price_imputed,3.2 Missing,cờ: giá niêm yết được điền = giá bán,False
+is_flash_sale,3.2 Missing,có flash sale hay không (thay cho ô giá flash sale trống),False
+brand_imputed,3.2 Missing,cờ: thương hiệu được điền 'UNKNOWN',False
+pack_imputed,3.2 Missing,cờ: số lượng trong gói được điền 1,False
+pack_count_filled,3.2 Missing,"số lượng trong gói, ô trống đã điền 1 (dùng cho mô hình)",1.0
+size_imputed,3.2 Missing,cờ: khối lượng được điền median (chỉ cho mô hình),False
+log_size_filled,3.2 Missing,"log khối lượng, ô trống điền median cùng siêu thị + danh mục",5.375278407684165
+log_price,3.3 Outlier / log,log của giá bán (bớt lệch phải),10.491274217438248
+log_unit_price,3.3 Outlier / log,log của giá/kg-lít,12.02375308873422
+price_outlier,3.3 Outlier / log,cờ outlier theo giá gốc (IQR trong nhóm hàng),False
+log_price_outlier,3.3 Outlier / log,cờ outlier theo log giá,False
+unit_price_outlier,3.3 Outlier / log,cờ outlier theo log giá/kg-lít,False
+log_price_minmax,3.4 Normalize,"log giá chuẩn hóa min-max về [0, 1]",0.4124556794165688
+log_price_z,3.4 Normalize,"log giá chuẩn hóa z-score (mean 0, std 1)",-0.21916710632138972
+log_price_robust,3.4 Normalize,log giá chuẩn hóa robust (x - median) / IQR,-0.11149243650590937
+discount_pct_minmax,3.4 Normalize,"% giảm giá chuẩn hóa min-max về [0, 1]",0.0
+discount_pct_z,3.4 Normalize,"% giảm giá chuẩn hóa z-score (mean 0, std 1)",-0.3995005164046898
+discount_pct_robust,3.4 Normalize,% giảm giá chuẩn hóa robust (x - median) / IQR,0.0
+log_size_filled_minmax,3.4 Normalize,"log khối lượng chuẩn hóa min-max về [0, 1]",0.5848009334523169
+log_size_filled_z,3.4 Normalize,"log khối lượng chuẩn hóa z-score (mean 0, std 1)",-0.025750960081988763
+log_size_filled_robust,3.4 Normalize,log khối lượng chuẩn hóa robust (x - median) / IQR,-0.011400960873629214
+pack_count_filled_minmax,3.4 Normalize,"số lượng trong gói chuẩn hóa min-max về [0, 1]",0.0
+pack_count_filled_z,3.4 Normalize,"số lượng trong gói chuẩn hóa z-score (mean 0, std 1)",-0.3316318929972089
+pack_count_filled_robust,3.4 Normalize,số lượng trong gói chuẩn hóa robust (x - median) / IQR,0.0
+is_promotion_int,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,0
+is_flash_sale_int,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,0
+store_bhx,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,1
+store_winmart,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,0
+group_beverages,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,0
+group_household_cleaning,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,0
+group_instant_food,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,0
+group_milk_dairy,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,0
+group_personal_care,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,0
+group_seasoning,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,0
+group_snacks_confectionery,3.5 Encoding,mã hóa 0/1 (one-hot / có-không) cho mô hình,1

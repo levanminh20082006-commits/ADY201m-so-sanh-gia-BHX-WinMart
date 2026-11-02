@@ -1,0 +1,21 @@
+﻿column,missing_total,bhx_pct,winmart_pct,loai_thieu,note,cach_xu_ly
+dom_promo_line,3492,100.0,99.28,Thiếu do cấu trúc (không phải lỗi),no promotion line on the card,Để trống (không áp dụng)
+flash_sale_price_vnd,3440,95.25,100.0,Thiếu do cấu trúc (không phải lỗi),no flash sale on this product,Đổi thành cột có/không: is_flash_sale
+flash_sale_start,3440,95.25,100.0,Thiếu do cấu trúc (không phải lỗi),no flash sale on this product,Để trống (không áp dụng)
+flash_sale_end,3440,95.25,100.0,Thiếu do cấu trúc (không phải lỗi),no flash sale on this product,Để trống (không áp dụng)
+spec_flavor,3403,92.63,100.0,Thiếu do cấu trúc (không phải lỗi),flavour not listed,Để trống (không áp dụng)
+warnings,3119,93.84,85.63,Thiếu do cấu trúc (không phải lỗi),no warning for this row,Để trống (không áp dụng)
+promotion_text,2967,78.12,88.97,Thiếu do cấu trúc (không phải lỗi),no promotion text shown,Để trống (không áp dụng)
+site_item_no,1412,100.0,0.0,Thiếu do cấu trúc (không phải lỗi),BHX has no WinMart item number,Để trống (không áp dụng)
+barcode,1412,100.0,0.0,Thiếu do cấu trúc (không phải lỗi),BHX does not publish barcodes,Để trống (không áp dụng)
+stock_qty,1412,100.0,0.0,Thiếu do cấu trúc (không phải lỗi),BHX does not publish stock,Để trống (không áp dụng)
+total_quantity,373,6.09,13.7,Thiếu thật,,Tính lại sau khi sửa; trống khi thiếu size/pack
+unit_price_vnd_per_kg_or_l,373,6.09,13.7,Thiếu thật,,Tính lại sau khi sửa; trống khi thiếu size/pack
+pack_count,193,4.46,6.21,Thiếu thật,,"Điền 1 (mode, 74% dòng) vào pack_count_filled + cờ pack_imputed"
+size_unit,188,1.7,7.83,Thiếu thật,,Để trống (không đoán được)
+size_source,188,1.7,7.83,Thiếu thật,,Để trống
+size_value,188,1.7,7.83,Thiếu thật,,KHÔNG bịa cho giá/kg; chỉ điền median nhóm (log) vào log_size_filled + cờ size_imputed
+pack_source,161,4.46,4.68,Thiếu thật,,Để trống
+brand,13,0.07,0.57,Thiếu thật,,Điền 'UNKNOWN' + cột cờ brand_imputed
+brand_key,13,0.07,0.57,Thiếu thật,,Điền 'unknown'
+list_price_vnd,2,0.0,0.1,Thiếu thật,,Điền = giá bán (không có khuyến mãi)
