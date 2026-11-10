@@ -36,10 +36,3 @@ python -m http.server 8000
 ```
 
 Rồi mở http://localhost:8000
-
-## Đăng lên GitHub Pages
-
-1. Tạo repository mới trên GitHub (ví dụ `so-gia-bhx-winmart`, chọn **Public**).
-2. Đưa toàn bộ nội dung thư mục `website/` lên repository đó.
-3. Vào **Settings → Pages → Build and deployment**: Source = *Deploy from a branch*, Branch = `main`, thư mục `/ (root)`, bấm **Save**.
-4. Sau 1–2 phút, website có địa chỉ `https://<tên-tài-khoản>.github.io/so-gia-bhx-winmart/`.

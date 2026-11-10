@@ -11,7 +11,7 @@
 | **Report 4** – Trực quan hóa | 12 biểu đồ thống kê (column, bar, stacked, pie, histogram, boxplot, scatter) kèm nhận xét | 65 cặp rẻ hơn ở BHX, 65 cặp rẻ hơn ở WinMart, 9 cặp bằng giá |
 | **Website** | Trang so sánh giá cho người mua: so cùng sản phẩm, tìm kiếm, giỏ hàng, thống kê | Xem mục [Website](#website) |
 
-**Kết luận:** cùng một sản phẩm thì không siêu thị nào rẻ hơn một cách có hệ thống; khoảng 74% số cặp chênh nhau không quá 10%.
+**Kết luận:** trong 139 cặp đã ghép, không siêu thị nào rẻ hơn một cách có hệ thống: paired t-test t = 0,66, p = 0,51; khoảng tin cậy 95% của chênh lệch từ −1,13% đến 2,45%; khoảng 74% số cặp chênh nhau không quá 10%.
 
 ## Xem nhanh kết quả
 
@@ -24,6 +24,32 @@
 | 139 cặp cùng sản phẩm | [data/processed_py/matched_products.csv](data/processed_py/matched_products.csv) |
 | Dữ liệu sau xử lý | [data/processed_py/report3_prepared.csv](data/processed_py/report3_prepared.csv) |
 | Website | [website/](website/) |
+
+## Đối chiếu nội dung môn học
+
+| Slide | Nội dung | Thực hiện trong project |
+|---|---|---|
+| 2.2, 5.6, 5.6.1 | Thu thập dữ liệu, web scraping | `report2/collect.py`, `report2/robots.py` |
+| 3.1 – 3.4 | SQL, truy cập database bằng Python | `sql/`, `report2/storage.py` |
+| 2.3, 2.6 | Trùng lặp, giá trị sai, missing value, normalize, binning, dummy | `report2/clean.py`, `report3/preprocess.py` |
+| 6.1, 6.2 | Loại biến, thống kê mô tả | `report3/run.py`, `report3/stats.py` |
+| 2.7, 6.6 – 6.8 | Tương quan, kiểm định | `report3/stats.py` |
+| 6.3, 6.4 | Trực quan hóa | `report4/visualize.py` |
+| 2.5 | Triển khai kết quả | `website/` |
+| 4.4, 4.6 | Jupyter Notebook, Git và GitHub | `notebooks/`, kho này |
+
+## Kiểm chứng
+
+- Đối soát số dòng JSON = CSV = SQL: [reconciliation_run_20261012_1622.json](reports_py/reconciliation_run_20261012_1622.json).
+- Kiểm tra 12 cặp trên website thật: tên khớp 12/12, giá WinMart 12/12, giá BHX 7/12 (trang danh mục và trang chi tiết của BHX có thể khác giá).
+- Test tự động (`python -m pytest`): 51 đạt, 7 bỏ qua vì cần SQL Server.
+
+## Hạn chế
+
+- Giá được thu thập một lần (12/10/2026) tại khu vực mặc định của hai website, nên chưa phân tích được biến động theo thời gian.
+- 139 cặp là các món ghép được, khoảng 10% sản phẩm của BHX, không phải mẫu ngẫu nhiên; kết luận chỉ áp dụng cho nhóm sản phẩm này.
+- Đã kiểm tra robots.txt; điều khoản sử dụng đầy đủ của hai website chưa được rà soát. Dự án chỉ phục vụ học tập.
+- Chưa có ANOVA, hồi quy và mô hình dự đoán (slide 6.7, 6.8).
 
 ## Thành viên & đóng góp
 
