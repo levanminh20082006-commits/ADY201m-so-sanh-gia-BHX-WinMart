@@ -55,6 +55,7 @@
         <a href="#/san-pham" data-nav="san-pham">Sản phẩm</a>
         <a href="#/khuyen-mai" data-nav="khuyen-mai">Khuyến mãi <span class="hot">HOT</span></a>
         <a href="#/thong-ke" data-nav="thong-ke">Thống kê</a>
+        <a href="#/theo-slide" data-nav="theo-slide">Theo slide</a>
         <a href="#/gioi-thieu" data-nav="gioi-thieu">Giới thiệu</a>
         <span class="menu-note" id="menuNote"></span>
       </div>
@@ -103,6 +104,7 @@
       <div class="ticker" aria-label="Món chênh giá lớn"><div class="ticker-track" id="ticker"></div></div>
 
       <div class="wrap">
+        <p class="notice" data-notice></p>
         <div class="stats-strip reveal" id="statsStrip"></div>
 
         <section class="block reveal" aria-labelledby="catTitle">
@@ -142,7 +144,7 @@
         <section class="block insight reveal" aria-labelledby="insTitle">
           <div class="insight-copy">
             <h2 id="insTitle">Nhóm hàng nào nên mua ở đâu?</h2>
-            <p class="block-sub">Số cặp sản phẩm giống hệt nhau rẻ hơn ở mỗi siêu thị, theo nhóm hàng. Không bên nào rẻ hơn ở mọi nhóm — vì vậy nên so <b>từng món</b>.</p>
+            <p class="block-sub">Số cặp sản phẩm giống hệt nhau rẻ hơn ở mỗi siêu thị, theo nhóm hàng. Không bên nào rẻ hơn ở mọi nhóm — vì vậy nên so <b>từng món</b>. Nhóm có ít cặp chỉ để tham khảo.</p>
             <div class="legend" aria-hidden="true">
               <span><span class="dot dot-b"></span>Rẻ hơn ở BHX</span>
               <span><span class="dot dot-eq"></span>Bằng giá</span>
@@ -180,6 +182,7 @@
         <p class="lead" id="cmpLead"></p>
       </div></div>
       <div class="wrap">
+        <p class="notice" data-notice></p>
         <div class="toolbar">
           <label class="search">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
@@ -297,6 +300,19 @@
       </div>
     </section>
 
+    <!-- ============================================================ COURSE SLIDES -> EVIDENCE -->
+    <section class="page" data-page="theo-slide" hidden>
+      <div class="page-head"><div class="wrap">
+        <nav class="crumbs" aria-label="Vị trí"><a href="#/">Trang chủ</a><span>/</span>Theo slide</nav>
+        <h1>Minh chứng theo slide môn học</h1>
+        <p class="lead">Mỗi phần ghi rõ slide tương ứng, số liệu thật do code của Report 3 + 4 tính ra, và nút mở phần demo. Đi từ trên xuống là đúng thứ tự bài giảng.</p>
+      </div></div>
+      <div class="wrap">
+        <nav class="slide-nav" id="slideNav" aria-label="Các phần"></nav>
+        <div id="slideBody"></div>
+      </div>
+    </section>
+
     <!-- ============================================================ FAVORITES -->
     <section class="page" data-page="yeu-thich" hidden>
       <div class="page-head"><div class="wrap">
@@ -365,7 +381,7 @@
       </div>
       <div>
         <h3>Khám phá</h3>
-        <a href="#/so-sanh">So sánh giá</a><a href="#/san-pham">Sản phẩm</a><a href="#/khuyen-mai">Khuyến mãi</a><a href="#/thong-ke">Thống kê</a>
+        <a href="#/so-sanh">So sánh giá</a><a href="#/san-pham">Sản phẩm</a><a href="#/khuyen-mai">Khuyến mãi</a><a href="#/thong-ke">Thống kê</a><a href="#/theo-slide">Theo slide</a>
       </div>
       <div>
         <h3>Thông tin</h3>
