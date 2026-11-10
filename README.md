@@ -29,14 +29,9 @@
 
 | Thành viên | Vai trò | Phần phụ trách |
 |---|---|---|
-| Lê Văn Minh | **Trưởng nhóm – phát triển chính** | Thiết kế và viết toàn bộ pipeline: thu thập, làm sạch, ghép cặp, SQL Server, Report 3, Report 4, website, test tự động; giao việc và duyệt Pull Request |
-| _(Thành viên 2)_ | Thành viên | _(ghi phần đã làm, link Pull Request)_ |
-| _(Thành viên 3)_ | Thành viên | _(ghi phần đã làm, link Pull Request)_ |
-| _(Thành viên 4)_ | Thành viên | _(ghi phần đã làm, link Pull Request)_ |
-| _(Thành viên 5)_ | Thành viên | _(ghi phần đã làm, link Pull Request)_ |
+| Lê Văn Minh | **Thực hiện toàn bộ phần kỹ thuật** | Thu thập, làm sạch, ghép cặp, SQL Server, Report 3, Report 4, website, test tự động |
 
-Phần code nền (Report 2 – 4 và website) được trưởng nhóm phát triển trước khi lập kho chung; sau đó nhóm làm việc trên kho này
-theo quy trình nhánh riêng → Pull Request → duyệt → gộp vào `main` (xem [HUONG_DAN_GIT.md](HUONG_DAN_GIT.md)).
+Toàn bộ code và kết quả trong kho này do Lê Văn Minh thực hiện và đưa lên GitHub.
 
 ## Luồng dữ liệu
 
