@@ -3,6 +3,7 @@
 /* ================================================================ constants */
 const STORE = { b: "Bách Hóa Xanh", w: "WinMart" };
 const SHORT = { b: "BHX", w: "WinMart" };
+const STORE_KEY_OF = { bhx: "b", winmart: "w" };
 const PAGE_PAIRS = 24;
 const PAGE_PRODUCTS = 40;
 const QUICK = ["Hảo Hảo", "Vinamilk", "Chinsu", "G7", "Omachi", "Maggi", "Head & Shoulders", "Cholimex"];
@@ -182,9 +183,10 @@ function bindTooltip() {
 }
 
 /* ================================================================ routing */
-const PAGES = ["home", "so-sanh", "san-pham", "khuyen-mai", "thong-ke", "yeu-thich", "gioi-thieu", "gio-hang"];
+const PAGES = ["home", "so-sanh", "san-pham", "khuyen-mai", "thong-ke", "theo-slide", "yeu-thich", "gioi-thieu", "gio-hang"];
 const TITLES = { home: "So Giá – BHX vs WinMart", "so-sanh": "So sánh giá", "san-pham": "Sản phẩm", "khuyen-mai": "Khuyến mãi",
-  "thong-ke": "Thống kê", "yeu-thich": "Yêu thích", "gioi-thieu": "Giới thiệu" };
+  "thong-ke": "Thống kê", "theo-slide": "Theo slide", "yeu-thich": "Yêu thích", "gioi-thieu": "Giới thiệu" };
+const validOption = (id, v, fallback) => ([...$(id).options].some((o) => o.value === v) ? v : fallback);
 
 function parseHash() {
   const h = location.hash.replace(/^#\/?/, "");
@@ -221,12 +223,13 @@ function onRoute() {
   let { page, params } = parseHash();
   if (page === "gio-hang") { importCart(params.get("c") || ""); return; }
   if (page === "so-sanh") {
-    Object.assign(S.cmp, { q: params.get("q") || "", g: params.get("nhom") || "", cheap: params.get("re") || "", sort: params.get("sx") || "save",
-      focus: params.has("cap") ? +params.get("cap") : null, limit: PAGE_PAIRS });
+    const cap = params.has("cap") && PAIRS[+params.get("cap")] ? +params.get("cap") : null;
+    Object.assign(S.cmp, { q: params.get("q") || "", g: params.get("nhom") || "", cheap: params.get("re") || "", sort: validOption("cmpSort", params.get("sx") || "save", "save"),
+      focus: cap, limit: PAGE_PAIRS });
   }
   if (page === "san-pham") {
-    Object.assign(S.prd, { q: params.get("q") || "", g: params.get("nhom") || "", price: params.get("gia") || "", store: params.get("st") || "",
-      promo: params.get("km") === "1", both: params.get("ca2") === "1", sort: params.get("sx") || "relevant", limit: PAGE_PRODUCTS });
+    Object.assign(S.prd, { q: params.get("q") || "", g: validOption("prdG", params.get("nhom") || "", ""), price: validOption("prdPrice", params.get("gia") || "", ""), store: params.get("st") || "",
+      promo: params.get("km") === "1", both: params.get("ca2") === "1", sort: validOption("prdSort", params.get("sx") || "relevant", "relevant"), limit: PAGE_PRODUCTS });
   }
   if (page === "khuyen-mai") {
     Object.assign(S.km, { type: params.get("loai") || "deep", store: params.get("st") || "", g: params.get("nhom") || "", limit: PAGE_PRODUCTS });
@@ -245,6 +248,11 @@ function onRoute() {
   if (page === "yeu-thich") renderFavs();
   if (changed) window.scrollTo(0, 0);
   observe(document.querySelector(`.page[data-page="${page}"]`));
+  // deep links used by the presentation folder: ?phan= section, ?cuon= element, ?sp= product, ?hinh= figure
+  if (page === "theo-slide" && params.has("sp")) { $("normPick").value = params.get("sp"); updateNorm(); }
+  const target = params.get("cuon") || (params.has("phan") ? `sl-${params.get("phan") - 1}` : null);
+  if (target && $(target)) setTimeout(() => $(target).scrollIntoView({ block: "start" }), 60);
+  if (page === "theo-slide" && params.has("hinh")) setTimeout(() => openFigure(params.get("hinh") - 1), 120);
 }
 
 /* ================================================================ cards */
@@ -253,7 +261,7 @@ function cartBtn(i, small) {
   return `<button class="btn ${inCart ? "added" : "primary"} ${small ? "small" : ""}" type="button" data-cart="${i}">${inCart ? svg(I.check) + " Đã có trong giỏ" : "+ Thêm vào giỏ"}</button>`;
 }
 function favBtn(i) {
-  const on = favs.has(PRODUCTS[i].u);
+  const on = favs.has(PRODUCTS[i].id);
   return `<button class="fav ${on ? "on" : ""}" type="button" data-fav="${i}" aria-pressed="${on}" aria-label="${on ? "Bỏ yêu thích" : "Yêu thích"}">${svg(I.heart)}</button>`;
 }
 
@@ -278,7 +286,7 @@ function pairCard(x, k) {
           <button class="pair-img" type="button" data-qv="${photo === B ? x.b : x.w}" aria-label="Xem nhanh ${esc(B.n)}">${img(photo)}</button>
           <div>
             <h3 class="clamp"><button type="button" data-qv="${x.b}">${esc(B.n)}</button></h3>
-            ${norm(B.n) !== norm(W.n) ? `<p class="alt-name clamp">WinMart: ${esc(W.n)}</p>` : ""}
+            ${norm(B.n) !== norm(W.n) ? `<p class="alt-name clamp">WinMart${W.ul ? ` (giá 1 ${esc(W.ul)})` : ""}: ${esc(W.n)}</p>` : ""}
             <p class="sub">${esc(META.groups[x.g])}${sizeText(B) ? " · " + esc(sizeText(B)) : ""}</p>
           </div>
         </div>
@@ -333,9 +341,14 @@ function renderHome() {
   [["hcB", c.b], ["hcW", c.w], ["hcEq", c["="]]].forEach(([id, v]) => { $(id).dataset.to = v; });
   const seg = (n, cls, label) => `<span class="dot-${cls}" style="flex:${n}" data-tip="<b>${label}</b><br>${n} cặp (${pct(n / META.pairs * 100)})"></span>`;
   $("hcSplit").innerHTML = seg(c.b, "b", "Rẻ hơn ở BHX") + seg(c["="], "eq", "Bằng giá") + seg(c.w, "w", "Rẻ hơn ở WinMart");
-  $("hcNote").innerHTML = `Không siêu thị nào rẻ hơn hẳn: khoảng <b>${Math.round(META.pairs_within_10pct)}%</b> số cặp chênh nhau không quá 10%. Muốn tiết kiệm, hãy so <b>từng món</b>.`;
+  $("hcNote").innerHTML = `Trong các cặp đã ghép, không siêu thị nào rẻ hơn hẳn: khoảng <b>${Math.round(META.pairs_within_10pct)}%</b> số cặp chênh nhau không quá 10%. Muốn tiết kiệm, hãy so <b>từng món</b>.`;
+  document.querySelectorAll("[data-notice]").forEach((el) => {
+    el.innerHTML = `${svg(I.info)}<span>Giá bán online tại khu vực mặc định của hai website, thu thập một lần ngày ${META.collected_from.slice(0, 10)}
+      (${META.collected_from.slice(11)}–${META.collected_to.slice(11)}). Giá có thể đã thay đổi, hãy bấm “Xem ở …” để kiểm tra trước khi mua.</span>`;
+  });
+  $("navQ").placeholder = `Tìm trong ${nf.format(META.products)} sản phẩm…`;
   $("heroChips").innerHTML = `<span class="chip-lbl">Tìm nhanh:</span>` + QUICK.map((q) => `<button class="chip" type="button" data-quick="${esc(q)}">${esc(q)}</button>`).join("");
-  $("menuNote").textContent = `Giá cập nhật ngày ${META.collected_from.slice(0, 10)}`;
+  $("menuNote").textContent = `Giá thu thập ngày ${META.collected_from.slice(0, 10)}`;
 
   // ticker: biggest gaps, duplicated for a seamless loop
   const top = PAIRS.map((x, i) => ({ ...x, i })).filter((x) => x.ch !== "=").sort((a, b) => pairSave(b) - pairSave(a)).slice(0, 14);
@@ -346,7 +359,7 @@ function renderHome() {
   const stats = [
     [I.box, META.products, "sản phẩm có giá"],
     [I.scale, META.pairs, "cặp cùng sản phẩm"],
-    [I.percent, promoCount, "món đang khuyến mãi"],
+    [I.percent, promoCount, "món có ưu đãi (giảm giá, flash sale, mua kèm)"],
     [I.grid, Object.keys(META.groups).length, "nhóm hàng thiết yếu"],
   ];
   $("statsStrip").innerHTML = stats.map(([ic, v, l]) => `<div class="stat"><span class="stat-ic">${svg(ic)}</span><div><b data-to="${v}">0</b><span>${l}</span></div></div>`).join("");
@@ -425,7 +438,7 @@ function renderCompare() {
   $("cmpInfo").innerHTML = c.focus !== null
     ? `Đang xem 1 cặp sản phẩm. <a href="#/so-sanh">Xem tất cả ${PAIRS.length} cặp →</a>`
     : `<b>${nf.format(list.length)}</b> cặp giống hệt nhau (cùng thương hiệu, khối lượng, số lượng)` +
-      (list.length ? ` · mua mỗi món một cái ở đúng nơi rẻ hơn tiết kiệm tổng cộng <b>${money(saveAll)}</b>` : "");
+      (list.length ? ` · mua mỗi món một cái ở nơi rẻ hơn thay vì nơi đắt hơn tiết kiệm tổng cộng <b>${money(saveAll)}</b>` : "");
 }
 
 /* ================================================================ products page */
@@ -531,8 +544,8 @@ function renderStats() {
   $("kpis").innerHTML = [
     [nf.format(META.products), `sản phẩm · BHX ${nf.format(META.by_store.b)} / WinMart ${nf.format(META.by_store.w)}`],
     [META.pairs, `cặp cùng sản phẩm · BHX rẻ hơn ${META.pairs_cheaper.b}, WinMart rẻ hơn ${META.pairs_cheaper.w}`],
-    [`${nf.format(Math.round(medAll.b / 1000))}k / ${nf.format(Math.round(medAll.w / 1000))}k`, "giá trung vị BHX / WinMart (cả kệ hàng)"],
-    [`${pct(promoAll.b)} / ${pct(promoAll.w)}`, "tỉ lệ sản phẩm đang khuyến mãi BHX / WinMart"],
+    [`${nf.format(medAll.b)} / ${nf.format(medAll.w)} đ`, "giá trung vị BHX / WinMart (toàn bộ sản phẩm đã thu thập)"],
+    [`${pct(promoAll.b)} / ${pct(promoAll.w)}`, `tỉ lệ sản phẩm đang giảm giá BHX / WinMart (${nf.format(META.promo_direct)} món, chưa tính ưu đãi mua kèm)`],
   ].map(([b, s]) => `<div class="kpi reveal"><b>${b}</b><span>${s}</span></div>`).join("");
 
   const rows = (key) => gs.map((g) => ({ name: META.groups[g], b: st.groups[g].b[key], w: st.groups[g].w[key] }));
@@ -567,21 +580,21 @@ function renderStats() {
 
   $("charts").innerHTML = `
     <article class="chart reveal">
-      <h3>Số sản phẩm theo nhóm hàng</h3><p class="note">Mỗi siêu thị bày bán bao nhiêu sản phẩm trong từng nhóm.</p>
+      <h3>Số sản phẩm theo nhóm hàng</h3><p class="note">Số dòng thu thập được từ ${META.academic.pages} trang danh mục (một mẫu, không phải toàn bộ hàng của siêu thị). WinMart: mỗi đơn vị bán là 1 dòng.</p>
       ${groupedBars(cnt, (v) => nf.format(v), "Số sản phẩm")}
       <p class="take">WinMart có nhiều sản phẩm hơn ở <b>${wMore(cnt)}/7</b> nhóm — hai kệ hàng có cơ cấu khác nhau.</p>
       ${tableView(["Nhóm hàng", "BHX", "WinMart"], cnt.map((r) => [esc(r.name), nf.format(r.b), nf.format(r.w)]))}
     </article>
     <article class="chart reveal">
-      <h3>Giá bán trung vị theo nhóm hàng</h3><p class="note">Giá ở giữa (median) của cả kệ hàng, đơn vị đồng.</p>
+      <h3>Giá bán trung vị theo nhóm hàng</h3><p class="note">Giá ở giữa (median) của các sản phẩm đã thu thập, đơn vị đồng.</p>
       ${groupedBars(med, money, "Giá trung vị")}
       <p class="take">WinMart có giá trung vị cao hơn ở <b>${wMore(med)}/7</b> nhóm — nhưng đó là do <b>khác mặt hàng</b>; so cùng sản phẩm thì không bên nào rẻ hơn hẳn.</p>
       ${tableView(["Nhóm hàng", "BHX", "WinMart"], med.map((r) => [esc(r.name), money(r.b), money(r.w)]))}
     </article>
     <article class="chart reveal">
-      <h3>Tỉ lệ sản phẩm đang khuyến mãi</h3><p class="note">Phần trăm sản phẩm có giảm giá trong từng nhóm.</p>
-      ${groupedBars(pro, pct, "Đang khuyến mãi")}
-      <p class="take">BHX khuyến mãi nhiều hơn ở <b>${7 - wMore(pro)}/7</b> nhóm, rõ nhất ở ${esc(pro[0].name.toLowerCase())} (${pct(pro[0].b)}).</p>
+      <h3>Tỉ lệ sản phẩm đang giảm giá</h3><p class="note">Phần trăm sản phẩm có giá bán thấp hơn giá niêm yết; chưa tính ưu đãi mua kèm.</p>
+      ${groupedBars(pro, pct, "Đang giảm giá")}
+      <p class="take">BHX giảm giá nhiều hơn ở <b>${7 - wMore(pro)}/7</b> nhóm, rõ nhất ở ${esc(pro[0].name.toLowerCase())} (${pct(pro[0].b)}).</p>
       ${tableView(["Nhóm hàng", "BHX", "WinMart"], pro.map((r) => [esc(r.name), pct(r.b), pct(r.w)]))}
     </article>
     <article class="chart reveal">
@@ -603,7 +616,7 @@ function renderStats() {
 
 /* ================================================================ favorites + about */
 function renderFavs() {
-  const list = PRODUCTS.filter((p) => favs.has(p.u));
+  const list = PRODUCTS.filter((p) => favs.has(p.id));
   $("favInfo").innerHTML = list.length ? `<b>${list.length}</b> sản phẩm yêu thích` : "";
   $("favList").innerHTML = list.length ? list.map(productCard).join("")
     : `<div class="empty">${svg(I.heart)}<h3>Chưa có sản phẩm yêu thích</h3>Bấm biểu tượng ♥ trên ảnh sản phẩm để lưu lại xem sau.<br><a class="btn primary" href="#/san-pham">Khám phá sản phẩm</a></div>`;
@@ -624,22 +637,23 @@ function renderAbout() {
   $("facts").classList.add("reveal");
   const steps = [
     ["Thu thập", `Chương trình Python đọc giá từ website công khai của hai siêu thị trong cùng một buổi (${time}, ngày ${META.collected_from.slice(0, 10)}), lưu dữ liệu gốc và vào SQL Server.`],
-    ["Làm sạch", `Loại ${META.duplicates_removed} dòng trùng, sửa ${META.values_fixed} giá trị số lượng bị đọc sai, xử lý giá trị thiếu có đánh dấu — không xóa sản phẩm nào có giá thật.`],
+    ["Làm sạch", `Loại ${META.duplicates_removed} dòng trùng, sửa ${META.values_fixed} giá trị số lượng bị đọc sai, xử lý giá trị thiếu có đánh dấu. Từ ${nf.format(META.academic.raw.total)} dòng gốc còn ${nf.format(META.products)} dòng sạch; Report 3 không xóa thêm dòng nào.`],
     ["Ghép cặp", `So khớp tên, thương hiệu, khối lượng, số lượng và hương vị để tìm ra ${META.pairs} cặp sản phẩm giống hệt nhau ở hai siêu thị.`],
     ["Phân tích", "Thống kê mô tả, kiểm định ý nghĩa thống kê và trực quan hóa để trả lời: cùng một món thì nơi nào rẻ hơn?"],
   ];
   $("pipeline").innerHTML = steps.map(([h, p]) => `<li><h3>${h}</h3><p>${p}</p></li>`).join("");
   const big = META.group_pairs.filter((r) => r.b + r.w + r["="] >= 10);
   $("findings").innerHTML = [
-    `Trong ${META.pairs} cặp cùng sản phẩm: <b>${c.b}</b> cặp rẻ hơn ở Bách Hóa Xanh, <b>${c.w}</b> cặp rẻ hơn ở WinMart, <b>${c["="]}</b> cặp bằng giá — <b>không siêu thị nào rẻ hơn một cách có hệ thống</b>.`,
+    `Trong ${META.pairs} cặp cùng sản phẩm: <b>${c.b}</b> cặp rẻ hơn ở Bách Hóa Xanh, <b>${c.w}</b> cặp rẻ hơn ở WinMart, <b>${c["="]}</b> cặp bằng giá — trong mẫu này <b>không siêu thị nào rẻ hơn một cách có hệ thống</b>.`,
     `Khoảng <b>${Math.round(META.pairs_within_10pct)}%</b> số cặp chênh nhau không quá 10%; một số ít món chênh rất lớn — đó là chỗ người mua tiết kiệm được nhiều nhất.`,
     `Theo nhóm hàng: ${big.map((r) => `${META.groups[r.g]} (BHX rẻ hơn ${r.b}, WinMart rẻ hơn ${r.w})`).join("; ")}.`,
-    `${nf.format(PRODUCTS.filter(isPromo).length)} sản phẩm đang có khuyến mãi tại thời điểm thu thập.`,
+    `${nf.format(PRODUCTS.filter(isPromo).length)} sản phẩm có ưu đãi tại thời điểm thu thập, trong đó ${nf.format(META.promo_direct)} món giảm giá trực tiếp.`,
     `Lời khuyên: đừng mặc định một siêu thị luôn rẻ hơn — hãy so từng món, hoặc cho cả giỏ hàng vào để biết nên mua ở đâu.`,
   ].map((t) => `<li>${t}</li>`).join("");
   const faq = [
     ["Giá trên website có phải giá hiện tại không?", `Không hẳn. Giá được thu thập ngày ${META.collected_from.slice(0, 10)} (${time}). Khuyến mãi thay đổi hằng ngày, vì vậy hãy bấm “Xem ở BHX / WinMart” để kiểm tra giá hiện tại trước khi mua.`],
     ["“Cùng một sản phẩm” được xác định như thế nào?", "Hai sản phẩm chỉ được ghép cặp khi cùng thương hiệu, cùng khối lượng hoặc dung tích, cùng số lượng trong gói và cùng hương vị, tên gần giống nhau. Nhờ vậy phép so sánh luôn công bằng."],
+    ["Vì sao WinMart ghi “Thùng 30 gói” mà giá chỉ vài nghìn đồng?", "WinMart bán một mặt hàng theo nhiều đơn vị (gói, lốc, thùng), mỗi đơn vị có giá riêng. Tên trên website giữ nguyên, còn giá so sánh là giá của đơn vị ghi trong ngoặc, ví dụ “giá 1 Gói”."],
     ["Vì sao có món chỉ thấy ở một siêu thị?", "Mỗi siêu thị bán mặt hàng và quy cách khác nhau (ví dụ một bên bán lốc 6, bên kia bán thùng 24). Những món không có bản giống hệt ở nơi còn lại vẫn xem được ở trang Sản phẩm."],
     ["“Giá theo kg / lít” dùng để làm gì?", "Để so gói to với gói nhỏ, hoặc thương hiệu này với thương hiệu khác. Khi xem nhanh một sản phẩm, trang gợi ý các món cùng danh mục có giá theo kg/lít rẻ hơn."],
     ["Giỏ hàng và mục yêu thích có lưu thông tin của tôi không?", "Chỉ lưu trên trình duyệt của chính bạn (localStorage), không gửi đi đâu. Khi bấm “Chia sẻ giỏ hàng”, đường link chỉ chứa mã sản phẩm và số lượng."],
@@ -650,7 +664,9 @@ function renderAbout() {
     "Giá là ảnh chụp tại một thời điểm, khuyến mãi thay đổi hằng ngày — luôn kiểm tra giá hiện tại trước khi mua.",
     "Giá theo khu vực mặc định của mỗi website (chưa chọn địa chỉ giao hàng); giá ở cửa hàng hoặc khu vực khác có thể khác.",
     "Chỉ gồm 7 nhóm hàng tiêu dùng nhanh; không có rau củ, thịt cá tươi.",
-    "Giỏ hàng chỉ tính những món đã ghép được cặp giống hệt nhau, để phép so sánh luôn công bằng.",
+    "Giỏ hàng chỉ tính những món đã ghép được cặp giống hệt nhau, chưa gồm phí giao hàng và ưu đãi mua kèm.",
+    `${META.pairs} cặp là các món ghép được, không phải mẫu ngẫu nhiên của toàn bộ hàng hóa; kết luận chỉ áp dụng cho nhóm sản phẩm này.`,
+    "Nhóm đã kiểm tra robots.txt của hai website; điều khoản sử dụng đầy đủ chưa được rà soát.",
   ].map((t) => `<li>${t}</li>`).join("");
   $("footMeta").textContent = `${nf.format(META.products)} sản phẩm · ${META.pairs} cặp cùng sản phẩm · thu thập ${META.collected_from.slice(0, 10)}.`;
   $("cmpLead").textContent = `${META.pairs} cặp sản phẩm giống hệt nhau có bán ở cả hai siêu thị. Ô viền xanh là nơi rẻ hơn.`;
@@ -662,7 +678,7 @@ function renderAbout() {
 let modalReturn = null;
 function cheaperAlternatives(p) {
   if (!p.up || !p.c) return null;
-  const peers = PRODUCTS.filter((q) => q.c === p.c && q.su === p.su && q.up && q.i !== p.i);
+  const peers = PRODUCTS.filter((q) => q.c === p.c && q.su === p.su && q.up && !q.uo && q.i !== p.i);   // IQR outliers are not advice
   if (!peers.length) return null;
   return peers.filter((q) => q.up < p.up * 0.97).sort((a, b) => a.up - b.up).slice(0, 4);
 }
@@ -672,7 +688,7 @@ function openQuickView(i) {
   const x = p.m !== undefined ? { ...PAIRS[p.m], i: p.m } : null;
   const other = x ? PRODUCTS[p.s === "b" ? x.w : x.b] : null;
   const alts = cheaperAlternatives(p);
-  const on = favs.has(p.u);
+  const on = favs.has(p.id);
   let compare = "";
   if (x) {
     const box = (s, price) => `<div class="pbox ${x.ch === s ? "win" : ""}">${x.ch === s ? `<span class="cheap-flag">Rẻ hơn</span>` : ""}<div class="store-name">${dot(s)}${STORE[s]}</div><div class="price">${money(price)}</div></div>`;
@@ -689,11 +705,11 @@ function openQuickView(i) {
         <span class="pair-img">${img(q)}</span>
         <span><span class="alt-n clamp">${esc(q.n)}</span><span class="alt-m">${dot(q.s)}${SHORT[q.s]} · ${money(q.p)}${sizeText(q) ? " · " + esc(sizeText(q)) : ""}</span></span>
         <span class="alt-p"><b>-${Math.round((1 - q.up / p.up) * 100)}%</b>${money(q.up)}${perUnit(q)}</span>
-      </button>`).join("")}</div></div>`;
+      </button>`).join("")}</div><p class="sub" style="margin-top:6px">Có thể khác thương hiệu hoặc quy cách; chỉ so theo đơn giá.</p></div>`;
   } else if (alts) {
-    altHtml = `<div class="qv-section"><p class="verdict">${svg(I.check)}<span>Đây là lựa chọn <b>rẻ nhất theo ${p.su === "ml" ? "lít" : "kg"}</b> trong danh mục “${esc(p.c)}”.</span></p></div>`;
+    altHtml = `<div class="qv-section"><p class="verdict">${svg(I.check)}<span>Không có món nào trong “${esc(p.c)}” rẻ hơn đáng kể (trên 3%) theo ${p.su === "ml" ? "lít" : "kg"}.</span></p></div>`;
   }
-  $("modalBox").innerHTML = `
+  showModal(`
     <button class="icon-btn qv-close" type="button" data-close-modal aria-label="Đóng">${svg(I.close)}</button>
     <div class="qv">
       <div class="qv-img">${img(p)}<span class="pill store">${dot(p.s)}${STORE[p.s]}</span>${p.d ? `<span class="pill off">-${Math.round(p.d)}%</span>` : ""}</div>
@@ -714,13 +730,120 @@ function openQuickView(i) {
           <button class="btn" type="button" data-fav="${p.i}" data-fav-text>${on ? "♥ Đã yêu thích" : "♡ Yêu thích"}</button>
         </div>
       </div>
-    </div>`;
+    </div>`);
+}
+
+function showModal(html) {
+  $("modalBox").innerHTML = html;
   // returning focus to a search box would reopen its suggestions, so fall back to the page in that case
   if ($("modal").hidden) modalReturn = document.activeElement && document.activeElement.type === "search" ? null : document.activeElement;
   $("modal").hidden = false;
   document.body.classList.add("no-scroll");
   $("modalBox").scrollTop = 0;
   $("modalBox").focus();
+}
+
+function openFigure(i) {
+  const figs = META.academic.figures;
+  const f = figs[(i + figs.length) % figs.length], k = figs.indexOf(f);
+  showModal(`
+    <button class="icon-btn qv-close" type="button" data-close-modal aria-label="Đóng">${svg(I.close)}</button>
+    <div class="fig-view">
+      <img src="assets/report4/${esc(f.file)}" alt="${esc(f.title)}">
+      <h2 id="qvTitle">Hình ${k + 1}. ${esc(f.title)}</h2>
+      <p class="sub">${esc(f.kind)}</p>
+      <p><b>Vì sao chọn:</b> ${esc(f.why)}</p>
+      <ul>${f.notes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>
+      <div class="fig-nav">
+        <button class="btn" type="button" data-fig="${k - 1}">← Hình trước</button>
+        <button class="btn" type="button" data-fig="${k + 1}">Hình sau →</button>
+      </div>
+    </div>`);
+}
+
+/* ================================================================ course slides -> evidence */
+const dec = (v, d = 2) => nf.format(Math.round(v * 10 ** d) / 10 ** d);
+const pValue = (p) => (p < 0.001 ? "< 0,001" : dec(p, 3));
+const decide = (p) => (p < 0.05 ? "Bác bỏ H₀ (p < 0,05)" : "Chưa đủ cơ sở bác bỏ H₀ (p ≥ 0,05)");
+const dataTable = (head, rows) => `<div class="table-wrap"><table>
+  <thead><tr>${head.map((h) => `<th>${h}</th>`).join("")}</tr></thead>
+  <tbody>${rows.map((r) => `<tr>${r.map((v) => `<td>${v}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+
+function updateNorm() {
+  const A = META.academic, s = A.samples[+$("normPick").value], p = A.scale;
+  const simple = s.x / p.max, minmax = (s.x - p.min) / (p.max - p.min), z = (s.x - p.mean) / p.std;
+  $("normOut").innerHTML = `Giá = ${money(s.price)} → x = ln(giá) = ${dec(s.x, 4)}<br>
+    Simple feature scaling: x / max = ${dec(s.x, 4)} / ${dec(p.max, 4)} = <b>${dec(simple, 4)}</b><br>
+    Min-max: (x − min) / (max − min) = (${dec(s.x, 4)} − ${dec(p.min, 4)}) / ${dec(p.max - p.min, 4)} = <b>${dec(minmax, 4)}</b>  (trong file: ${dec(s.minmax, 4)})<br>
+    Z-score: (x − mean) / std = (${dec(s.x, 4)} − ${dec(p.mean, 4)}) / ${dec(p.std, 4)} = <b>${dec(z, 4)}</b>  (trong file: ${dec(s.z, 4)})<br>
+    Dummy: store_bhx = ${s.store_bhx}, store_winmart = ${s.store_winmart}`;
+}
+
+function renderSlides() {
+  const A = META.academic, T = A.tests, P = T.pairs, c = META.pairs_cheaper;
+  const link = (label, href) => `<a class="btn" href="${href}">${label}</a>`;
+  const stat = (key, f) => [f(A.describe.b[key]), f(A.describe.w[key])];
+  const vnd = (v) => money(v);
+  const rows = [["Số quan sát (n)", ...stat("n", (v) => nf.format(v))], ["Mean (trung bình)", ...stat("mean", vnd)], ["Median (trung vị)", ...stat("median", vnd)],
+    ["Mode (hay gặp nhất)", ...stat("mode", vnd)], ["Min", ...stat("min", vnd)], ["Max", ...stat("max", vnd)], ["Range = max − min", ...stat("range", vnd)],
+    ["Variance (đơn vị đồng²)", ...stat("variance", (v) => nf.format(Math.round(v)))], ["Std (độ lệch chuẩn)", ...stat("std", vnd)], ["Q1", ...stat("q1", vnd)], ["Q3", ...stat("q3", vnd)], ["IQR = Q3 − Q1", ...stat("iqr", vnd)],
+    ["CV = std / mean", ...stat("cv_pct", (v) => dec(v, 1) + "%")], ["Skewness (độ lệch)", ...stat("skew", (v) => dec(v))]];
+  const levels = {};
+  A.variables.forEach(([, kind]) => { const k = kind.split(" ")[0]; levels[k] = (levels[k] || 0) + 1; });
+  const corr = A.correlation.map((r) => [STORE[STORE_KEY_OF[r.store]], r.method === "pearson" ? "Pearson" : "Spearman", nf.format(r.n), dec(r.r, 3), pValue(r.p_value)]);
+  const fixes = { selling_unit_label: "Bán theo lốc: lấy số trong đơn vị bán", number_is_part_of_name: "Số thuộc tên sản phẩm (Wake Up 247): sửa về 1", n_x_size_in_name: "Dạng 25*20g: lấy 25" };
+  const figCards = A.figures.map((f, i) => `<button class="fig" type="button" data-fig="${i}"><img src="assets/report4/${esc(f.file)}" alt="" loading="lazy"><span>Hình ${i + 1}. ${esc(f.title)}</span><small>${esc(f.kind.split(" (")[0])}</small></button>`).join("");
+
+  const sections = [
+    ["1.3, 2.1", "Câu hỏi và cách tiếp cận", `<p><b>Câu hỏi:</b> cùng một sản phẩm thì Bách Hóa Xanh hay WinMart rẻ hơn?</p>
+      <p>Theo slide 2.1, câu hỏi về quan hệ và so sánh dùng hướng <b>mô tả</b> và <b>phân tích thống kê</b>. Website không có mô hình dự đoán hay AI: mọi kết quả đều là tính toán trực tiếp trên dữ liệu.</p>`,
+      [["Mở trang chủ", "#/"]]],
+    ["2.2, 5.6, PDF 5.6.1", "Thu thập dữ liệu", `<p>Thu thập từ ${A.pages} trang danh mục trong một buổi (${META.collected_from.slice(11)}–${META.collected_to.slice(11)}, ${META.collected_from.slice(0, 10)}): trang chạy JavaScript nên dùng Playwright và đọc phản hồi JSON. Có kiểm tra robots.txt, nghỉ 5 giây giữa các trang, không đăng nhập. Điều khoản sử dụng đầy đủ chưa được rà soát.</p>
+      ${dataTable(["Bước", "BHX", "WinMart", "Tổng"], [["Dòng gốc", nf.format(A.raw.by_store.b), nf.format(A.raw.by_store.w), nf.format(A.raw.total)], ["Dòng sạch", nf.format(META.by_store.b), nf.format(META.by_store.w), nf.format(META.products)]])}
+      <p>Loại ${nf.format(A.raw.rejected)} dòng: ${A.raw.reasons.duplicate_in_run} dòng trùng trong cùng lần thu thập, ${A.raw.reasons.missing_product_code} dòng không có mã sản phẩm.</p>`,
+      [["Quy trình dữ liệu", "#/gioi-thieu"]]],
+    ["6.1, 6.2", "Tìm hiểu dữ liệu: loại dữ liệu, mẫu, loại biến", `<p>Dữ liệu <b>cross-sectional</b> (một thời điểm) và <b>multivariate</b>. Đây là <b>mẫu</b>, không phải toàn bộ hàng hóa của hai siêu thị. Vì không có chuỗi thời gian nên không vẽ line chart (slide 6.3).</p>
+      <p>${Object.entries(levels).map(([k, n]) => `<b>${esc(k)}</b>: ${n} biến`).join(" · ")}</p>
+      <details class="table-view"><summary>Xem ${A.variables.length} biến và loại biến</summary>${dataTable(["Biến", "Loại", "Ý nghĩa"], A.variables.map((v) => v.map(esc)))}</details>`,
+      [["Xem dữ liệu sản phẩm", "#/san-pham"]]],
+    ["2.3, 2.6", "Chuẩn bị dữ liệu", `<h3>Trùng lặp</h3>${dataTable(["Kiểm tra lại trên dữ liệu sạch", "Số dòng trùng"], A.dup_check.map(([a, b]) => [esc(a), b]))}
+      <h3>Giá trị sai (${META.values_fixed} dòng)</h3>${dataTable(["Quy tắc sửa pack_count", "Số dòng"], Object.entries(A.pack_fixes).map(([k, n]) => [esc(fixes[k] || k), n]))}
+      <h3 id="h-missing">Giá trị thiếu</h3>${dataTable(["Cột", "Số ô thiếu", "BHX", "WinMart", "Loại", "Cách xử lý"], A.missing.map((r) => [`<code>${esc(r.col)}</code>`, nf.format(r.n), dec(r.b) + "%", dec(r.w) + "%", esc(r.kind), esc(r.rule)]))}
+      <p>Outlier theo IQR được <b>đánh dấu, không xóa</b> vì đều là giá thật: ${A.outliers.log_price_outlier} dòng theo giá, ${A.outliers.unit_price_outlier} dòng theo giá/kg-lít. Dữ liệu đi từ ${A.columns[0]} lên ${A.columns[1]} cột.</p>
+      <h3>Normalize, dummy: chọn một sản phẩm thật để tính</h3>
+      <label class="field"><span>Sản phẩm</span><select id="normPick">${A.samples.map((s, i) => `<option value="${i}">${esc(s.name)} – ${money(s.price)}</option>`).join("")}</select></label>
+      <p class="formula" id="normOut"></p>`,
+      [["Món giá/kg thấp nhất", "#/san-pham?sx=unit"]]],
+    ["6.2", "Thống kê mô tả giá bán", `${dataTable(["Chỉ số", "Bách Hóa Xanh", "WinMart"], rows)}
+      <p>Giá lệch phải mạnh nên mean bị kéo lên: BHX có mean cao hơn WinMart nhưng median thấp hơn. Vì vậy các so sánh dùng <b>median</b> (slide 6.2: median không bị ảnh hưởng bởi giá trị cực đoan).</p>`,
+      [["Biểu đồ thống kê", "#/thong-ke"]]],
+    ["2.3, 2.7", "Tương quan: khối lượng và giá", `${dataTable(["Siêu thị", "Hệ số", "n", "r", "p"], corr)}
+      <p>Gói càng lớn càng đắt. Theo slide 2.7, <b>tương quan không có nghĩa là quan hệ nhân quả</b>.</p>`,
+      []],
+    ["6.5 – 6.8", "Kiểm định: so sánh công bằng", `${dataTable(["Giả thuyết H₀", "Phép kiểm định", "Thống kê", "p", "Kết luận"], [
+        [`Cùng sản phẩm: trung bình ln(giá WinMart / giá BHX) = 0 (n = ${P.n_pairs})`, "Paired t-test", `t = ${dec(P.paired_t.t)}`, pValue(P.paired_t.p_value), decide(P.paired_t.p_value)],
+        [`Cùng sản phẩm: khả năng WinMart đắt hơn = 50% (bỏ ${P.same_price} cặp bằng giá)`, "Sign test", `${P.winmart_more_expensive} đắt hơn / ${P.winmart_cheaper} rẻ hơn`, pValue(P.sign_test.p_value), decide(P.sign_test.p_value)],
+        ["Tỉ lệ giảm giá không phụ thuộc siêu thị", "Chi-square 2×2", `χ² = ${dec(T.promo.chi2, 1)}`, pValue(T.promo.p_value), decide(T.promo.p_value)],
+        ["Phân bố giá của toàn bộ sản phẩm đã thu thập như nhau", "Mann-Whitney U", `z = ${dec(T.shelves.z)}`, pValue(T.shelves.p_value), decide(T.shelves.p_value)],
+      ])}
+      <p>Trên ${P.n_pairs} cặp, giá WinMart so với BHX trung bình nhân chênh <b>${dec(P.geo_mean_ratio_pct)}%</b> (khoảng tin cậy 95%: ${dec(P.geo_mean_ratio_ci95_pct[0])}% đến ${dec(P.geo_mean_ratio_ci95_pct[1])}%, có chứa 0). Không bác bỏ H₀ không có nghĩa là giá bằng nhau, chỉ là mẫu này chưa đủ bằng chứng về chênh lệch.</p>
+      <p>Toàn bộ sản phẩm có khác biệt nhưng hai bên bán mặt hàng khác nhau, nên phép so sánh đúng là theo cặp. Với n lớn, phân phối t gần như trùng z (slide 6.6), nên code dùng xấp xỉ chuẩn. Sign test, Chi-square, Mann-Whitney và Spearman không có trong slide, được dùng vì giá lệch mạnh hoặc dữ liệu dạng đếm.</p>
+      <details class="table-view"><summary>Xem theo từng nhóm hàng</summary>${dataTable(["Nhóm", "Số cặp", "WinMart rẻ hơn", "WinMart đắt hơn", "Median chênh", "p (sign test)"], T.by_group.map((r) => [esc(META.groups[r.group]), r.pairs, r.winmart_cheaper, r.winmart_more_expensive, dec(r.median_diff_pct) + "%", pValue(r.sign_test_p)]))}</details>`,
+      [["Mở 139 cặp", "#/so-sanh"]]],
+    ["6.3, 6.4", "Trực quan hóa: 12 biểu đồ Report 4", `<p>Bấm vào hình để xem lớn, kèm lý do chọn loại biểu đồ và nhận xét. Slide 6.3 dùng stacked column cho cơ cấu qua vài giai đoạn; Hình 4 áp dụng cho cơ cấu giữa các nhóm tại một thời điểm.</p><div class="fig-grid">${figCards}</div>`,
+      [["Biểu đồ tương tác", "#/thong-ke"]]],
+    ["2.5", "Triển khai và phản hồi", `<p>Website là bước <b>triển khai</b>: đưa kết quả phân tích đến người mua. Giỏ hàng cộng giá theo từng cặp để biết nên mua ở đâu. <b>Phản hồi người dùng chưa được thu thập</b>. Slide 2.4 về xây dựng và đánh giá mô hình không áp dụng vì project không có mô hình dự đoán.</p>`,
+      [["Chọn món cho vào giỏ", "#/so-sanh"]]],
+  ];
+  $("slideNav").innerHTML = sections.map(([tag], i) => `<button class="chip" type="button" data-jump="sl-${i}">${i + 1}. Slide ${esc(tag)}</button>`).join("");
+  $("slideBody").innerHTML = sections.map(([tag, title, body, links], i) => `
+    <section class="sl reveal" id="sl-${i}">
+      <div class="sl-head"><span class="sl-no">${i + 1}</span><div><span class="sl-tag">Slide ${esc(tag)}</span><h2>${title}</h2></div></div>
+      <div class="sl-body">${body}</div>
+      ${links.length ? `<div class="sl-demo">${links.map(([l, h]) => link(l, h)).join("")}</div>` : ""}
+    </section>`).join("");
+  $("normPick").addEventListener("change", updateNorm);
+  updateNorm();
 }
 function closeModal(silent) {
   if ($("modal").hidden) return;
@@ -789,7 +912,7 @@ function saveCart(bump) {
   if (bump) { const el = $("cartCount"); el.classList.remove("bump"); void el.offsetWidth; el.classList.add("bump"); }
 }
 function saveFavs() {
-  storage("sogia-favs", JSON.stringify([...favs]));
+  storage("sogia-favs2", JSON.stringify([...favs]));
   $("favCount").textContent = favs.size;
   $("favCount").hidden = !favs.size;
 }
@@ -847,6 +970,7 @@ function renderCart() {
     ${row("Mua tách 2 nơi (rẻ nhất từng món)", t.s, splitGain > 0)}
     ${worstTotal - t.s > 0 ? `<div class="saving"><span>Mua đúng nơi, bạn tiết kiệm</span><b>${money(worstTotal - t.s)}</b></div>` : ""}
     <p class="advice">${advice}</p>
+    <p class="sub" style="margin-bottom:10px">Theo giá thu thập ngày ${META.collected_from.slice(0, 10)}; chưa gồm phí giao hàng và ưu đãi mua kèm.</p>
     <div class="drawer-actions">
       <button class="btn primary full" type="button" id="copyList">Sao chép danh sách đi chợ</button>
       <button class="btn" type="button" id="shareCart">Chia sẻ giỏ hàng</button>
@@ -889,9 +1013,11 @@ function importCart(code) {
   history.replaceState(null, "", "#/so-sanh");
   onRoute();
   if (Object.keys(next).length) {
-    cart = next; saveCart(true); refreshCartButtons();
+    const hadItems = cartItems().length > 0;     // a shared link must not wipe out the visitor's own cart
+    for (const [i, q] of Object.entries(next)) cart[i] = Math.max(cart[i] || 0, q);
+    saveCart(true); refreshCartButtons();
     openCart();
-    toast(`${svg(I.check)}Đã mở giỏ hàng được chia sẻ (${Object.values(next).reduce((a, b) => a + b, 0)} món)`);
+    toast(`${svg(I.check)}${hadItems ? "Đã gộp giỏ hàng được chia sẻ vào giỏ của bạn" : "Đã mở giỏ hàng được chia sẻ"} (${Object.values(next).reduce((a, b) => a + b, 0)} món)`);
   }
 }
 
@@ -938,7 +1064,7 @@ function refreshCartButtons() {
   document.querySelectorAll("[data-cart]").forEach((b) => { b.outerHTML = cartBtn(+b.dataset.cart, b.classList.contains("small")); });
 }
 function refreshFavButtons(i) {
-  const on = favs.has(PRODUCTS[i].u);
+  const on = favs.has(PRODUCTS[i].id);
   document.querySelectorAll(`[data-fav="${i}"]`).forEach((b) => {
     if (b.hasAttribute("data-fav-text")) { b.textContent = on ? "♥ Đã yêu thích" : "♡ Yêu thích"; return; }
     b.classList.toggle("on", on); b.setAttribute("aria-pressed", on); b.setAttribute("aria-label", on ? "Bỏ yêu thích" : "Yêu thích");
@@ -956,8 +1082,16 @@ function bind() {
   attachSuggest($("heroQ"), $("heroQ-list"), (q) => (q && PAIRS.some((x) => matches(x.key, q)) ? go("so-sanh", { q }) : go("san-pham", { q })));
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "/" && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); $("navQ").focus(); }
+    const layer = !$("modal").hidden ? $("modalBox") : $("drawer").classList.contains("open") ? $("drawer") : null;
+    if (e.key === "/" && !layer && !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)) { e.preventDefault(); $("navQ").focus(); }
     if (e.key === "Escape") { if (!$("modal").hidden) closeModal(); else closeCart(); }
+    if (e.key === "Tab" && layer) {               // keep keyboard focus inside the open dialog
+      const items = [...layer.querySelectorAll("a[href], button, select, input")].filter((el) => el.offsetParent !== null);
+      if (!items.length) return;
+      const first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && (document.activeElement === first || document.activeElement === layer)) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   });
 
   // compare
@@ -997,7 +1131,7 @@ function bind() {
     const el = (sel) => e.target.closest(sel);
     let b;
     if ((b = el("[data-fav]"))) {
-      const i = +b.dataset.fav, u = PRODUCTS[i].u;
+      const i = +b.dataset.fav, u = PRODUCTS[i].id;
       favs.has(u) ? favs.delete(u) : favs.add(u);
       saveFavs(); refreshFavButtons(i);
       toast(favs.has(u) ? `${svg(I.heart)}Đã thêm vào yêu thích <button type="button" data-goto="#/yeu-thich">Xem</button>` : "Đã bỏ khỏi yêu thích");
@@ -1014,6 +1148,8 @@ function bind() {
       return;
     }
     if ((b = el("[data-qv]"))) { e.preventDefault(); openQuickView(+b.dataset.qv); return; }
+    if ((b = el("[data-fig]"))) { openFigure(+b.dataset.fig); return; }
+    if ((b = el("[data-jump]"))) { $(b.dataset.jump).scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" }); return; }
     if (el("[data-close-modal]")) { closeModal(); return; }
     if (el("[data-open-cart]")) { $("toast").hidden = true; openCart(); return; }
     if ((b = el("[data-goto]"))) { $("toast").hidden = true; location.hash = b.dataset.goto; return; }
@@ -1077,7 +1213,7 @@ function bind() {
     const saved = JSON.parse(storage("sogia-cart") || "{}");
     for (const [k, v] of Object.entries(saved)) if (PAIRS[+k] && v > 0) cart[k] = v;
   } catch (e) { cart = {}; }
-  try { favs = new Set(JSON.parse(storage("sogia-favs") || "[]")); } catch (e) { favs = new Set(); }
+  try { favs = new Set(JSON.parse(storage("sogia-favs2") || "[]")); } catch (e) { favs = new Set(); }
 
   const groupOpts = `<option value="">Tất cả nhóm</option>` + Object.entries(META.groups).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("");
   $("prdG").innerHTML = groupOpts;
@@ -1088,6 +1224,7 @@ function bind() {
   renderHome();
   renderAbout();
   renderStats();
+  renderSlides();
   bind();
   rotateWord();
   $("loading").hidden = true;

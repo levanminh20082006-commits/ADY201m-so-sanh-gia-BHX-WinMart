@@ -13,18 +13,25 @@
 
 **Kết luận:** cùng một sản phẩm thì không siêu thị nào rẻ hơn một cách có hệ thống; khoảng 74% số cặp chênh nhau không quá 10%.
 
+## Xem nhanh kết quả
+
+| Nội dung | Mở |
+|---|---|
+| Kết quả Report 3 (thống kê, kiểm định, xử lý dữ liệu) | [reports_py/report3_results.md](reports_py/report3_results.md) |
+| Kết quả Report 4 (12 biểu đồ và nhận xét) | [reports_py/report4_results.md](reports_py/report4_results.md) |
+| 12 biểu đồ trên một ảnh | [report4_tong_hop_12_bieu_do.png](reports_py/report4_tong_hop_12_bieu_do.png) |
+| Chất lượng dữ liệu Report 2 | [reports_py/data_quality_report.md](reports_py/data_quality_report.md) |
+| 139 cặp cùng sản phẩm | [data/processed_py/matched_products.csv](data/processed_py/matched_products.csv) |
+| Dữ liệu sau xử lý | [data/processed_py/report3_prepared.csv](data/processed_py/report3_prepared.csv) |
+| Website | [website/](website/) |
+
 ## Thành viên & đóng góp
 
 | Thành viên | Vai trò | Phần phụ trách |
 |---|---|---|
-| _(Tên trưởng nhóm)_ | **Trưởng nhóm – phát triển chính** | Thiết kế và viết toàn bộ pipeline: thu thập, làm sạch, ghép cặp, SQL Server, Report 3, Report 4, website, test tự động; giao việc và duyệt Pull Request |
-| _(Thành viên 2)_ | Thành viên | _(ghi phần đã làm, link Pull Request)_ |
-| _(Thành viên 3)_ | Thành viên | _(ghi phần đã làm, link Pull Request)_ |
-| _(Thành viên 4)_ | Thành viên | _(ghi phần đã làm, link Pull Request)_ |
-| _(Thành viên 5)_ | Thành viên | _(ghi phần đã làm, link Pull Request)_ |
+| Lê Văn Minh | **Thực hiện toàn bộ phần kỹ thuật** | Thu thập, làm sạch, ghép cặp, SQL Server, Report 3, Report 4, website, test tự động |
 
-Phần code nền (Report 2 – 4 và website) được trưởng nhóm phát triển trước khi lập kho chung; sau đó nhóm làm việc trên kho này
-theo quy trình nhánh riêng → Pull Request → duyệt → gộp vào `main` (xem [HUONG_DAN_GIT.md](HUONG_DAN_GIT.md)).
+Toàn bộ code và kết quả trong kho này do Lê Văn Minh thực hiện và đưa lên GitHub.
 
 ## Luồng dữ liệu
 

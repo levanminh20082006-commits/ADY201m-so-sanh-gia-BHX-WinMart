@@ -10,6 +10,7 @@ và tính tổng tiền giỏ hàng ở mỗi siêu thị.
 - **Khuyến mãi**: giảm sâu nhất, flash sale, mua kèm / combo.
 - **Thống kê**: biểu đồ tương tác (số sản phẩm, giá trung vị, tỉ lệ khuyến mãi theo nhóm, phân khúc giá, phân bố chênh lệch 139 cặp), có bảng số liệu.
 - **Giỏ hàng**: tổng tiền nếu mua hết ở BHX / WinMart / mua tách 2 nơi, số tiền tiết kiệm, sao chép hoặc tải danh sách đi chợ, chia sẻ giỏ hàng bằng link.
+- **Theo slide**: minh chứng theo thứ tự bài giảng (loại biến, chuẩn bị dữ liệu, thống kê mô tả, tương quan, kiểm định, 12 biểu đồ Report 4), số liệu tính bằng chính code của Report 3.
 - **Yêu thích**, **Giới thiệu** (quy trình dữ liệu, kết quả chính, câu hỏi thường gặp).
 - Tìm kiếm không dấu (phím tắt `/`), giao diện sáng / tối, hiệu ứng khi cuộn, dùng tốt trên điện thoại, đường link chia sẻ được đúng bộ lọc.
 
