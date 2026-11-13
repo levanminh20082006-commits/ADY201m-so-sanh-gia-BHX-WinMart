@@ -20,6 +20,7 @@
 | Kết quả Report 3 (thống kê, kiểm định, xử lý dữ liệu) | [reports_py/report3_results.md](reports_py/report3_results.md) |
 | Kết quả Report 4 (12 biểu đồ và nhận xét) | [reports_py/report4_results.md](reports_py/report4_results.md) |
 | 12 biểu đồ trên một ảnh | [report4_tong_hop_12_bieu_do.png](reports_py/report4_tong_hop_12_bieu_do.png) |
+| Kết quả Report 5 (mô hình dự đoán chênh lệch giá) | [reports_py/report5_results.md](reports_py/report5_results.md) |
 | Chất lượng dữ liệu Report 2 | [reports_py/data_quality_report.md](reports_py/data_quality_report.md) |
 | 139 cặp cùng sản phẩm | [data/processed_py/matched_products.csv](data/processed_py/matched_products.csv) |
 | Dữ liệu sau xử lý | [data/processed_py/report3_prepared.csv](data/processed_py/report3_prepared.csv) |
@@ -36,20 +37,21 @@
 | 2.7, 6.6 – 6.8 | Tương quan, kiểm định | `report3/stats.py` |
 | 6.3, 6.4 | Trực quan hóa | `report4/visualize.py` |
 | 2.5 | Triển khai kết quả | `website/` |
+| 2.4, 6.8 | Xây dựng và đánh giá mô hình, hồi quy | `report5/model.py`: hồi quy tuyến tính, kiểm định chéo 5 lần |
 | 4.4, 4.6 | Jupyter Notebook, Git và GitHub | `notebooks/`, kho này |
 
 ## Kiểm chứng
 
 - Đối soát số dòng JSON = CSV = SQL: [reconciliation_run_20261012_1622.json](reports_py/reconciliation_run_20261012_1622.json).
 - Kiểm tra 12 cặp trên website thật: tên khớp 12/12, giá WinMart 12/12, giá BHX 7/12 (trang danh mục và trang chi tiết của BHX có thể khác giá).
-- Test tự động (`python -m pytest`): 51 đạt, 7 bỏ qua vì cần SQL Server.
+- Test tự động (`python -m pytest`): 55 đạt, 7 bỏ qua vì cần SQL Server.
 
 ## Hạn chế
 
 - Giá được thu thập một lần (12/10/2026) tại khu vực mặc định của hai website, nên chưa phân tích được biến động theo thời gian.
 - 139 cặp là các món ghép được, khoảng 10% sản phẩm của BHX, không phải mẫu ngẫu nhiên; kết luận chỉ áp dụng cho nhóm sản phẩm này.
 - Đã kiểm tra robots.txt; điều khoản sử dụng đầy đủ của hai website chưa được rà soát. Dự án chỉ phục vụ học tập.
-- Chưa có ANOVA, hồi quy và mô hình dự đoán (slide 6.7, 6.8).
+- Chưa có ANOVA (slide 6.7). Mô hình dự đoán chỉ giải thích chênh lệch tại một thời điểm (R² ngoài mẫu 0,38), chưa dự đoán được giá tương lai.
 
 ## Thành viên & đóng góp
 
@@ -69,6 +71,7 @@ websites ──► report2/collect.py ──► data/raw_py/<run>/*.json        
          ──► report3/run.py     ──► data/processed_py/report3_prepared.csv + reports_py/report3_results.md
          ──► report3/evidence.py──► evidence/report3/*.csv, *.png
          ──► report4/visualize.py─► reports_py/report4/*.png + reports_py/report4_results.md
+         ──► report5/model.py   ──► reports_py/report5/*.png + reports_py/report5_results.md
          ──► website/tools/build_data.py ──► website/data/*.json ──► website/
 ```
 
@@ -107,6 +110,7 @@ Lần đầu tạo database: `& $py -m report2.storage --create-database`
 & $py -m report3.run              # 3 mục Report 3 -> reports_py/report3_results.md + data/processed_py/report3_prepared.csv
 & $py -m report3.evidence         # bảng và hình bằng chứng -> evidence/report3/
 & $py -m report4.visualize        # 12 biểu đồ -> reports_py/report4/ + reports_py/report4_results.md
+& $py -m report5.model            # mô hình dự đoán chênh lệch giá -> reports_py/report5/ + reports_py/report5_results.md
 ```
 
 ## 4. Test tự động
@@ -140,6 +144,7 @@ cd website; python -m http.server 8000     # xem trên máy: http://localhost:80
 | `report2/` | Code Report 2: thu thập, làm sạch, ghép cặp, SQL Server, đối soát |
 | `report3/` | Code Report 3: tiền xử lý, thống kê, kiểm định, xuất bằng chứng |
 | `report4/` | Code Report 4: 12 biểu đồ |
+| `report5/` | Code Report 5: hồi quy tuyến tính dự đoán chênh lệch giá, kiểm định chéo 5 lần |
 | `website/` | Website so sánh giá |
 | `config/` | Danh mục thu thập, bảng tên thương hiệu khác nhau giữa 2 siêu thị |
 | `sql/` | Schema, truy vấn demo, bài tập truy vấn |
