@@ -796,7 +796,7 @@ function renderSlides() {
 
   const sections = [
     ["1.3, 2.1", "Câu hỏi và cách tiếp cận", `<p><b>Câu hỏi:</b> cùng một sản phẩm thì Bách Hóa Xanh hay WinMart rẻ hơn?</p>
-      <p>Theo slide 2.1, câu hỏi về quan hệ và so sánh dùng hướng <b>mô tả</b> và <b>phân tích thống kê</b>. Website không có mô hình dự đoán hay AI: mọi kết quả đều là tính toán trực tiếp trên dữ liệu.</p>`,
+      <p>Theo slide 2.1, câu hỏi về quan hệ và so sánh dùng hướng <b>mô tả</b> và <b>phân tích thống kê</b>. Phần mở rộng có một mô hình <b>hồi quy tuyến tính</b> dự đoán chênh lệch giá (Report 5). Website không dùng AI: mọi kết quả đều tính trực tiếp trên dữ liệu.</p>`,
       [["Mở trang chủ", "#/"]]],
     ["2.2, 5.6, PDF 5.6.1", "Thu thập dữ liệu", `<p>Thu thập từ ${A.pages} trang danh mục trong một buổi (${META.collected_from.slice(11)}–${META.collected_to.slice(11)}, ${META.collected_from.slice(0, 10)}): trang chạy JavaScript nên dùng Playwright và đọc phản hồi JSON. Có kiểm tra robots.txt, nghỉ 5 giây giữa các trang, không đăng nhập. Điều khoản sử dụng đầy đủ chưa được rà soát.</p>
       ${dataTable(["Bước", "BHX", "WinMart", "Tổng"], [["Dòng gốc", nf.format(A.raw.by_store.b), nf.format(A.raw.by_store.w), nf.format(A.raw.total)], ["Dòng sạch", nf.format(META.by_store.b), nf.format(META.by_store.w), nf.format(META.products)]])}
@@ -832,7 +832,7 @@ function renderSlides() {
       [["Mở 139 cặp", "#/so-sanh"]]],
     ["6.3, 6.4", "Trực quan hóa: 12 biểu đồ Report 4", `<p>Bấm vào hình để xem lớn, kèm lý do chọn loại biểu đồ và nhận xét. Slide 6.3 dùng stacked column cho cơ cấu qua vài giai đoạn; Hình 4 áp dụng cho cơ cấu giữa các nhóm tại một thời điểm.</p><div class="fig-grid">${figCards}</div>`,
       [["Biểu đồ tương tác", "#/thong-ke"]]],
-    ["2.5", "Triển khai và phản hồi", `<p>Website là bước <b>triển khai</b>: đưa kết quả phân tích đến người mua. Giỏ hàng cộng giá theo từng cặp để biết nên mua ở đâu. <b>Phản hồi người dùng chưa được thu thập</b>. Slide 2.4 về xây dựng và đánh giá mô hình không áp dụng vì project không có mô hình dự đoán.</p>`,
+    ["2.5", "Triển khai và phản hồi", `<p>Website là bước <b>triển khai</b>: đưa kết quả phân tích đến người mua. Giỏ hàng cộng giá theo từng cặp để biết nên mua ở đâu. <b>Phản hồi người dùng chưa được thu thập</b>. Slide 2.4 về xây dựng và đánh giá mô hình được làm ở Report 5: hồi quy tuyến tính, đánh giá bằng kiểm định chéo 5 lần; chỉ biết nhóm hàng và kích thước thì R² 0,09, thêm khuyến mãi thì R² 0,38.</p>`,
       [["Chọn món cho vào giỏ", "#/so-sanh"]]],
   ];
   $("slideNav").innerHTML = sections.map(([tag], i) => `<button class="chip" type="button" data-jump="sl-${i}">${i + 1}. Slide ${esc(tag)}</button>`).join("");
